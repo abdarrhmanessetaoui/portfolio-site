@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/iconlg.png">
+    <title>Abderrhman Settaoui | Portfolio</title>
+    <meta name="description" content="Portfolio of Abderrhaman Settaoui, full stack developer specialized in modern web applications." data-i18n-content="metaDescription" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  </head>
+  <body>
+  <header class="header ">
+    <a href="#home" class="logo">
+      <img src="img/logohd_nobg.png" alt="" data-i18n-alt="logoAlt">
+    </a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+        
+    <nav class="navbar">
+          
+        <a href="#home" data-i18n="nav.home">Home</a>      
+        <a href="#qualifications" data-i18n="nav.resume">Resume</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+   
+    </nav>
+
+    <button class="mode-btn">
+      <i class="bx bx-moon"></i>
+    </button>
+    
+
+    <div class="dropdown" id="langDropdown">
+      <div class="dropdown-btn" id="selected">
+        <img class="flag-icon" src="https://flagcdn.com/w20/us.png" alt="English" /> English
+      </div>
+      <div class="dropdown-list" id="langOptions">
+        <div data-value="en"><img class="flag-icon" src="https://flagcdn.com/w20/us.png" alt="English" /> English</div>
+        <div data-value="fr"><img class="flag-icon" src="https://flagcdn.com/w20/fr.png" alt="French" /> Français</div>
+        <div data-value="ar"><img class="flag-icon" src="https://flagcdn.com/w20/sa.png" alt="Arabic" /> العربية</div>
+      </div>
+    </div>
+    
+  
+  </header>
+
+  
+
+  <section class="home" id="home">
+
+     <div class="home-content">
+
+      <h1 data-i18n="welcome">Hi, It's <span>Abderrhman</span></h1>
+
+      <h3 data-i18n="aboutHeadline">
+        I'm a <span>Junior Full Stack Web Developer</span>
+      </h3>
+      
+      <p data-i18n="aboutText">
+
+        From electricity to coding, I've always been curious about how things work.
+        I build websites with HTML, CSS, JavaScript, jQuery, and Bootstrap.
+        I create web apps using PHP, Python, APIs, and MySQL.
+        I'm always learning and exploring frameworks like Laravel, React.js, Next.js, and Django.
+        I love solving problems and making useful digital solutions.
+
+      </p>
+      <div class="social-icons">
+
+        <a href="#">
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/abderrhman-settaoui-33569b305/" data-i18n-href="linkedin">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+
+        <a href="https://www.instagram.com/abdarrhmane_ssetaoui/" data-i18n-href="instagram">
+          <i class="bx bxl-instagram-alt"></i>
+        </a>
+
+        <a href="#">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        
+        <a href="https://www.facebook.com/profile.php?id=61550493181950" data-i18n-href="facebook">
+          <i class="bx bxl-facebook"></i>
+        </a>
+
+        <a href="https://wa.me/+212776429048" data-i18n-href="whatsapp">
+          <i class="bx bxl-whatsapp"></i>
+        </a>
+      </div>
+      
+
+      <div class="btn-group">
+
+        <a href="#contact" class="btn" data-i18n="contactMe">Contact Me</a>
+        <a href="#" class="btn" data-i18n="downloadCV">Download CV</a>
+      </div>
+
+     </div>
+     
+     <div class="home-img">
+      <img src="img/profile.png" alt="Profile picture" data-i18n-alt="profileAlt">
+     </div>
+
+
+  </section>
+
+
+
+<!-- Education -->
+
+
+
+
+<section class="timeline-section" id="qualifications">
+  <h2 class="heading"><span data-i18n="my">My</span> <span data-i18n="resume">Resume</span></h2>
+
+  <!-- Timeline Container -->
+  <div class="timeline-container">
+    <!-- Education Column -->
+    <div class="timeline-column">
+      <h3 class="column-title " id="education" data-i18n="educationTitle">
+        <i class='bx bxs-graduation'></i>Education
+      </h3>
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item">
+        <div class="timeline-node"></div>
+        <div class="timeline-content">
+          <div class="timeline-icon">
+            <i class='bx bx-code-alt'></i>
+          </div>
+          <div class="timeline-date">2024 — Present</div>
+          <h4 class="timeline-title" data-i18n="digitalDev">Digital Development</h4>
+          <p class="timeline-subtitle" data-i18n="ofppt">OFPPT NTIC Syba</p>
+          <p class="timeline-description" data-i18n="ofpptDesc">Specialized training in web development and digital technologies, covering both frontend and backend aspects of modern development.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-node"></div>
+        <div class="timeline-content">
+          <div class="timeline-icon">
+            <i class='bx bx-chip'></i>
+          </div>
+          <div class="timeline-date">2023</div>
+          <h4 class="timeline-title" data-i18n="hsdiploma">Technical Baccalaureate in Electrical Sciences</h4>
+          <p class="timeline-subtitle" data-i18n="hassan">Hassan II Qualifying High School</p>
+          <p class="timeline-description" data-i18n="hassanDesc">High school diploma specialized in electrical sciences, building a strong foundation in mathematics and applied sciences.</p>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Certificates Column -->
+<div class="timeline-column">
+  <h3 class="column-title" data-i18n="certificatesTitle">
+    <i class='bx bxs-certification'></i>Certificates
+  </h3>
+  <div class="timeline-line"></div>
+
+  <div class="timeline-item">
+    <div class="timeline-node"></div>
+    <div class="timeline-content">
+      <div class="timeline-icon">
+        <i class='bx bxs-badge-check'></i>
+      </div>
+      <div class="timeline-date">2025</div>
+      <h4 class="timeline-title" data-i18n="frontendCert">Frontend Development Certificate</h4>
+      <p class="timeline-subtitle" data-i18n="coursera">Coursera / Meta</p>
+      <p class="timeline-description" data-i18n="courseraDesc">Completion of a professional certification in frontend technologies (HTML, CSS, JavaScript, React) focusing on practical applications and projects.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-node"></div>
+    <div class="timeline-content">
+      <div class="timeline-icon">
+        <i class='bx bxs-badge-check'></i>
+      </div>
+      <div class="timeline-date">2024</div>
+      <h4 class="timeline-title" data-i18n="responsiveWeb">Responsive Web Design</h4>
+      <p class="timeline-subtitle" data-i18n="freecodecamp">freeCodeCamp</p>
+      <p class="timeline-description" data-i18n="freecodecampDesc">Mastery of responsive web design principles, mobile-first approach, and CSS frameworks.</p>
+    </div>
+  </div>
+</div>
+
+    <!-- Experience Column -->
+    <div class="timeline-column">
+      <h3 class="column-title" data-i18n="experienceTitle">
+        <i class='bx bxs-briefcase'></i>Experience
+      </h3>
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item">
+        <div class="timeline-node"></div>
+        <div class="timeline-content">
+          <div class="timeline-icon">
+            <i class='bx bx-laptop'></i>
+          </div>
+          <div class="timeline-date">2025</div>
+          <h4 class="timeline-title" data-i18n="freelancer">IT Freelancer</h4>
+          <p class="timeline-subtitle" data-i18n="independent">Independent Web Developer</p>
+          <p class="timeline-description" data-i18n="independentDesc">Creation and updating of web pages using HTML/CSS, developing custom web solutions for local and international clients.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-node"></div>
+        <div class="timeline-content">
+          <div class="timeline-icon">
+            <i class='bx bx-mobile-alt'></i>
+          </div>
+          <div class="timeline-date">2023</div>
+          <h4 class="timeline-title" data-i18n="mobileTech">Mobile Technician</h4>
+          <p class="timeline-subtitle" data-i18n="samir">Samir Mobile</p>
+          <p class="timeline-description" data-i18n="samirDesc">Mobile phone repair, formatting and system maintenance, developing technical skills in hardware and software.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+</section>
+
+<section class="skills" id="skills">
+  <h2 class="heading"><span data-i18n="my">My</span> <span data-i18n="skills">Skills</span></h2>
+  <h2 class="section-title" data-i18n="technicalSkills">Technical Skills</h2>
+  <div class="skills-container">
+
+    <!-- Frontend -->
+    <div class="skill-box">
+      <h3 data-i18n="frontend">Frontend</h3>
+
+      <div class="skill">
+        <span><i class='bx bxl-html5'></i> HTML</span>
+        <div class="progress-bar">
+          <div style="--target-width: 95%;"><span data-i18n-number>95%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bxl-css3'></i> CSS</span>
+        <div class="progress-bar">
+          <div style="--target-width: 90%;"><span data-i18n-number>90%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bxl-javascript'></i> JavaScript (ES6+)</span>
+        <div class="progress-bar">
+          <div style="--target-width: 70%;"><span data-i18n-number>70%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bxl-jquery'></i> jQuery (Library)</span>
+        <div class="progress-bar">
+          <div style="--target-width: 85%;"><span data-i18n-number>85%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bxl-bootstrap'></i> Bootstrap (Framework)</span>
+        <div class="progress-bar">
+          <div style="--target-width: 80%;"><span data-i18n-number>80%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bxl-react'></i> React.js (Framework)</span>
+        <div class="progress-bar">
+          <div style="--target-width: 20%; background-color: #999;"><span data-i18n-number>20%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skill-box">
+      <h3 data-i18n="backend">Backend</h3>
+
+      <div class="skill">
+        <span><i class='bx bxl-php'></i> PHP</span>
+        <div class="progress-bar">
+          <div style="--target-width: 85%;"><span data-i18n-number>85%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bxl-python'></i> Python</span>
+        <div class="progress-bar">
+          <div style="--target-width: 70%;"><span data-i18n-number>70%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bx-reset'></i> REST API</span>
+        <div class="progress-bar">
+          <div style="--target-width: 70%;"><span data-i18n-number>70%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bxl-django'></i> Django (Framework)</span>
+        <div class="progress-bar">
+          <div style="--target-width: 20%; background-color: #999;"><span data-i18n-number>20%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class="bx bx-code-alt"></i> Laravel (Framework)</span>
+        <div class="progress-bar">
+          <div style="--target-width: 25%; background-color: #999;"><span data-i18n-number>25%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class="bx bx-code"></i> VB.NET</span>
+        <div class="progress-bar">
+          <div style="--target-width: 35%; background-color: #999;"><span data-i18n-number>35%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="skill-box">
+      <h3 data-i18n="databases">Databases</h3>
+
+      <div class="skill">
+        <span><i class='bx bxs-data'></i> <span data-i18n="mysql">MySQL</span></span>
+        <div class="progress-bar">
+          <div style="--target-width: 90%;"><span data-i18n-number>90%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bxl-mongodb'></i> <span data-i18n="mongodb">MongoDB</span></span>
+        <div class="progress-bar">
+          <div style="--target-width: 20%; background-color: #999;"><span data-i18n-number>20%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools & Others -->
+    <div class="skill-box">
+      <h3 data-i18n="tools">Tools & Others</h3>
+
+      <div class="skill">
+        <span><i class='bx bxl-github'></i> Git & GitHub</span>
+        <div class="progress-bar">
+          <div style="--target-width: 90%;"><span data-i18n-number>90%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bx-cloud-upload'></i> Deployment & Hosting</span>
+        <div class="progress-bar">
+          <div style="--target-width: 65%;"><span data-i18n-number>65%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bxl-wordpress'></i> WordPress</span>
+        <div class="progress-bar">
+          <div style="--target-width: 60%;"><span data-i18n-number>60%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span><i class='bx bxs-brush'></i> Figma (UI/UX)</span>
+        <div class="progress-bar">
+          <div style="--target-width: 25%; background-color: #999;"><span data-i18n-number>25%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>   
+
+  <h2 class="section-title" data-i18n="professionalSkills">Professional Skills</h2>
+
+  <div class="pro-skills-grid">
+    <div class="pro-circle">
+      <div class="circle" style="--percentage: 90;">
+        <i class='bx bx-brain'></i>
+      </div>
+      <span data-i18n="problemSolving">Problem Solving</span>
+    </div>
+
+    <div class="pro-circle">
+      <div class="circle" style="--percentage: 85;">
+        <i class='bx bx-group'></i>
+      </div>
+      <span data-i18n="teamwork">Teamwork</span>
+    </div>
+
+    <div class="pro-circle">
+      <div class="circle" style="--percentage: 80;">
+        <i class='bx bx-microphone'></i>
+      </div>
+      <span data-i18n="communication">Communication</span>
+    </div>
+
+    <div class="pro-circle">
+      <div class="circle" style="--percentage: 75;">
+        <i class='bx bx-time'></i>
+      </div>
+      <span data-i18n="planning">Planning</span>
+    </div>
+
+    <div class="pro-circle">
+      <div class="circle" style="--percentage: 85;">
+        <i class='bx bx-sync'></i>
+      </div>
+      <span data-i18n="adaptability">Adaptability</span>
+    </div>
+  </div>
+
+
+  <h2 class="section-title" data-i18n="languageSkills">Languages Skills</h2>
+  <div class="pro-skills-grid">
+
+    <div class="pro-circle">
+      <div class="circle" style="--percentage: 100;">
+        <i>C</i>
+      </div>
+      <span data-i18n="arabic">Arabic</span>
+    </div>
+  
+    <div class="pro-circle">
+      <div class="circle" style="--percentage: 60;">
+        <i>B1</i>
+      </div>
+      <span data-i18n="french">French</span>
+    </div>
+  
+    <div class="pro-circle">
+      <div class="circle" style="--percentage: 40;">
+        <i>A2</i>
+      </div>
+      <span data-i18n="english">English</span>
+    </div>
+
+    <div class="pro-circle">
+      <div class="circle" style="--percentage: 40;">
+        <i>A1</i>
+      </div>
+      <span data-i18n="deutsch">Deutsch</span>
+    </div>
+  
+  </div>
+
+
+</section>
+
+  
+
+  
+
+  <section class="services" id="services">
+
+    <h2 class="heading" data-i18n="servicesHeadline">Services</h2>
+
+    <div class="services-container">
+
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bx-code-alt"></i>
+          <h4 data-i18n="webDev">Web Development</h4>
+          <p data-i18n="webDevDesc">
+            I create modern and responsive websites and web applications using JavaScript,
+            PHP, Laravel, React, and Node.js. My focus is on clean code,
+            simple design, and great user experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bx-shield-quarter"></i>
+          <h4 data-i18n="cybersecurity">Cybersecurity Basics</h4>
+          <p data-i18n="cybersecurityDesc">
+            I have knowledge of fundamental cybersecurity practices
+            to help protect websites and applications from common threats,
+            ensuring safer user data and secure environments.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bx-network-chart"></i>
+          <h4 data-i18n="network">Network Fundamentals</h4>
+          <p data-i18n="networkDesc">
+            I understand basic networking concepts,
+            which helps me optimize web performance and troubleshoot connectivity issues efficiently.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="projects" id="projects">
+
+    <h2 class="heading" data-i18n="projectsHeadline">Projects</h2>
+
+    <div class="projects-box">
+
+      <div class="project-card">
+        <img src="img/project1.png" alt="Portfolio project screenshot" data-i18n-alt="portfolioImgAlt">
+        <h3 data-i18n="portfolio">Portfolio Website</h3>
+        <p data-i18n="portfolioDesc">
+          I designed and built a personal portfolio website to showcase skills, projects,
+          and experience with a clean and modern design.
+          It is fully responsive and easy to navigate.
+        </p>
+        <div class="btn" data-i18n="reviewProject">Review Project</div>
+      </div>
+
+
+      <div class="project-card coming-soon">
+        <img src="img/project2.png" alt="E-commerce project screenshot" data-i18n-alt="ecommerceImgAlt">
+        <h3 data-i18n="ecommerce">E-commerce Website</h3>
+        <p data-i18n="ecommerceDesc">
+          I developed a full-featured online store where users can browse products, 
+          add items to their cart, and securely complete purchases.
+          The site includes an admin panel for easy product management.
+        </p>
+        <div class="btn" data-i18n="reviewProject">Review Project</div>
+        <div class="overlay">
+          <i class="bx bxs-lock-alt"></i>
+          <span data-i18n="inDev">In Development..</span>
+        </div>
+      </div>
+
+
+      <div class="project-card coming-soon">
+        <img src="img/project3.png" alt="Task app project screenshot" data-i18n-alt="taskImgAlt">
+        <h3 data-i18n="taskApp">Task Management App</h3>
+        <p data-i18n="taskAppDesc">
+          This web application helps users organize their daily tasks
+          with features like task creation, editing, and status tracking.
+          It uses React for a smooth user experience.
+        </p>
+        <div class="btn" data-i18n="reviewProject">Review Project</div>
+        <div class="overlay">
+          <i class="bx bxs-lock-alt"></i>
+          <span data-i18n="inDev">In Development..</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  
+  <section class="contact" id="contact">
+
+    <h2 class="heading" data-i18n="contactHeadline">Contact <span>Me</span></h2>
+
+    <form action="#">
+
+      <div class="input-group">
+
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" data-i18n="contactName">
+          <input type="email" placeholder="Email" data-i18n="contactEmail">
+        </div>
+
+        <div class="input-box">
+          <input type="tel" placeholder="Phone Number" data-i18n="phoneNumber">
+          <input type="text" placeholder="Subject" data-i18n="subject">
+        </div>
+
+      </div>
+
+
+      <div class="input-group">
+        <textarea name="" id="" placeholder="Your Message" cols="30" rows="10" data-i18n="contactMessage"></textarea>
+        <input type="submit" value="Send Message" class="btn" data-i18n="contactSubmit">
+
+      </div>
+
+    </form>
+
+  </section>
+
+
+  <footer class="footer">
+
+    <div class="social-icons">
+
+      <a href="#">
+        <i class="bx bxl-github"></i>
+      </a>
+
+      <a href="#">
+        <i class="bx bxl-linkedin-square"></i>
+      </a>
+
+      <a href="#">
+        <i class="bx bxl-instagram-alt"></i>
+      </a>
+
+      <a href="#">
+        <i class="bx bxl-twitter"></i>
+      </a>
+      
+      <a href="#">
+        <i class="bx bxl-facebook"></i>
+      </a>
+
+      <a href="https://wa.me/+212776429048" data-i18n-href="whatsapp">
+        <i class="bx bxl-whatsapp"></i>
+      </a>
+    </div>
+
+
+    <ul class="list">
+
+      <li><a href="#" data-i18n="faq" class="faa">FAQ</a></li>
+
+      <li><a href="#qualifications" data-i18n="nav.resume" class="faa">Resume</a></li>
+
+      <li><a href="#skills" data-i18n="nav.skills" class="faa">Skills</a></li>
+
+      <li><a href="#services" data-i18n="nav.services" class="faa">Services</a></li>
+
+      <li><a href="#projects" data-i18n="nav.projects" class="faa">Projects</a></li>
+
+      <li><a href="#contact" data-i18n="nav.contact" class="faa">Contact</a></li>
+
+    </ul>
+
+
+    <p class="copyright" data-i18n="footer">
+      &copy; <span data-i18n-number>2025</span> Abderrhman Settaoui. All rights reserved.
+    </p>
+  
+  </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
