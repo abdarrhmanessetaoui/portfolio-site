@@ -10,7 +10,7 @@
 ## 🌟 Project Preview
 
 <p align="center">
-  <img src="preview.png" alt="Project Preview" width="600" style="border-radius: 15px;"/>
+  <img src="preview.PNG" alt="Project Preview" width="600" style="border-radius: 15px;"/>
 </p>
 
 ---
