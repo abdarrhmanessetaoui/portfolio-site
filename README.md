@@ -32,7 +32,7 @@ Open the `index.html` file in your browser or visit the live site at:
 
 ## 📬 Contact
 
-Email: ssetaouiabdarrhmane2004@gmail.com  
+Email: abderrhman.settaoui@gmail.com  
 GitHub: [abdarrhmanessetaoui](https://github.com/abdarrhmanessetaoui)
 
 ---
