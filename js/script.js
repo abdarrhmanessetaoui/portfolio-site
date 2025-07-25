@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hassan: "Hassan II Qualifying High School",
       hassanDesc: "High school diploma specialized in electrical sciences, building a strong foundation in mathematics and applied sciences.",
       certificatesTitle: "Certificates",
-      'frontendCert: "Frontend Development Certificate",
+      'frontendCert': "Frontend Development Certificate",
       coursera: "Coursera / Meta",
       courseraDesc: "Completion of a professional certification in frontend technologies (HTML, CSS, JavaScript, React) focusing on practical applications and projects.",
       responsiveWeb: "Responsive Web Design",
