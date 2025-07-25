@@ -1,6 +1,7 @@
 # 🎨 Portfolio Site - Abderrhman Settaoui
 
 [![GitHub stars](https://img.shields.io/github/stars/abdarrhmanessetaoui/portfolio-site?style=for-the-badge&logo=github)](https://github.com/abdarrhmanessetaoui/portfolio-site/stargazers)
+![Last Commit](https://img.shields.io/github/last-commit/abdarrhmanessetaoui/portfolio-site?style=for-the-badge)
 [![GitHub forks](https://img.shields.io/github/forks/abdarrhmanessetaoui/portfolio-site?style=for-the-badge)](https://github.com/abdarrhmanessetaoui/portfolio-site/network)
 [![GitHub issues](https://img.shields.io/github/issues/abdarrhmanessetaoui/portfolio-site?style=for-the-badge)](https://github.com/abdarrhmanessetaoui/portfolio-site/issues)
 [![GitHub license](https://img.shields.io/github/license/abdarrhmanessetaoui/portfolio-site?style=for-the-badge)](https://github.com/abdarrhmanessetaoui/portfolio-site/blob/main/LICENSE)
