@@ -1,21 +1,41 @@
-# Portfolio Website
+# 🎨 Portfolio Site - Abderrhman Settaoui
 
-This repository contains my personal portfolio website built with HTML, CSS, and JavaScript.
+[![GitHub stars](https://img.shields.io/github/stars/abdarrhmanessetaoui/portfolio-site?style=for-the-badge&logo=github)](https://github.com/abdarrhmanessetaoui/portfolio-site/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/abdarrhmanessetaoui/portfolio-site?style=for-the-badge)](https://github.com/abdarrhmanessetaoui/portfolio-site/network)
+[![GitHub issues](https://img.shields.io/github/issues/abdarrhmanessetaoui/portfolio-site?style=for-the-badge)](https://github.com/abdarrhmanessetaoui/portfolio-site/issues)
+[![GitHub license](https://img.shields.io/github/license/abdarrhmanessetaoui/portfolio-site?style=for-the-badge)](https://github.com/abdarrhmanessetaoui/portfolio-site/blob/main/LICENSE)
 
-## Features
+---
 
-- Simple and responsive homepage with my introduction  
-- Projects section showcasing my work with links  
-- Clean design focused on usability  
+## 🌟 Project Preview
 
-## Status
+<p align="center">
+  <img src="./preview.png" alt="Project Preview" width="600" style="border-radius: 15px;"/>
+</p>
 
-Work in progress — improving and adding new projects regularly.
+---
 
-## How to View
+## 🚀 Features
 
-Just open the `index.html` file in your browser to see the portfolio.
+- Responsive & clean design  
+- Projects showcase with live links  
+- Contact section for collaboration  
 
-## Contact
+---
 
-Feel free to contact me for collaboration or feedback.
+## 📂 How to View
+
+Open the `index.html` file in your browser or visit the live site at:  
+[https://abdarrhmanessetaoui.github.io/portfolio-site/](https://abdarrhmanessetaoui.github.io/portfolio-site/)
+
+---
+
+## 📬 Contact
+
+Email: ssetaouiabdarrhmane2004@gmail.com  
+GitHub: [abdarrhmanessetaoui](https://github.com/abdarrhmanessetaoui)
+
+---
+
+> _Thank you for visiting!_
+
