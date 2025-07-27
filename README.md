@@ -28,6 +28,7 @@
 
 Open the `index.html` file in your browser or visit the live site at:  
 [https://abdarrhmanessetaoui.github.io/portfolio-site/](https://abdarrhmanessetaoui.github.io/portfolio-site/)
+[https://abderrhmansettaoui.netlify.app/](https://abderrhmansettaoui.netlify.app/)
 
 ---
 
