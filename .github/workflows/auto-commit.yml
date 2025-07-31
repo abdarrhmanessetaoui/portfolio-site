@@ -20,7 +20,7 @@ jobs:
 
       - name: Make fake change
         run: |
-          date >> activity.log
+          echo "Heartbeat at $(date)" >> activity.log
 
       - name: Commit & Push
         env:
