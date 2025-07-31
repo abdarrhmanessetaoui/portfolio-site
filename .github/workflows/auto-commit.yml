@@ -23,7 +23,10 @@ jobs:
           date >> activity.log
 
       - name: Commit & Push
+        env:
+          TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/abdarrhmanessetaoui/portfolio-site.git
           git add .
-          git commit -m "Auto hourly commit"
+          git commit -m "Auto hourly commit" || echo "Nothing to commit"
           git push origin main
