@@ -407,7 +407,7 @@ section {
 /* Timeline Container */
 .timeline-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
   gap: 1rem;
   margin-bottom: 5rem;
 }
