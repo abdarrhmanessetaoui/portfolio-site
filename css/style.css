@@ -461,7 +461,7 @@ section {
   position: absolute;
   left: 50%;
   top: 2rem;
-  width: 10px;
+  width: 100px;
   height: 100px;
   background: var(--main-color);
   border: 4px solid var(--bg-color);
