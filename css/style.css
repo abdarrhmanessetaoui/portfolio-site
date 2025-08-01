@@ -1108,7 +1108,6 @@ section {
 
 .project-card img {
   max-width: 300px;
-  max-height: 700px;
   border-radius: 2em;
   object-fit: cover;
 }
