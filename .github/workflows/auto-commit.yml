@@ -8,21 +8,25 @@ on:
 jobs:
   auto-commit:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Set user
+      - name: Set user for git
         run: |
           git config user.name "abdarrhmanessetaoui"
           git config user.email "ssetaouiabdarrhmane2004@gmail.com"
 
       - name: Make fake change
         run: |
-          date >> activity.log
+          echo "Heartbeat at $(date)" >> activity.log
 
       - name: Commit & Push
+        env:
+          TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/abdarrhmanessetaoui/portfolio-site.git
           git add .
-          git commit -m "🤖 Auto daily commit"
-          git push
+          git commit -m "Auto hourly commit" || echo "Nothing to commit"
+          git push origin main
