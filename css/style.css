@@ -436,7 +436,7 @@ section {
   position: absolute;
   left: 50%;
   top: 80px;
-  bottom: 50%;
+  
   width: 3px;
   background: linear-gradient(180deg, #ff8c00, #ffa500);
   transform: translateX(-50%);
