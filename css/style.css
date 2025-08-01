@@ -407,7 +407,7 @@ section {
 /* Timeline Container */
 .timeline-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20px, 3fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 4rem;
   margin-bottom: 5rem;
 }
@@ -489,7 +489,6 @@ section {
 .timeline-item:hover .timeline-content {
   transform: translateY(-10px);
 }
-
 
 
 .timeline-icon {
