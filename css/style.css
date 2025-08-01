@@ -509,7 +509,7 @@ section {
   display: inline-block;
   background: linear-gradient(45deg, #ff8c00, #ffa500);
   color: var(--bg-color);
-  padding: 0.5rem 111.2rem;
+  padding: 0.5rem 0.2rem;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 900;
