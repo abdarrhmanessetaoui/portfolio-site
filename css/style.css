@@ -1107,7 +1107,7 @@ section {
 }
 
 .project-card img {
-  max-width: 300px;
+  max-width: 700px;
   border-radius: 2em;
   object-fit: cover;
 }
