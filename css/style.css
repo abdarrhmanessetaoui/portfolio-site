@@ -491,20 +491,6 @@ section {
 }
 
 
-
-.timeline-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(45deg, #ff8c00, #ffa500);
-  border-radius: 50%;
-  color: var(--bg-color);
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
 .timeline-title {
   font-size: 1.8rem;
   font-weight: 600;
