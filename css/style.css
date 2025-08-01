@@ -490,6 +490,17 @@ section {
   transform: translateY(-10px);
 }
 
+.timeline-img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+
 .timeline-icon {
   display: inline-flex;
   align-items: center;
