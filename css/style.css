@@ -479,7 +479,7 @@ section {
 
 .timeline-content {
   background: var(--bg-color);
-  padding: 1.5rem;
+  padding: -.5rem;
   border-radius: 20px;
   position: relative;
   transition: all 0.3s ease;
