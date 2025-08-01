@@ -408,7 +408,7 @@ section {
 .timeline-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 4rem;
+  gap: 2rem;
   margin-bottom: 5rem;
 }
 
