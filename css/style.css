@@ -434,7 +434,7 @@ section {
 /* Vertical Timeline Line */
 .timeline-line {
   position: absolute;
-  left: 50%;
+  left: 10%;
   top: 80px;
   bottom: 0;
   width: 3px;
