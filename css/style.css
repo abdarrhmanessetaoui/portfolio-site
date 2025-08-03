@@ -1129,7 +1129,7 @@ section {
 
 /* Buttons */
 .project-card .btn {
-  margin-top: auto;
+  margin-top: 1rem;
   width: 50%;
 }
 
