@@ -1327,7 +1327,17 @@ section {
   .skill-box {
     flex: 1 1 100%;
   }
-  
+  .project-card h3 {
+    font-size: 2.5rem;
+  }
+
+  .projects-box {
+    grid-template-columns: 1fr;
+  }
+
+  .home-img img {
+    width: 65vw;
+  }
 }
 
 /* Responsive 768px */
