@@ -1064,21 +1064,21 @@ section {
   color: var(--main-color);
 }
 
-/* Projects */
+/* === Projects Section === */
 .projects {
   background-color: var(--second-bg-color);
 }
 
-/* Grid Layout */
+/* === Grid Layout === */
 .projects-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  place-items: stretch; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cards responsive */
+  place-items: stretch;
   gap: 3rem;
   row-gap: 5rem;
 }
 
-
+/* === Project Card === */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -1091,12 +1091,13 @@ section {
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(var(--main-color-rgb), 0.1);
   transition: 0.3s ease;
-  max-height: 1000px;
-  height: 100%; 
+  max-width: 300px;     /* Fix max size */
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
-
+/* Hover Effect */
 .project-card:hover {
   box-shadow: 0 10px 30px rgba(var(--main-color-rgb), 0.2),
               0 20px 60px rgba(var(--main-color-rgb), 0.1);
@@ -1104,41 +1105,43 @@ section {
   border-color: var(--main-color);
 }
 
-
+/* Project Image */
 .project-card img {
   width: 100%;
-  height: 200px; 
+  height: 200px;
   border-radius: 2em;
   object-fit: cover;
 }
 
-
+/* Title */
 .project-card h3 {
   font-size: 2.4rem;
   color: var(--text-color);
   margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Description */
 .project-card p {
   font-size: 1.6rem;
   color: var(--muted-color);
-  flex-grow: 1; 
+  flex-grow: 1;
   margin: 1rem 0;
 }
 
 /* Buttons */
 .project-card .btn {
   margin-top: 1rem;
-  width: auto;
+  width: 100%;
   text-align: center;
 }
 
-/* Coming Soon Style */
+/* === Coming Soon Card === */
 .coming-soon .btn {
   visibility: hidden;
 }
 
+/* Overlay Locked Message */
 .coming-soon .overlay {
   position: absolute;
   top: 0;
@@ -1161,7 +1164,7 @@ section {
   padding: 2rem;
 }
 
-
+/* Overlay Icon */
 .overlay i {
   font-size: 11rem;
   color: var(--main-color);
@@ -1169,12 +1172,14 @@ section {
   display: block;
 }
 
+/* Overlay Text */
 .coming-soon .overlay span {
   position: absolute;
   bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
 }
+
 
 
 /* Contact */
