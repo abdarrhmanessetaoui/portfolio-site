@@ -1064,13 +1064,11 @@ section {
   color: var(--main-color);
 }
 
-
-/* Projects Section */
+/* Projects */
 .projects {
   background-color: var(--second-bg-color);
 }
 
-/* Project Cards Grid */
 .projects-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -1079,7 +1077,6 @@ section {
   row-gap: 5rem;
 }
 
-/* Individual Project Card */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -1096,43 +1093,41 @@ section {
   box-shadow: 0 4px 15px rgba(var(--main-color-rgb), 0.1);
   transition: 0.3s ease;
   max-height: 600px;
-  position: relative;
-  min-height: 550px; /* Moved here instead of duplicating in another selector */
 }
 
-/* Hover effect */
 .project-card:hover {
-  box-shadow: 0 10px 30px rgba(var(--main-color-rgb), 0.2),
+  box-shadow: 0 10px 30px rgba(var(--main-color-rgb), 0.2), 
               0 20px 60px rgba(var(--main-color-rgb), 0.1);
   transform: scale(1.02);
   border-color: var(--main-color);
 }
 
-/* Project Image */
 .project-card img {
   max-width: 105%;
   border-radius: 2em;
   object-fit: cover;
 }
 
-/* Project Title */
 .project-card h3 {
   font-size: 3rem;
   color: var(--text-color);
 }
 
-/* Project Description */
 .project-card p {
   font-size: 1.6rem;
   color: var(--muted-color);
 }
 
-/* Coming Soon Customization */
-.coming-soon .btn {
-  visibility: hidden; /* Hide the "Review Project" button */
+/* Projects Coming Soon */
+.project-card {
+  position: relative;
+  min-height: 550px;
 }
 
-/* Coming Soon Overlay */
+.coming-soon .btn {
+  visibility: hidden;
+}
+
 .coming-soon .overlay {
   position: absolute;
   top: 0;
@@ -1152,10 +1147,7 @@ section {
   transition: 1.5s ease;
   pointer-events: auto;
   padding: 2rem;
-  flex-direction: column;
 }
-
-/* Lock Icon */
 .overlay i {
   font-size: 11rem;
   color: var(--main-color);
@@ -1163,14 +1155,12 @@ section {
   display: block;
 }
 
-/* "In Development.." Text */
 .coming-soon .overlay span {
   position: absolute;
   bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 /* Contact */
 .contact {
