@@ -1087,7 +1087,7 @@ section {
   border: 2px solid var(--border-color);
   border-radius: 3rem;
   gap: 2rem;
-  padding: 203rem 2rem;
+  padding: 15rem 2rem;
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(var(--main-color-rgb), 0.1);
