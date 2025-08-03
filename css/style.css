@@ -1325,7 +1325,7 @@ section {
   }
 
   .skill-box {
-    flex: 1 1 100%;
+    flex: 1 1 0%;
   }
   .project-card h3 {
     font-size: 2.5rem;
