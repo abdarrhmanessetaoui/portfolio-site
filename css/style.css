@@ -1121,7 +1121,7 @@ section {
 /* Projects Coming Soon */
 .project-card {
   position: relative;
-  min-height: 550px;
+  max-height: 1000px;
 }
 
 .coming-soon .btn {
