@@ -1337,7 +1337,7 @@ section {
 
   .home-img img {
     width: 95vw;
-    pad
+    padding-top: 0;
   }
   .project-card {
     max-height: 900px;
