@@ -1130,7 +1130,7 @@ section {
 /* Buttons */
 .project-card .btn {
   margin-top: 1rem;
-  width: 50%;
+  width: a;
 }
 
 /* Coming Soon Style */
