@@ -1074,7 +1074,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   place-items: center;
   gap: 3rem;
-  row-gap: 5rem;
+  row-gap: 88rem;
 }
 
 .project-card {
