@@ -1073,7 +1073,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   place-items: center;
-  gap: 1rem;
+  gap: 17rem;
   row-gap: 5rem;
 }
 
