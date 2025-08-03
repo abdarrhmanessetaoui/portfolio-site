@@ -1131,7 +1131,7 @@ section {
 .project-card .btn {
   margin-top: 1rem;
   width: 50%;
-  ju
+  justify-content: center;
 }
 
 /* Coming Soon Style */
