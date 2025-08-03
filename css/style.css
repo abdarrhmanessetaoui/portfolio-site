@@ -1071,7 +1071,7 @@ section {
 
 .projects-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, fr));
   place-items: center;
   gap: 3rem;
   row-gap: 5rem;
