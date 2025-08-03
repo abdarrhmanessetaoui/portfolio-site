@@ -1123,7 +1123,7 @@ section {
 .project-card p {
   font-size: 1.6rem;
   color: var(--muted-color);
-  flex-grow: 1; /* 👈 pushes buttons to the bottom */
+  flex-grow: 1; 
   margin: 1rem 0;
 }
 
