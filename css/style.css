@@ -1073,7 +1073,7 @@ section {
 .projects-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  place-items: stretch; /* Stretch cards to equal height */
+  place-items: stretch; 
   gap: 3rem;
   row-gap: 5rem;
 }
