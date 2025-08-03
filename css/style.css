@@ -1123,11 +1123,14 @@ section {
 .project-card p {
   font-size: 1.6rem;
   color: var(--muted-color);
-  flex-grow: 1; 
+  flex-grow: 1; /* 👈 pushes buttons to the bottom */
   margin: 1rem 0;
 }
 
-
+/* Buttons */
+.project-card .btn {
+  margin-top: auto;
+}
 
 /* Coming Soon Style */
 .coming-soon .btn {
