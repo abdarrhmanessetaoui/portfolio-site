@@ -617,6 +617,11 @@ section {
   width: 120px;
 }
 
+.pro-circle {
+  text-align: center;
+  width: 120px;
+}
+
 .circle {
   --size: 120px;
   width: var(--size);
