@@ -668,7 +668,9 @@ section {
   margin-top: 2%;
 }
 
-
+.skill-box:hover {
+  transform: translateY(-5px);
+}
 
 .skill-box h3 {
   font-size: 2.5rem;
