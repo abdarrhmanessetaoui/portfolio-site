@@ -617,7 +617,7 @@ section {
   width: 120px;
 }
 
-.pro-circle {
+.pro-circle:hover {
   text-align: center;
   width: 120px;
 }
