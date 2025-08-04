@@ -399,26 +399,27 @@ section {
 
 
 
-/* Timeline Container */
+/* === Timeline Container === */
 .timeline-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   margin-bottom: 5rem;
+  position: relative;
 }
 
-
+/* === Each Column (Left/Right) === */
 .timeline-column {
   position: relative;
 }
 
+/* === Title of Each Column === */
 .column-title {
   font-size: 3.5rem;
   font-weight: 600;
   color: #ff8c00;
   text-align: center;
   margin-bottom: 3rem;
-  position: relative;
 }
 
 .column-title i {
@@ -426,25 +427,27 @@ section {
   font-size: 3.8rem;
 }
 
-/* Vertical Timeline Line */
+/* === Vertical Line in the Center of Timeline === */
 .timeline-line {
   position: absolute;
   left: 50%;
   top: 80px;
-  
   width: 3px;
+  height: 100%;
   background: linear-gradient(180deg, #ff8c00, #ffa500);
   transform: translateX(-50%);
   border-radius: 2px;
+  z-index: 1;
 }
 
-/* Timeline Items */
+/* === Timeline Item Block === */
 .timeline-item {
   position: relative;
   margin-bottom: 3rem;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.6s ease;
+  z-index: 2;
 }
 
 .timeline-item.animate {
@@ -452,6 +455,7 @@ section {
   transform: translateY(0);
 }
 
+/* === Circle Node === */
 .timeline-node {
   position: absolute;
   left: 50%;
@@ -463,8 +467,8 @@ section {
   border-radius: 50%;
   transform: translateX(-50%);
   box-shadow: 0 0 0 4px rgba(255, 140, 0, 0.3);
-  z-index: 2;
   transition: all 0.3s ease;
+  z-index: 3;
 }
 
 .timeline-item:hover .timeline-node {
@@ -472,9 +476,10 @@ section {
   box-shadow: 0 0 0 6px rgba(255, 140, 0, 0.4);
 }
 
+/* === Content Box === */
 .timeline-content {
   background: var(--bg-color);
-  padding: 0.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 20px;
   position: relative;
   transition: all 0.3s ease;
@@ -485,7 +490,7 @@ section {
   transform: translateY(-10px);
 }
 
-
+/* === Title of Timeline Entry === */
 .timeline-title {
   font-size: 1.8rem;
   font-weight: 600;
@@ -493,13 +498,15 @@ section {
   margin-bottom: 0.5rem;
 }
 
+/* === Subtitle (usually company or institution) === */
 .timeline-subtitle {
   font-size: 1.3rem;
-  color: var(--main-color);
   font-weight: 900;
+  color: var(--main-color);
   margin-bottom: 1rem;
 }
 
+/* === Date Pill === */
 .timeline-date {
   display: inline-block;
   background: linear-gradient(45deg, #ff8c00, #ffa500);
@@ -511,11 +518,13 @@ section {
   margin-bottom: 1rem;
 }
 
+/* === Description Text === */
 .timeline-description {
   color: var(--muted-color);
   line-height: 1.6;
   font-size: 1.1rem;
 }
+
 
 /* Animation delays for timeline items */
 .timeline-item:nth-child(1) { transition-delay: 0.05s; }
