@@ -438,7 +438,7 @@ section {
 .timeline-line {
   position: absolute;
   left: 50%;
-  top: 200px;
+  top: 150px;
   width: 3px;
   height: 85%;
   background: linear-gradient(180deg, #ff8c00, #ffa500);
