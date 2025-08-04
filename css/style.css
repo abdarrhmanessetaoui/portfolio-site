@@ -538,6 +538,108 @@ section {
 
 
 
+/* --- Skills Section --- */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.skill-box {
+  flex: 1 1 300px;
+  min-width: 270px;
+}
+
+.skill-box h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.skill {
+  margin-bottom: 1.2rem;
+}
+
+.skill span {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.3rem;
+}
+
+.skill span i {
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.progress-bar {
+  background: var(--border-color);
+  height: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar div {
+  height: 100%;
+  width: var(--target-width);
+  background: linear-gradient(45deg, #ff8c00, #ffa500);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: var(--bg-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: width 1s ease-in-out;
+}
+
+/* Change background color for low proficiency */
+.progress-bar div[style*="background-color: #999"] {
+  background: var(--muted-color);
+}
+
+/* --- Professional Skills Circles --- */
+.pro-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.pro-circle {
+  text-align: center;
+  width: 120px;
+}
+
+.pro-circle:hover {
+  scale: 1.2;
+}
+
+.circle {
+  --size: 120px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--main-color) calc(var(--percentage) * 1%),
+    var(--bg-color) 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--bg-color);
+  margin: 0 auto 1rem;
+}
+
+
+
 /* Skills Container */
 .skills-container {
   display: flex;
@@ -545,11 +647,20 @@ section {
   justify-content: center;
   gap: 3rem;
 }
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  margin-top: 5.5rem;
+  text-align: center;
+  border-bottom: 3px solid var(--main-color);
+  display: inline-block; 
+}
 
 /* Skill Box */
 .skill-box {
-  flex: 1 1 300px;
-  min-width: 270px;
+  flex: 1 1 100px;
   background: var(--second-bg-color);
   border-radius: 2rem;
   padding: 2.5rem;
@@ -574,12 +685,11 @@ section {
 }
 
 .skill span {
-  display: flex;
-  align-items: center;
+  display: block;
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--text-color);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
 }
 
 .skill span i {
@@ -589,7 +699,7 @@ section {
   text-align: center;
 }
 
-/* Progress Bar */
+/* Progress Bar Container */
 .progress-bar {
   background: var(--border-color);
   height: 20px;
@@ -601,16 +711,13 @@ section {
 
 /* Progress Fill */
 .progress-bar div {
+  background: linear-gradient(90deg, 
+    var(--main-color) 0%, 
+    var(--accent-color) 50%, 
+    var(--hover-color) 100%
+  );
   height: 100%;
   width: 0%;
-  background-size: 200% 100%;
-  background-image: linear-gradient(90deg,
-    var(--main-color) 0%, 
-    var(--accent-color) 25%,
-    var(--hover-color) 50%,
-    var(--accent-color) 75%,
-    var(--main-color) 100%
-  );
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -621,25 +728,16 @@ section {
   font-weight: bold;
   position: relative;
   overflow: hidden;
+  
+  /* Smooth fill animation */
   animation: smoothFill 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards,
              shimmer 3s ease-in-out infinite 2.5s;
-  box-shadow: 0 0 10px rgba(var(--main-color-rgb), 0.3);
+  
+  /* Add a subtle glow effect */
+  box-shadow: 0 0 10px rgba(var(--main-color-rgb), 20.3);
 }
 
-/* Low proficiency fallback */
-.progress-bar div[style*="background-color"] {
-  background: var(--muted-color) !important;
-  background-image: none !important;
-}
-
-/* 100% Completion Pulse */
-.progress-bar div[style*="--target-width: 100%"],
-.progress-bar div[data-progress="100"] {
-  animation: smoothFill 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards,
-             completePulse 1.5s ease-in-out infinite 2.5s;
-}
-
-/* Shimmer overlay */
+/* Shimmer effect overlay */
 .progress-bar div::before {
   content: '';
   position: absolute;
@@ -655,14 +753,86 @@ section {
   animation: shimmerMove 2s ease-in-out infinite;
 }
 
+/* Smooth filling animation */
+@keyframes smoothFill {
+  0% {
+    width: 0%;
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+
+  100% {
+    width: var(--target-width, 100%);
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0%, 100% {
+    background-position: -200% center;
+    
+  }
+  50% {
+    background-position: 200% center;
+  }
+}
+
+/* Shimmer overlay movement */
+@keyframes shimmerMove {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Enhanced gradient background */
+.progress-bar div {
+  background-size: 200% 100%;
+  background-image: linear-gradient(90deg, 
+    var(--main-color) 0%, 
+    var(--accent-color) 25%,
+    var(--hover-color) 50%,
+    var(--accent-color) 75%,
+    var(--main-color) 100%
+  );
+}
+
+/* Pulse effect on completion */
+@keyframes completePulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(var(--main-color-rgb), 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(var(--main-color-rgb), 0.6),
+                0 0 30px rgba(var(--main-color-rgb), 0.4);
+  }
+}
+
+/* Apply pulse effect when progress reaches 100% */
+.progress-bar div[style*="--target-width: 100%"],
+.progress-bar div[data-progress="100"] {
+  animation: smoothFill 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards,
+             completePulse 1.5s ease-in-out infinite 2.5s;
+}
+.progress-bar div[style*="background-color"] {
+  background: unset !important;
+  background-color: var(--muted-color) !important;
+}
+
 /* Pro Skills Grid */
 .pro-skills-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin: 7% auto 0;
+  margin-top: 7%;
   max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pro-circle {
@@ -670,11 +840,6 @@ section {
   flex-direction: column;
   align-items: center;
   width: 120px;
-  transition: transform 0.3s ease;
-}
-
-.pro-circle:hover {
-  transform: scale(1.2);
 }
 
 .circle {
@@ -690,7 +855,7 @@ section {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  animation: growCircle 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards,
+  animation: growCircle 2.5ms cubic-bezier(0.4, 0, 0.2, 1) forwards,
              circleShimmer 3s ease-in-out infinite 1.5s;
 }
 
@@ -703,9 +868,10 @@ section {
   z-index: 1;
   transform: scaleX(0);
   transform-origin: left;
-  animation: scaleXCircleFill 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: scaleXCircleFill 0s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
+/* Shimmer overlay for circle */
 .circle::after {
   content: '';
   position: absolute;
@@ -729,7 +895,7 @@ section {
   position: relative;
   z-index: 4;
   transform: scale(0);
-  animation: iconAppear 0.5s ease-out forwards 0.1s;
+  animation: iconAppear 0.5s ease-out forwards 100ms;
 }
 
 .pro-circle span {
@@ -740,45 +906,16 @@ section {
   text-align: center;
   opacity: 0;
   transform: translateY(10px);
-  animation: textAppear 0.5s ease-out forwards 0.1s;
+  animation: textAppear 0.5s ease-out forwards 100ms;
 }
 
-/* Animations */
-@keyframes smoothFill {
-  0% {
-    width: 0%;
-    transform-origin: left;
-    transform: scaleX(0);
-  }
-  100% {
-    width: var(--target-width, 100%);
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-}
-
-@keyframes shimmerMove {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-@keyframes completePulse {
-  0%, 100% {
-    box-shadow: 0 0 10px rgba(var(--main-color-rgb), 0.3);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(var(--main-color-rgb), 0.6),
-                0 0 30px rgba(var(--main-color-rgb), 0.4);
-  }
-}
-
+/* Circle conic gradient fill animation */
 @keyframes growCircle {
   0% {
-    background: conic-gradient(var(--main-color) 0%, var(--border-color) 0%);
+    background: conic-gradient(
+      var(--main-color) 0%, 
+      var(--border-color) 0%
+    );
   }
   100% {
     background: conic-gradient(
@@ -788,6 +925,7 @@ section {
   }
 }
 
+/* ScaleX animation for circle inner fill */
 @keyframes scaleXCircleFill {
   0% {
     transform: scaleX(0);
@@ -797,17 +935,19 @@ section {
   }
 }
 
+/* Icon appear animation */
 @keyframes iconAppear {
   0% {
     transform: scale(0) rotate(-180deg);
     opacity: 0;
   }
   100% {
-    transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0deg);
     opacity: 1;
   }
 }
 
+/* Text appear animation */
 @keyframes textAppear {
   0% {
     opacity: 0;
@@ -819,6 +959,7 @@ section {
   }
 }
 
+/* Shimmer movement for circle */
 @keyframes circleShimmerMove {
   0% {
     left: 100%;
@@ -828,6 +969,7 @@ section {
   }
 }
 
+/* Circle shimmer background effect */
 @keyframes circleShimmer {
   0%, 100% {
     filter: brightness(0.95);
@@ -836,6 +978,22 @@ section {
     filter: brightness(1);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Services */
 .heading {
