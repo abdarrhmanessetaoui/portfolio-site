@@ -304,7 +304,7 @@ section {
     0 0 50px rgba(var(--main-color-rgb), 0.5),
     0 0 100px rgba(var(--main-color-rgb), 0.4),
     0 0 150px rgba(var(--main-color-rgb), 0.3);
-    sca
+    scale: ;
 }
 
 
