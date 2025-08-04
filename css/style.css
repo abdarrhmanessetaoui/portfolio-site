@@ -613,11 +613,7 @@ section {
 }
 
 .pro-skills-grid:hover {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  justify-content: center;
-  margin-top: 3rem;
+scale: 1.2;
 }
 
 .pro-circle {
