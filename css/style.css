@@ -414,7 +414,7 @@ section {
   position: relative;
 }
 
-.timeline-container h3 {
+.timeline-container>h3 {
   margin-top: 560%;
 }
 
