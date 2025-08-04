@@ -1511,7 +1511,7 @@ section {
     font-size: 1.1rem;
   }
   .project-card img {
-    width: 100%;
+    width: 50%;
     height: 200px; 
     border-radius: 2em;
     object-fit: cover;
