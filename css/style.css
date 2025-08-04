@@ -647,17 +647,6 @@ section {
   justify-content: center;
   gap: 3rem;
 }
-
-/* Skill Box */
-.skill-box {
-  flex: 1 1 100px;
-  background: var(--second-bg-color);
-  border-radius: 2rem;
-  padding: 2.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 2%;
-}
-
 .skill-box:hover {
   transform: translateY(-5px);
 }
