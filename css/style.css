@@ -1512,7 +1512,7 @@ section {
   }
   .project-card img {
     width: 50%;
-    height: 20px; 
+    height: 200px; 
     border-radius: 2em;
     object-fit: cover;
   }
