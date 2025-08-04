@@ -612,10 +612,6 @@ section {
   margin-top: 3rem;
 }
 
-.pro-skills-grid:hover {
-scale: 1.01;
-}
-
 .pro-circle {
   text-align: center;
   width: 120px;
