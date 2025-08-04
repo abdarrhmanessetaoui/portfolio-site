@@ -612,7 +612,7 @@ section {
   margin-top: 3rem;
 }
 
-.pro-skills-grid {
+.pro-skills-grid:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
