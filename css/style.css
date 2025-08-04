@@ -843,12 +843,6 @@ section {
 }
 
 
-.pro-circle span {
-
-  transform: translateY(10px);
-  animation: textAppear 0.5s ease-out forwards 0.1s;
-}
-
 .circle {
   width: 100px;
   height: 100px;
