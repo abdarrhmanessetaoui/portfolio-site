@@ -467,7 +467,7 @@ section {
   left: 50%;
   top: 2rem;
   width: 20px;
-  height: 20px;
+  height: 10px;
   background: var(--main-color);
   border: 4px solid var(--bg-color);
   border-radius: 50%;
