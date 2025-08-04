@@ -439,7 +439,7 @@ section {
   left: 50%;
   top: 80px;
   width: 3px;
-  height: 70%;
+  height: 80%;
   background: linear-gradient(180deg, #ff8c00, #ffa500);
   transform: translateX(-50%);
   border-radius: 2px;
