@@ -618,7 +618,7 @@ section {
 }
 
 .pro-circle:hover {
-scas
+  scale: 1.4;
 }
 
 .circle {
