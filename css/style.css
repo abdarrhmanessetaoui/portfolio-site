@@ -556,6 +556,11 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 2%;
 }
+.skill-box h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
 
 .skill-box:hover {
   transform: translateY(-5px);
