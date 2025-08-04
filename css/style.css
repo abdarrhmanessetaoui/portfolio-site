@@ -612,6 +612,14 @@ section {
   margin-top: 3rem;
 }
 
+.pro-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 .pro-circle {
   text-align: center;
   width: 120px;
