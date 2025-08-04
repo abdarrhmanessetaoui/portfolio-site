@@ -618,7 +618,7 @@ section {
 }
 
 .pro-circle:hover {
-  scale: 1.0;
+  scale: 1.2;
 }
 
 .circle {
@@ -646,16 +646,6 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
-}
-.section-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--text-color);
-  margin-bottom: 0.5rem;
-  margin-top: 5.5rem;
-  text-align: center;
-  border-bottom: 3px solid var(--main-color);
-  display: inline-block; 
 }
 
 /* Skill Box */
