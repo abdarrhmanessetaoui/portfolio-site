@@ -681,6 +681,7 @@ section {
   color: var(--text-color);
   margin-bottom: 0.1rem;
 }
+.skill-box:hover {
 
 .skill span i {
   font-size: 1.5rem;
