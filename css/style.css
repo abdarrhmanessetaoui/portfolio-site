@@ -1449,7 +1449,12 @@ section {
   .timeline-section {
     padding: 0 1rem;
   }
-  
+  .project-card img {
+    width: 100%;
+    height: 150px; 
+    border-radius: 2em;
+    object-fit: cover;
+  }
 }
 
 /* Responsive 576px */
