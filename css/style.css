@@ -15,8 +15,6 @@
   --text-color: #1e1611;
 
   --main-color: #f59e0b;
-  --main-color-rgb: 245, 158, 11;
-  
   --accent-color: #fbbf24;
   --hover-color: #d97706;
   --btn-bg: linear-gradient(135deg, var(--main-color), var(--hover-color));
@@ -28,7 +26,6 @@
   --muted-color: #78716c;
   --border-color: #f3e8d6;
 }
-
 
 html {
   font-size: 60%;
@@ -300,13 +297,10 @@ section {
 }
 
 .home-img img:hover {
-  box-shadow:
-    0 0 50px rgba(var(--main-color-rgb), 0.5),
-    0 0 100px rgba(var(--main-color-rgb), 0.4),
-    0 0 150px rgba(var(--main-color-rgb), 0.3);
-    scale: 1.01;
+  box-shadow: 0 0 30px rgba(var(--main-color-rgb), 0.4), 
+              0 0 60px rgba(var(--main-color-rgb), 0.3), 
+              0 0 100px rgba(var(--main-color-rgb), 0.2);
 }
-
 
 /* Social Icons */
 .social-icons a {
@@ -539,7 +533,104 @@ section {
 
 
 /* --- Skills Section --- */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
 
+.skill-box {
+  flex: 1 1 300px;
+  min-width: 270px;
+}
+
+.skill-box h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.skill {
+  margin-bottom: 1.2rem;
+}
+
+.skill span {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.3rem;
+}
+
+.skill span i {
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.progress-bar {
+  background: var(--border-color);
+  height: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar div {
+  height: 100%;
+  width: var(--target-width);
+  background: linear-gradient(45deg, #ff8c00, #ffa500);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: var(--bg-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: width 1s ease-in-out;
+}
+
+/* Change background color for low proficiency */
+.progress-bar div[style*="background-color: #999"] {
+  background: var(--muted-color);
+}
+
+/* --- Professional Skills Circles --- */
+.pro-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.pro-circle {
+  text-align: center;
+  width: 120px;
+}
+
+.circle {
+  --size: 120px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--main-color) calc(var(--percentage) * 1%),
+    var(--bg-color) 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--bg-color);
+  margin: 0 auto 1rem;
+}
+
+
+
+/* Skills Container */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -740,7 +831,6 @@ section {
   align-items: center;
   width: 120px;
 }
-
 
 .circle {
   width: 100px;
