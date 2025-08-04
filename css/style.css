@@ -1523,7 +1523,7 @@ section {
     font-size: 1.1rem;
   }
   .project-card img {
-    width: 200px;
+    width: 600px;
     height: 200px; 
     border-radius: 2em;
     object-fit: cover;
