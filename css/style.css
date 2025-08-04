@@ -414,11 +414,6 @@ section {
   position: relative;
 }
 
-.column-title h3 {
-  margin-top: 111%;
-}
-
-
 /* === Each Column (Left/Right) === */
 .timeline-column {
   position: relative;
