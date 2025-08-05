@@ -646,7 +646,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 }
-T1=new TranslationSystem()
+T1=new TranslationSystem();
 
 
 
