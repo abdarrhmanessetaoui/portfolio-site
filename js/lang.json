@@ -1,0 +1,49 @@
+{
+    "en": {
+      "welcome": "Hi, It's <span>Abderrhman</span>",
+      "aboutHeadline": "I'm a <span>Junior Full Stack Web Developer</span>",
+      "aboutText": "From electricity to coding, I've always been curious about how things work. I build websites with HTML, CSS, JavaScript, jQuery, and Bootstrap. I create web apps using PHP, Python, APIs, and MySQL. I'm always learning and exploring frameworks like Laravel, React.js, Next.js, and Django. I love solving problems and making useful digital solutions.",
+      "nav": {
+        "home": "Home",
+        "resume": "Resume",
+        "skills": "Skills",
+        "services": "Services",
+        "projects": "Projects",
+        "contact": "Contact"
+      },
+      "contactMe": "Contact Me",
+      "downloadCV": "Download CV",
+      "contactName": "Full Name",
+      "contactEmail": "Email",
+      "phoneNumber": "Phone Number",
+      "subject": "Subject",
+      "contactMessage": "Your Message",
+      "contactSubmit": "Send Message",
+      "faq": "FAQ",
+      "footer": "All rights reserved."
+    },
+    "ar": {
+      "welcome": "مرحبًا، أنا <span>عبد الرحمن</span>",
+      "aboutHeadline": "أنا <span>مطور ويب متكامل مبتدئ</span>",
+      "aboutText": "من الكهرباء إلى البرمجة، كنت دائمًا فضوليًا لمعرفة كيفية عمل الأشياء. أصمم مواقع باستخدام HTML، CSS، JavaScript، jQuery وBootstrap. أبرمج تطبيقات باستخدام PHP، Python، APIs وMySQL. أتعلم دائمًا وأستكشف إطارات العمل مثل Laravel، React.js، Next.js وDjango. أحب حل المشاكل وصناعة حلول رقمية مفيدة.",
+      "nav": {
+        "home": "الرئيسية",
+        "resume": "السيرة الذاتية",
+        "skills": "المهارات",
+        "services": "الخدمات",
+        "projects": "المشاريع",
+        "contact": "تواصل"
+      },
+      "contactMe": "اتصل بي",
+      "downloadCV": "تحميل السيرة الذاتية",
+      "contactName": "الاسم الكامل",
+      "contactEmail": "البريد الإلكتروني",
+      "phoneNumber": "رقم الهاتف",
+      "subject": "الموضوع",
+      "contactMessage": "رسالتك",
+      "contactSubmit": "إرسال",
+      "faq": "الأسئلة الشائعة",
+      "footer": "جميع الحقوق محفوظة."
+    }
+  }
+  
