@@ -116,70 +116,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  const langData = {};
-  let currentLang = 'en';
+
+
+
+
+
+
+
+
+
+
   
-  // Load translations
-  fetch('lang.json')
-    .then(response => response.json())
-    .then(data => {
-      Object.assign(langData, data);
-      translatePage(currentLang); // default language
-    });
-  
-  // Switch Language
-  document.getElementById("langOptions").addEventListener("click", (e) => {
-    const lang = e.target.closest("div[data-value]");
-    if (lang) {
-      currentLang = lang.getAttribute("data-value");
-      translatePage(currentLang);
-      document.getElementById("selected").innerHTML = lang.innerHTML;
-    }
-  });
-  
-  function translatePage(lang) {
-    const elements = document.querySelectorAll("[data-i18n]");
-    elements.forEach(el => {
-      const key = el.getAttribute("data-i18n");
-      const value = getValueFromKey(langData[lang], key);
-      if (value) el.innerHTML = value;
-    });
-  
-    const alts = document.querySelectorAll("[data-i18n-alt]");
-    alts.forEach(el => {
-      const key = el.getAttribute("data-i18n-alt");
-      const value = getValueFromKey(langData[lang], key);
-      if (value) el.alt = value;
-    });
-  
-    const hrefs = document.querySelectorAll("[data-i18n-href]");
-    hrefs.forEach(el => {
-      const key = el.getAttribute("data-i18n-href");
-      const value = getValueFromKey(langData[lang], key);
-      if (value) el.href = value;
-    });
-  
-    const numbers = document.querySelectorAll("[data-i18n-number]");
-    numbers.forEach(el => {
-      const key = el.getAttribute("data-i18n-number");
-      const value = getValueFromKey(langData[lang], key);
-      if (value) el.textContent = value;
-    });
-  }
-  
-  // Helper to support nested keys like "nav.home"
-  function getValueFromKey(obj, key) {
-    return key.split('.').reduce((o, k) => (o ? o[k] : null), obj);
-  }
-  
-
-
-
-
-
-
-
-
-
-
 });
