@@ -33,19 +33,10 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(5%);
-  transition: opacity 2s ease, transform 2s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+/* Dark Mode Variables */
 body[data-theme="dark"] {
   --bg-color: #000000;
   --second-bg-color: #111111;
@@ -62,7 +53,19 @@ body[data-theme="dark"] {
   --border-color: #44403c;
 }
 
-/* Theme Toggle Button */
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(5%);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Theme Toggle Button - Fixed Position Bottom Left */
 .mode-btn {
   position: fixed;
   bottom: 2rem;
@@ -74,7 +77,7 @@ body[data-theme="dark"] {
   width: 6rem;
   height: 6rem;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   z-index: 999;
   display: flex;
   align-items: center;
@@ -89,6 +92,11 @@ body[data-theme="dark"] {
 
 .mode-btn i {
   font-size: 2.4rem;
+  transition: transform 0.3s ease;
+}
+
+.mode-btn:hover i {
+  transform: rotate(180deg);
 }
 
 /* Header */
@@ -105,6 +113,7 @@ body[data-theme="dark"] {
   align-items: center;
   z-index: 1000;
   border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
 }
 
 body[data-theme="dark"] .header {
@@ -136,6 +145,7 @@ body[data-theme="dark"] .header {
   transform: scale(1.05);
 }
 
+/* Fixed span gradient animation */
 span {
   background: linear-gradient(
     270deg,
@@ -144,9 +154,10 @@ span {
     var(--hover-color),
     var(--main-color)
   );
-  background-size: 400% auto;
+  background-size: 400% 400%;
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
   display: inline-block;
   animation: gradientMove 3s ease-in-out infinite;
@@ -159,6 +170,11 @@ span {
   50% {
     background-position: 100% 50%;
   }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
 }
 
 .navbar a {
@@ -194,6 +210,7 @@ span {
   box-shadow: 0 0 20px rgba(var(--main-color-rgb), 0.4);
 }
 
+/* Language Dropdown */
 .dropdown {
   position: relative;
   width: 10rem;
