@@ -373,7 +373,13 @@ function setupKeyboardAccessibility() {
         closeDropdown();
       }
     });
-  });AbortController
+  });
+
+
+
+
+
+  
 }
 
 console.log('Portfolio translation system loaded! 🌍');
