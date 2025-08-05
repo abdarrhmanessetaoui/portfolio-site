@@ -102,7 +102,7 @@ body[data-theme="dark"] {
 /* Header */
 .header {
   position: fixed;
-  width: 10%;
+  width: 100%;
   top: 0;
   left: 0;
   padding: 1rem 5%;
