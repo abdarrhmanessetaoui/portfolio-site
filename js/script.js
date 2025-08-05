@@ -376,10 +376,313 @@ function setupKeyboardAccessibility() {
   });
 
 
+// ===== Translation System =====
+class TranslationSystem {
+  constructor() {
+    this.translations = {
+      en: {
+        // Meta and SEO
+        'metaDescription': 'Portfolio of Abderrhman Settaoui, full stack developer specialized in modern web applications.',
+        'logoAlt': 'Abderrhman Settaoui Logo',
+        'profileAlt': 'Profile picture of Abderrhman Settaoui',
+        
+        // Navigation
+        'nav.home': 'Home',
+        'nav.resume': 'Resume',
+        'nav.skills': 'Skills',
+        'nav.services': 'Services',
+        'nav.projects': 'Projects',
+        'nav.contact': 'Contact',
+        
+        // Language names
+        'lang.english': 'English',
+        'lang.french': 'Français',
+        'lang.arabic': 'العربية',
+        
+        // ... (include all your English translations here)
+      },
+      fr: {
+        // ... (include all your French translations here)
+      },
+      ar: {
+        // ... (include all your Arabic translations here)
+      }
+    };
+
+    this.languageConfig = {
+      en: { dir: 'ltr', flag: 'us', name: 'english' },
+      fr: { dir: 'ltr', flag: 'fr', name: 'french' },
+      ar: { dir: 'rtl', flag: 'sa', name: 'arabic' }
+    };
+
+    this.currentLanguage = 'en';
+    this.init();
+  }
+
+  init() {
+    this.loadLanguage();
+    this.setupLanguageDropdown();
+    this.setupKeyboardAccessibility();
+    console.log('Translation system initialized!');
+  }
+
+  loadLanguage() {
+    try {
+      const savedLang = localStorage.getItem('preferredLanguage');
+      if (savedLang && this.translations[savedLang]) {
+        this.changeLanguage(savedLang);
+      } else {
+        const browserLang = navigator.language.substring(0, 2);
+        if (this.translations[browserLang]) {
+          this.changeLanguage(browserLang);
+        }
+      }
+    } catch (e) {
+      console.warn('Could not access localStorage or navigator.language');
+      this.changeLanguage('en');
+    }
+  }
+
+  changeLanguage(langCode) {
+    if (!this.translations[langCode]) {
+      console.error(`Language ${langCode} not supported`);
+      return;
+    }
+
+    this.currentLanguage = langCode;
+    const config = this.languageConfig[langCode];
+
+    // Update HTML attributes
+    document.documentElement.lang = langCode;
+    document.documentElement.dir = config.dir;
+
+    // Update translations
+    this.updatePageTranslations();
+    this.updateMetaTags();
+    this.updateDropdownButton();
+
+    // Save preference
+    try {
+      localStorage.setItem('preferredLanguage', langCode);
+    } catch (e) {
+      console.warn('Failed to save language preference');
+    }
+  }
+
+  updatePageTranslations() {
+    // Text content
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (this.translations[this.currentLanguage][key]) {
+        el.textContent = this.translations[this.currentLanguage][key];
+      }
+    });
+
+    // Placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (this.translations[this.currentLanguage][key]) {
+        el.setAttribute('placeholder', this.translations[this.currentLanguage][key]);
+      }
+    });
+
+    // Alt texts
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+      const key = el.getAttribute('data-i18n-alt');
+      if (this.translations[this.currentLanguage][key]) {
+        el.setAttribute('alt', this.translations[this.currentLanguage][key]);
+      }
+    });
+
+    // Title attributes
+    document.querySelectorAll('[data-i18n-title]').forEach(el => {
+      const key = el.getAttribute('data-i18n-title');
+      if (this.translations[this.currentLanguage][key]) {
+        el.setAttribute('title', this.translations[this.currentLanguage][key]);
+      }
+    });
+  }
+
+  updateMetaTags() {
+    // Update meta description
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && this.translations[this.currentLanguage]['metaDescription']) {
+      metaDesc.content = this.translations[this.currentLanguage]['metaDescription'];
+    }
+
+    // Update OpenGraph/Facebook meta tags if needed
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle && this.translations[this.currentLanguage]['ogTitle']) {
+      ogTitle.content = this.translations[this.currentLanguage]['ogTitle'];
+    }
+  }
+
+  setupLanguageDropdown() {
+    const dropdown = document.getElementById('langDropdown');
+    const dropdownBtn = document.getElementById('selected');
+    const dropdownList = document.getElementById('langOptions');
+    
+    if (!dropdown || !dropdownBtn || !dropdownList) return;
+
+    // Populate dropdown options
+    Object.keys(this.translations).forEach(langCode => {
+      const option = document.createElement('div');
+      option.dataset.value = langCode;
+      option.innerHTML = `
+        <span class="flag-icon" style="background-image: url(https://flagcdn.com/w20/${this.languageConfig[langCode].flag}.png)"></span>
+        ${this.translations[langCode][`lang.${this.languageConfig[langCode].name}`]}
+      `;
+      option.addEventListener('click', () => this.changeLanguage(langCode));
+      dropdownList.appendChild(option);
+    });
+
+    // Toggle dropdown
+    dropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownList.classList.toggle('show');
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', () => {
+      dropdownList.classList.remove('show');
+    });
+  }
+
+  updateDropdownButton() {
+    const dropdownBtn = document.getElementById('selected');
+    if (!dropdownBtn) return;
+
+    const config = this.languageConfig[this.currentLanguage];
+    const langName = this.translations[this.currentLanguage][`lang.${config.name}`];
+
+    // Clear existing content
+    dropdownBtn.innerHTML = '';
+
+    // Add flag icon
+    const flagIcon = document.createElement('span');
+    flagIcon.className = 'flag-icon';
+    flagIcon.style.backgroundImage = `url(https://flagcdn.com/w20/${config.flag}.png)`;
+    dropdownBtn.appendChild(flagIcon);
+
+    // Add language name
+    dropdownBtn.appendChild(document.createTextNode(' ' + langName));
+  }
+
+  setupKeyboardAccessibility() {
+    const dropdownBtn = document.getElementById('selected');
+    const dropdownList = document.getElementById('langOptions');
+    
+    if (!dropdownBtn || !dropdownList) return;
+
+    dropdownBtn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        dropdownList.classList.toggle('show');
+      }
+    });
+
+    dropdownList.querySelectorAll('[data-value]').forEach(option => {
+      option.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          this.changeLanguage(option.dataset.value);
+          dropdownList.classList.remove('show');
+        }
+      });
+    });
+  }
+}
+
+// ===== Initialize Everything When DOM is Ready =====
+document.addEventListener('DOMContentLoaded', () => {
+  // Make body visible
+  document.body.classList.add('visible');
+
+  // Initialize translation system
+  new TranslationSystem();
+
+  // Initialize menu toggle
+  const menuIcon = document.getElementById('menu-icon');
+  const navbar = document.querySelector('.navbar');
+  if (menuIcon && navbar) {
+    menuIcon.addEventListener('click', () => {
+      menuIcon.classList.toggle('bx-x');
+      navbar.classList.toggle('active');
+    });
+  }
+
+  // Initialize fade-in animations
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        fadeObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+
+  // Initialize timeline animations
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  if (timelineItems.length) {
+    const checkVisibility = () => {
+      timelineItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.85 && rect.bottom >= 0) {
+          item.classList.add('animate');
+        }
+      });
+    };
+
+    checkVisibility();
+    window.addEventListener('scroll', checkVisibility);
+  }
+
+  // Initialize theme toggle
+  const themeToggle = document.querySelector('.mode-btn');
+  if (themeToggle) {
+    const themeIcon = themeToggle.querySelector('i');
+    const body = document.body;
+
+    // Get saved theme or default to light
+    let currentTheme = 'light';
+    try {
+      currentTheme = localStorage.getItem('theme') || 'light';
+    } catch (e) {
+      console.warn('Could not access localStorage');
+    }
+
+    // Apply saved theme
+    if (currentTheme === 'dark') {
+      body.setAttribute('data-theme', 'dark');
+      if (themeIcon) {
+        themeIcon.classList.replace('bx-moon', 'bx-sun');
+      }
+    }
+
+    // Toggle theme
+    themeToggle.addEventListener('click', () => {
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      const newTheme = isDark ? 'light' : 'dark';
+      
+      body.setAttribute('data-theme', newTheme);
+      if (themeIcon) {
+        themeIcon.classList.toggle('bx-moon');
+        themeIcon.classList.toggle('bx-sun');
+      }
+      
+      try {
+        localStorage.setItem('theme', newTheme);
+      } catch (e) {
+        console.warn('Could not save theme preference');
+      }
+    });
+  }
+});
 
 
 
-  
 }
 
 console.log('Portfolio translation system loaded! 🌍');
