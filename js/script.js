@@ -376,6 +376,6 @@ function setupKeyboardAccessibility() {
   });
 
 
-
+}
 
 console.log('Portfolio translation system loaded! 🌍');
