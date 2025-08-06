@@ -129,6 +129,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   faders.forEach(fader => observer.observe(fader));
 
+
+
+
+
+
+  
+
   // ===== Timeline Animation =====
   const timelineItems = document.querySelectorAll('.timeline-item');
 
