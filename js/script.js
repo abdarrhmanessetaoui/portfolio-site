@@ -195,7 +195,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "sou9naTitle": "Sou9na - Fruits & Légumes",
       "sou9naDesc": "Une boutique en ligne marocaine fraîche et entièrement responsive pour fruits et légumes. Le design est clair, adapté aux mobiles, et met en avant les offres saisonnières. Elle propose une ambiance de marché local avec une navigation intuitive et des contrôles admin fictifs.",
       "sou9naImgAlt": "Aperçu du site Sou9na Fruits et Légumes",
-      "inDev": "En développement.."
+      "inDev": "En développement..",
+      
        },
     ar: {
       //traduction for header
