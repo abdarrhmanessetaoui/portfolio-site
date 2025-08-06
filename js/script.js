@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hsdiploma: "Baccalauréat Technique en Sciences Électriques",
       hassan: "Lycée Qualifiant Hassan II, Marrakech",
       hassanDesc: "Baccalauréat spécialisé en sciences électriques, avec une base solide en mathématiques et sciences appliquées.",
-      certificatesTitle: "Certificats",
+      certificatesTitle: "<i class='bx bxs-certification'></i>Certificats",
       gitCert: "Certificat Git & GitHub",
       freePlatform: "Udemy",
       gitDesc: "Cours gratuit complété sur le contrôle de version avec Git et la collaboration via GitHub. Apprentissage des branches, commits, pull requests et meilleures pratiques.",
