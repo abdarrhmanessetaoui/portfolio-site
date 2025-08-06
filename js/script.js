@@ -178,7 +178,16 @@ document.addEventListener('DOMContentLoaded', () => {
       "network": "Bases des Réseaux",
       "networkDesc": "Je comprends les concepts fondamentaux des réseaux, ce qui m'aide à optimiser les performances web et à résoudre efficacement les problèmes de connectivité.",
       //projects
-      
+      "projectsHeadline": "Projets",
+      "portfolio": "Site Portfolio",
+      "portfolioDesc": "J'ai créé ce portfolio personnel de zéro avec HTML, CSS et JavaScript. Il met en valeur mes compétences, présente certains de mes projets, et offre un aperçu clair de mon parcours. Le design est épuré, responsive, et facile à consulter sur tous les appareils.",
+      "codeProject": "Voir le Code Source",
+      "reviewProject": "Démo en Ligne",
+      "portfolioImgAlt": "Capture d'écran du projet portfolio",
+      "sou9naTitle": "Sou9na - Fruits & Légumes",
+      "sou9naDesc": "Une boutique en ligne marocaine fraîche et entièrement responsive pour fruits et légumes. Le design est clair, adapté aux mobiles, et met en avant les offres saisonnières. Elle propose une ambiance de marché local avec une navigation intuitive et des contrôles admin fictifs.",
+      "sou9naImgAlt": "Aperçu du site Sou9na Fruits et Légumes",
+      "inDev": "En développement.."
        },
     ar: {
       //traduction for header
