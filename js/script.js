@@ -8,7 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-    dropdown.style.display = 'none';
+    if (navbar.classList.contains('active')) {
+      dropdown.style.display = 'none'; // ملي تفتح المينيو، خبي dropdown
+    } else {
+      dropdown.style.display = 'block'; // ملي تسد المينيو، رجع dropdown تبان
+    }
+  });
   });
 
   // ===== Language Dropdown =====
