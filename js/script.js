@@ -118,4 +118,6 @@ document.addEventListener('DOMContentLoaded', () => {
       themeIcon.classList.replace('bx-moon', 'bx-sun');
     }
   });
+
+  
 });
