@@ -57,18 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.skills": "Compétences",
       "nav.services": "Services",
       "nav.projects": "Projets",
-      "nav.contact": "Contact",
-
-      welcome: "Salut, c'est <span>Abderrhman</span>",
-      aboutHeadline: "Je suis un <span>Développeur Web Full Stack Junior</span>",
-      aboutText: `De l'électricité au codage, j'ai toujours été curieux de savoir comment les choses fonctionnent.
-        Je crée des sites avec HTML, CSS, JavaScript, jQuery et Bootstrap.
-        Je développe des applications web avec PHP, Python, des APIs et MySQL.
-        J'apprends en permanence les frameworks comme Laravel, React.js, Next.js et Django.
-        J'adore résoudre des problèmes et créer des solutions numériques utiles.`,
-      contactMe: "Me Contacter",
-      downloadCV: "Télécharger le CV",
-      profileAlt: "Photo de profil"
+      "nav.contact": "Contact"
     },
     ar: {
       //traduction for home
@@ -81,35 +70,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
   
+  function updateOptionsDisplay(selectedValue) {
+    allOptions.forEach(option => {
+      option.style.display = (option.dataset.value === selectedValue) ? 'none' : 'flex';
+    });
+  }
+  
   function applyTranslation(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (translations[lang] && translations[lang][key]) {
-        el.innerHTML = translations[lang][key]; // مهم لاستعمال HTML
+        el.innerHTML = translations[lang][key];
       }
     });
-  
-    // ALT attributes
-    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
-      const key = el.getAttribute('data-i18n-alt');
-      if (translations[lang] && translations[lang][key]) {
-        el.setAttribute('alt', translations[lang][key]);
-      }
-    });
-  
-    // HREF attributes
-    document.querySelectorAll('[data-i18n-href]').forEach(el => {
-      const key = el.getAttribute('data-i18n-href');
-      if (translations[lang] && translations[lang][key]) {
-        el.setAttribute('href', translations[lang][key]);
-      }
-    });
-  
-    // Direction RTL/LTR
     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+    // Translate alt
+document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+  const key = el.getAttribute('data-i18n-alt');
+  if (translations[lang][key]) {
+    el.setAttribute('alt', translations[lang][key]);
   }
-  
+});
+
+// Translate href
+document.querySelectorAll('[data-i18n-href]').forEach(el => {
+  const key = el.getAttribute('data-i18n-href');
+  if (translations[lang][key]) {
+    el.setAttribute('href', translations[lang][key]);
+  }
+});
+
+  }
   
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
   const savedOption = allOptions.find(opt => opt.dataset.value === savedLang);
