@@ -205,8 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
       frontend: "	الواجهة الأمامية",
       backend: "	الواجهة الخلفية",
       databases: "قواعد البيانات",
-      mysql: "ماي إس كيو إل",
-      mongodb: "مونغو دي بي",
       tools: "الأدوات وغيرها",
       professionalSkills: "المهارات المهنية",
       problemSolving: "حل المشكلات",
