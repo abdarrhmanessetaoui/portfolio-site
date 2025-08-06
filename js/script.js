@@ -230,10 +230,8 @@ document.addEventListener('DOMContentLoaded', () => {
       option.style.display = (option.dataset.value === selectedValue) ? 'none' : 'flex';
     });
   }
-  
+
   function applyTranslation(lang) {
-
-
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
       const key = el.getAttribute('data-i18n');
@@ -251,66 +249,62 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-  
-    // ALT attributes
     document.querySelectorAll('[data-i18n-alt]').forEach(el => {
       const key = el.getAttribute('data-i18n-alt');
       if (translations[lang] && translations[lang][key]) {
         el.setAttribute('alt', translations[lang][key]);
       }
     });
-  
-    // HREF attributes
+
     document.querySelectorAll('[data-i18n-href]').forEach(el => {
       const key = el.getAttribute('data-i18n-href');
       if (translations[lang] && translations[lang][key]) {
         el.setAttribute('href', translations[lang][key]);
       }
     });
-  
-    // Direction RTL/LTR
+
     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
 
-    // Styling adjustments for Arabic
-const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
-const flagIcons = document.querySelectorAll('.flag-icon');
+    const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
+    const flagIcons = document.querySelectorAll('.flag-icon');
 
-flagIcons.forEach(icon => {
-  if (lang === 'ar') {
-    icon.style.marginLeft = '8px';  
-    icon.style.marginRight = '0';
-  } else {
-    icon.style.marginRight = '8px';
-    icon.style.marginLeft = '0';
+    flagIcons.forEach(icon => {
+      if (lang === 'ar') {
+        icon.style.marginLeft = '8px';
+        icon.style.marginRight = '0';
+      } else {
+        icon.style.marginRight = '8px';
+        icon.style.marginLeft = '0';
+      }
+    });
+
+    if (aboutParagraph) {
+      if (lang === 'ar') {
+        aboutParagraph.style.textAlign = 'right';
+        aboutParagraph.style.paddingLeft = '0';
+        aboutParagraph.style.paddingRight = '0rem';
+      } else {
+        aboutParagraph.style.textAlign = 'left';
+        aboutParagraph.style.paddingRight = '0';
+        aboutParagraph.style.paddingLeft = '0rem';
+      }
+    }
   }
-});
 
-
-if (lang === 'ar') {
-  aboutParagraph.style.textAlign = 'right';
-  aboutParagraph.style.paddingLeft = '0';
-  aboutParagraph.style.paddingRight = '0rem';
-} else {
-  aboutParagraph.style.textAlign = 'left';
-  aboutParagraph.style.paddingRight = '0';
-  aboutParagraph.style.paddingLeft = '0rem';
-}
-  }
-  
-  
+  // Load saved language
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
-  const savedOption = allOptions.find(opt => opt.dataset.value === savedLang);
+  const savedOption = Array.from(allOptions).find(opt => opt.dataset.value === savedLang);
   if (savedOption) {
     selected.innerHTML = savedOption.innerHTML;
     updateOptionsDisplay(savedLang);
     applyTranslation(savedLang);
   }
-  
+
   selected.addEventListener('click', (e) => {
     e.stopPropagation();
     options.style.display = (options.style.display === 'block') ? 'none' : 'block';
   });
-  
+
   allOptions.forEach(option => {
     option.addEventListener('click', () => {
       selected.innerHTML = option.innerHTML;
@@ -321,7 +315,11 @@ if (lang === 'ar') {
       applyTranslation(chosenValue);
     });
   });
-  
+
+  // Close options menu on click outside
+  document.addEventListener('click', () => {
+    options.style.display = 'none';
+  });
 
   // ===== Fade-in Sections =====
   const allElements = document.body.querySelectorAll('section');
