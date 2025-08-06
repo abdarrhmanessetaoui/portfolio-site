@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.services": "الخدمات",
       "nav.projects": "المشاريع",
       "nav.contact": "اتصل",
-            //traduction for home
+      //traduction for home
       welcome: "مرحبًا، أنا <span>عبد الرحمن</span>",
       aboutHeadline: "أنا <span>مطور ويب متكامل مبتدئ</span>",
       aboutText: `من الكهرباء إلى البرمجة، لطالما كنت فضوليًا لمعرفة كيفية عمل الأشياء.
