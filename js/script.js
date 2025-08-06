@@ -197,13 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "sou9naImgAlt": "Aperçu du site Sou9na Fruits et Légumes",
       "inDev": "En développement..",
       //contact
-      contactHeadline: "تواصل معي",
-      contactName: "الاسم الكامل",
-      contactEmail: "البريد الإلكتروني",
-      phoneNumber: "رقم الهاتف",
-      subject: "الموضوع",
-      contactMessage: "رسالتك",
-      contactSubmit: "إرسال الرسالة",
+      
        },
     ar: {
       //traduction for header
