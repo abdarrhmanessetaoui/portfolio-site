@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     option.addEventListener('click', () => {
       selected.innerHTML = option.innerHTML;
       options.style.display = 'none';
+      dropdown.style.display = 'flex';
       const chosenValue = option.dataset.value;
       localStorage.setItem('selectedLanguage', chosenValue);
       updateOptionsDisplay(chosenValue);
