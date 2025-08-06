@@ -30,6 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.services": "Services",
       "nav.projects": "Projects",
       "nav.contact": "Contact",
+
+      welcome: "Hi, It's <span>Abderrhman</span>",
+      aboutHeadline: "I'm a <span>Junior Full Stack Web Developer</span>",
+      aboutText: `From electricity to coding, I've always been curious about how things work.
+        I build websites with HTML, CSS, JavaScript, jQuery, and Bootstrap.
+        I create web apps using PHP, Python, APIs, and MySQL.
+        I'm always learning and exploring frameworks like Laravel, React.js, Next.js, and Django.
+        I love solving problems and making useful digital solutions.`,
+      contactMe: "Contact Me",
+      downloadCV: "Download CV",
+      profileAlt: "Profile picture",
+      "nav.home": "Home",
+      "nav.resume": "Resume",
+      "nav.skills": "Skills",
+      "nav.services": "Services",
+      "nav.projects": "Projects",
+      "nav.contact": "Contact"
     },
     fr: {
       "nav.home": "Accueil",
