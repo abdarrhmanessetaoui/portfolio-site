@@ -228,17 +228,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  function fromArabicNumbers(str) {
-    const englishDigits = ['0','1','2','3','4','5','6','7','8','9'];
+  function toArabicNumbers(str, lang = 'ar') {
+    if (lang !== 'ar') return str; // ما تبدل والو إلا ماشي عربية
+  
     const arabicDigits = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
-    
-    let converted = str;
-    for (let i = 0; i < 10; i++) {
-      const regex = new RegExp(arabicDigits[i], 'g');
-      converted = converted.replace(regex, englishDigits[i]);
-    }
-    
-    converted = converted.replace('\u00A0٪', '%'); // convert Arabic % to normal
+    let converted = str.replace(/\d/g, d => arabicDigits[d]);
+    converted = converted.replace('%', '\u00A0٪'); 
     return converted;
   }
 
