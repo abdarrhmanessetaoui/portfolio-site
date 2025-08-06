@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.skills": "Compétences",
       "nav.services": "Services",
       "nav.projects": "Projets",
-      "nav.contact": "Contact"
+      "nav.contact": "Contact",
 
       welcome: "Salut, c'est <span>Abderrhman</span>",
       aboutHeadline: "Je suis un <span>Développeur Web Full Stack Junior</span>",
