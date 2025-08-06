@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "cybersecurityDesc": "J'ai des connaissances fondamentales en cybersécurité pour aider à protéger les sites et les applications contre les menaces courantes, assurant la sécurité des données utilisateurs.",
       "network": "Bases des Réseaux",
       "networkDesc": "Je comprends les concepts fondamentaux des réseaux, ce qui m'aide à optimiser les performances web et à résoudre efficacement les problèmes de connectivité.",
-    
+      //
        },
     ar: {
       //traduction for header
