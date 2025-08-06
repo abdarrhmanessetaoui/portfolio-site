@@ -279,6 +279,14 @@ document.addEventListener('DOMContentLoaded', () => {
       "sou9naDesc": "متجر إلكتروني مغربي حديث ومتجاوب مخصص للفواكه والخضروات. التصميم بسيط ومتوافق مع الهواتف، ويبرز العروض الموسمية. يحتوي على أجواء السوق المحلي مع تنقل سهل ووظائف إدارية تجريبية.",
       "sou9naImgAlt": "معاينة موقع سوقنا للفواكه والخضروات",
       "inDev": "قيد التطوير...",
+      //contact
+      contactHeadline: "Contactez-moi",
+      contactName: "Nom complet",
+      contactEmail: "Email",
+      phoneNumber: "Numéro de téléphone",
+      subject: "Sujet",
+      contactMessage: "Votre message",
+      contactSubmit: "Envoyer le message",
     }
   };
 
