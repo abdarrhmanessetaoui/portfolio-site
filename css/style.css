@@ -665,7 +665,7 @@ section {
 
 .lang-level {
   background-color:var(--main-color);
-  color: var(--bg-color);
+  color: var();
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
   font-size: 0.85rem;
