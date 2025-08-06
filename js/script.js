@@ -70,38 +70,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
   
-  function updateOptionsDisplay(selectedValue) {
-    allOptions.forEach(option => {
-      option.style.display = (option.dataset.value === selectedValue) ? 'none' : 'flex';
-    });
-  }
-  
   function applyTranslation(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (translations[lang] && translations[lang][key]) {
-        el.innerHTML = translations[lang][key];
+        el.innerHTML = translations[lang][key]; // مهم لاستعمال HTML
       }
     });
+  
+    // ALT attributes
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+      const key = el.getAttribute('data-i18n-alt');
+      if (translations[lang] && translations[lang][key]) {
+        el.setAttribute('alt', translations[lang][key]);
+      }
+    });
+  
+    // HREF attributes
+    document.querySelectorAll('[data-i18n-href]').forEach(el => {
+      const key = el.getAttribute('data-i18n-href');
+      if (translations[lang] && translations[lang][key]) {
+        el.setAttribute('href', translations[lang][key]);
+      }
+    });
+  
+    // Direction RTL/LTR
     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-    // Translate alt
-document.querySelectorAll('[data-i18n-alt]').forEach(el => {
-  const key = el.getAttribute('data-i18n-alt');
-  if (translations[lang][key]) {
-    el.setAttribute('alt', translations[lang][key]);
   }
-});
-
-// Translate href
-document.querySelectorAll('[data-i18n-href]').forEach(el => {
-  const key = el.getAttribute('data-i18n-href');
-  if (translations[lang][key]) {
-    el.setAttribute('href', translations[lang][key]);
-  }
-});
-
-  }
+  
   
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
   const savedOption = allOptions.find(opt => opt.dataset.value === savedLang);
