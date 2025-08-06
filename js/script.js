@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
       resume: "الذاتية",
       educationTitle: "<i class='bx bxs-graduation'></i>التعليم",
       ofpptTitle: "تقني متخصص في تطوير الويب الكامل (Full-Stack)",
-ofpptSchool: "مكتب التكوين المهني - ISTA NTIC السبا، مراكش",
+      ofpptSchool: "مكتب التكوين المهني - ISTA NTIC السبا، مراكش",
 ofpptDesc: `في OFPPT، تعلمت كيفية إنشاء مواقع وتطبيقات ويب ديناميكية باستخدام تقنيات مثل HTML، CSS، JavaScript و PHP.
 كما اشتغلت على أطر وأدوات حديثة مثل Laravel، React، Node.js و Git.`,
       hsdiploma: "البكالوريا التقنية في العلوم الكهربائية",
