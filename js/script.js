@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function toArabicNumbers(str) {
     const arabicDigits = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
     let converted = str.replace(/\d/g, d => arabicDigits[d]);
-    converted = converted.replace(,'%', '\u00A0٪'); 
+    converted = converted.replace('%', '\u00A0٪'); 
     return converted;
   }
 
