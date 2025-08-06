@@ -85,6 +85,22 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+    // Translate alt
+document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+  const key = el.getAttribute('data-i18n-alt');
+  if (translations[lang][key]) {
+    el.setAttribute('alt', translations[lang][key]);
+  }
+});
+
+// Translate href
+document.querySelectorAll('[data-i18n-href]').forEach(el => {
+  const key = el.getAttribute('data-i18n-href');
+  if (translations[lang][key]) {
+    el.setAttribute('href', translations[lang][key]);
+  }
+});
+
   }
   
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
