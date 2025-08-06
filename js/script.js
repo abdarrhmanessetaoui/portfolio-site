@@ -62,7 +62,24 @@ document.addEventListener('DOMContentLoaded', () => {
       contactMe: "Me Contacter",
       downloadCV: "Télécharger le CV",
       profileAlt: "Photo de profil",
-      //
+      //cv
+      my: "Mon",
+      resume: "CV",
+      educationTitle: "Éducation",
+      hsdiploma: "Baccalauréat Technique en Sciences Électriques",
+      hassan: "Lycée Qualifiant Hassan II, Marrakech",
+      hassanDesc: "Baccalauréat spécialisé en sciences électriques, avec une base solide en mathématiques et sciences appliquées.",
+      certificatesTitle: "Certificats",
+      gitCert: "Certificat Git & GitHub",
+      freePlatform: "Udemy",
+      gitDesc: "Cours gratuit complété sur le contrôle de version avec Git et la collaboration via GitHub. Apprentissage des branches, commits, pull requests et meilleures pratiques.",
+      experienceTitle: "Expérience",
+      freelancer: "Freelance en informatique",
+      independent: "Développeur Web Indépendant",
+      independentDesc: "Création et mise à jour de pages web en HTML/CSS, développement de solutions personnalisées pour des clients locaux et internationaux.",
+      mobileTech: "Technicien Mobile",
+      samir: "Samir Mobile",
+      samirDesc: "Réparation de téléphones, formatage et maintenance système, développement de compétences techniques en matériel et logiciel."
     },
     ar: {
       //traduction for header
