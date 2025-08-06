@@ -42,12 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
       contactMe: "Contact Me",
       downloadCV: "Download CV",
       profileAlt: "Profile picture",
-      "nav.home": "Home",
-      "nav.resume": "Resume",
-      "nav.skills": "Skills",
-      "nav.services": "Services",
-      "nav.projects": "Projects",
-      "nav.contact": "Contact",
 
     },
     fr: {
