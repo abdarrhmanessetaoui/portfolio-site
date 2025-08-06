@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdown.style.display = 'none';
     } else {
       dropdown.style.display = 'block';
-    }
+    }}
   });
 
   // ===== Language Dropdown =====
