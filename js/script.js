@@ -125,7 +125,7 @@ const flagIcons = document.querySelectorAll('.flag-icon');
 
 flagIcons.forEach(icon => {
   if (lang === 'ar') {
-    icon.style.marginLeft = '8px';   // المسافة تكون على اليسار لأن النص على اليمين
+    icon.style.marginLeft = '8px';  
     icon.style.marginRight = '0';
   } else {
     icon.style.marginRight = '8px';  // المسافة تكون على اليمين لأن النص على اليسار
