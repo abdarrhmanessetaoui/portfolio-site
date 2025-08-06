@@ -46,7 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.skills": "Skills",
       "nav.services": "Services",
       "nav.projects": "Projects",
-      "nav.contact": "Contact"
+      "nav.contact": "Contact",
+      
     },
     fr: {
       "nav.home": "Accueil",
