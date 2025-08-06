@@ -537,35 +537,44 @@
   
   <section class="contact" id="contact">
 
-    <h2 class="heading" data-i18n="contactHeadline"> <span>Contact Me</span></h2>
-
+    <h2 class="heading" data-i18n="contactHeadline"> 
+      <span>Contact Me</span>
+    </h2>
+  
     <form action="#">
-
+  
       <div class="input-group">
-
+  
         <div class="input-box">
-          <input type="text" placeholder="Full Name" data-i18n="contactName">
-          <input type="email" placeholder="Email" data-i18n="contactEmail">
+          <input type="text" data-i18n-placeholder="contactName" placeholder="Full Name">
+          <input type="email" data-i18n-placeholder="contactEmail" placeholder="Email">
         </div>
-
+  
         <div class="input-box">
-          <input type="tel" placeholder="Phone Number" data-i18n="phoneNumber">
-          <input type="text" placeholder="Subject" data-i18n="subject">
+          <input type="tel" data-i18n-placeholder="contactPhone" placeholder="Phone Number">
+          <input type="text" data-i18n-placeholder="contactSubject" placeholder="Subject">
         </div>
-
+  
       </div>
-
-
+  
       <div class="input-group">
-        <textarea name="" id="" placeholder="Your Message" cols="30" rows="10" data-i18n="contactMessage"></textarea>
-        <input type="submit" value="Send Message" class="btn" data-i18n="contactSubmit">
-
+        <textarea 
+          data-i18n-placeholder="contactMessage"
+          placeholder="Your Message"
+          cols="30" rows="10">
+        </textarea>
+        
+        <input 
+          type="submit" 
+          class="btn" 
+          value="Send Message" 
+          data-i18n-value="contactSubmit">
       </div>
-
+  
     </form>
-
+  
   </section>
-
+  
 
   <footer class="footer">
 
