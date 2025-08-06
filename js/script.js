@@ -239,7 +239,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    
+    const elements2 = document.querySelectorAll('[data-i18n-number]');
+elements2.forEach(el => {
+  const raw = el.textContent.trim();
+  let value = raw;
+
+  if (lang === 'ar') {
+    value = toArabicNumbers(raw);
+  }
+
+  el.innerHTML = value;
+});
 
     document.querySelectorAll('[data-i18n-alt]').forEach(el => {
       const key = el.getAttribute('data-i18n-alt');
