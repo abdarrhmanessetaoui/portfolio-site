@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
     if (navbar.classList.contains('active')) {
-      dropdown.style.display = 'none'; // ملي تفتح المينيو، خبي dropdown
+      dropdown.style.display = 'none';
     } else {
       dropdown.style.display = 'block'; // ملي تسد المينيو، رجع dropdown تبان
     }
