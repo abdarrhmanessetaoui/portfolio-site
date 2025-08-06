@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
       gitDesc: "Cours gratuit complété sur le contrôle de version avec Git et la collaboration via GitHub. Apprentissage des branches, commits, pull requests et meilleures pratiques.",
       lifeCert: "Certificat de Compétences de Vie",
       rahal: "Lycée Rahal El Farouq",
-      lifeDesc: "J'ai obtenu ce certificat lors de ma formation aux compétences de vie, où j'ai appris des choses utiles comme la communication et la résolution de problèmes."
+      lifeDesc: "J'ai obtenu ce certificat lors de ma formation aux compétences de vie, où j'ai appris des choses utiles comme la communication et la résolution de problèmes.",
       experienceTitle: "Expérience",
       freelancer: "Freelance en informatique",
       independent: "Développeur Web Indépendant",
