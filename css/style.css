@@ -1268,7 +1268,7 @@ section {
   .logo {
     font-size: 1rem;
     color: var(--text-color);
-    font-weight: 800;
+    font-weight: 500;
   }
 }
 
