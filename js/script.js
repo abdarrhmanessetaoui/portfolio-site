@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
       my: "Mon",
       resume: "CV",
       educationTitle: "Éducation",
-      
       hsdiploma: "Baccalauréat Technique en Sciences Électriques",
       hassan: "Lycée Qualifiant Hassan II, Marrakech",
       hassanDesc: "Baccalauréat spécialisé en sciences électriques, avec une base solide en mathématiques et sciences appliquées.",
