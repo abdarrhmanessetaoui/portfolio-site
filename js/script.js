@@ -199,7 +199,26 @@ document.addEventListener('DOMContentLoaded', () => {
       samir: "سمّير كمبيوتر",
       samirDesc: "إصلاح الحواسيب، وتحديث النظام، وصيانة الأجهزة والبرمجيات، وتطوير المهارات التقنية.",
       //skills
-      
+      my: "مؤهلاتي",
+      skills: "المهارات",
+      technicalSkills: "المهارات التقنية",
+      frontend: "واجهات المستخدم",
+      backend: "الخلفية",
+      databases: "قواعد البيانات",
+      mysql: "ماي إس كيو إل",
+      mongodb: "مونغو دي بي",
+      tools: "الأدوات وغيرها",
+      professionalSkills: "المهارات المهنية",
+      problemSolving: "حل المشكلات",
+      teamwork: "العمل الجماعي",
+      communication: "التواصل",
+      planning: "التخطيط",
+      adaptability: "التكيف",
+      languageSkills: "مهارات اللغة",
+      arabic: "العربية",
+      french: "الفرنسية",
+      english: "الإنجليزية",
+      deutsch: "الألمانية"
     }
   };
 
