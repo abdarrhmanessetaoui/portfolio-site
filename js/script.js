@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function setLanguage(lang) {
-    const elements = document.querySelectorAll('[data-translate]');
+    const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
       const key = el.getAttribute('data-translate');
       if (translations[lang] && translations[lang][key]) {
