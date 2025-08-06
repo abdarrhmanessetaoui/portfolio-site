@@ -219,6 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
       french: "الفرنسية",
       english: "الإنجليزية",
       deutsch: "الألمانية"
+      "percentage": "{{value, number, ::percent}}"
     }
   };
 
