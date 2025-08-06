@@ -229,6 +229,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
+  function toArabicNumbers(str) {
+    const arabicDigits = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
+    return str.replace(/\d/g, d => arabicDigits[d]);
+  }
 
   function applyTranslation(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
