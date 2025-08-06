@@ -245,7 +245,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const elements2 = document.querySelectorAll('[data-i18n-number]');
     elements2.forEach(el => {
       const key = el.getAttribute('data-i18n-number');
-      const value = parseFloat(el.textContent.replace('%', '').trim()) / 100;
+      const raw = el.textContent.replace('%', '').trim();
+      const value = parseFloat(raw);
+    
       if (translations[lang] && translations[lang][key]) {
         el.innerHTML = i18next.t(key, { value: value });
       }
