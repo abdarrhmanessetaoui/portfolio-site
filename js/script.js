@@ -228,7 +228,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  function toArabicNumbers(str) {
+  function toArabicNumbers(str, lang = 'ar') {
+    if (lang !== 'ar') return str; // ما تبدل والو إلا ماشي عربية
+  
     const arabicDigits = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
     let converted = str.replace(/\d/g, d => arabicDigits[d]);
     converted = converted.replace('%', '\u00A0٪'); 
