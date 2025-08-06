@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
     elements2.forEach(el => {
       if (lang === 'ar') {
         el.style.marginRight = '36px';
-        el.style.marginLeft = '5px';
+        el.style.marginLeft = '53px';
       } else {
         el.style.marginLeft = '6px';
         el.style.marginRight = '0';
