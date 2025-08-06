@@ -1355,7 +1355,7 @@ section {
   }
 
   .skill-box {
-    flex: 1 1 10%;
+    flex: 2 1 10%;
     min-height: auto;
   }
 
