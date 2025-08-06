@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       my: "My",
       resume: "Resume",
-      educationTitle: "Education",
+      educationTitle: "<i class='bx bxs-graduation'></i>Education",
       ofpptTitle: "Technician Specialized in Full-Stack Web Development",
       ofpptSchool: "OFPPT - ISTA NTIC SYBA, Marrakech",
       ofpptDesc: "At OFPPT, I learned how to build dynamic websites and applications using technologies like HTML, CSS, JavaScript, and PHP, and I also worked with modern frameworks and tools such as Laravel, React, Node.js, and Git.",
