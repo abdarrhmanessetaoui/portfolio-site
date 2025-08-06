@@ -991,8 +991,9 @@ section {
   margin: 5rem 0;
 }
 
+/* Services */
 .services {
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
 }
 
 .services h2 {
@@ -1001,7 +1002,7 @@ section {
 
 .services-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: center;
   gap: 2.5rem;
 }
@@ -1011,7 +1012,7 @@ section {
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, var(--main-color), var(--hover-color));
-  height: 600px;
+  height: 50rem;
   border-radius: 3rem;
   cursor: pointer;
   border: 5px solid transparent;
@@ -1032,7 +1033,7 @@ section {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 3rem;
   color: var(--btn-text-color);
   transition: color 0.3s ease;
 }
@@ -1041,26 +1042,27 @@ section {
   color: var(--text-color);
 }
 
+.service-info i {
+  font-size: 8rem;
+  color: var(--btn-text-color);
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+.service-box:hover .service-info i {
+  color: var(--main-color);
+}
+
 .service-info h4 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 2rem 0;
   font-weight: 800;
 }
 
 .service-info p {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.7;
-}
-.service-info i {
-  font-size: 9rem;
-  color: var(--btn-text-color);
-  margin-bottom: 1rem;
-  transition: color 0.3s ease;
-}
-
-.service-box:hover .service-info i {
-  color: var(--main-color);
 }
 
 /* Projects */
