@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
       english: "English",
       deutsch: "Deutsch",
       //services
-      servicesHeadline: "Our <span>Services</span>",
+      servicesHeadline: "<span>Services</span>",
       webDev: "Web Development",
       webDevDesc: "I create modern and responsive websites and web applications using JavaScript, PHP, Laravel, React, and Node.js. My focus is on clean code, simple design, and great user experience.",
       cybersecurity: "Cybersecurity Basics",
