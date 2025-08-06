@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "projectsHeadline": "المشاريع",
       "portfolio": "موقع البورتفوليو",
       "portfolioDesc": "صممت هذا الموقع الشخصي من البداية باستخدام HTML وCSS وJavaScript. يعرض مهاراتي، ويعرض بعض مشاريعي، ويوضح خلفيتي بشكل واضح. التصميم نظيف ومتجاوب وسهل الاستخدام على كل الأجهزة.",
-      "codeProject": "عرض الكود المصدري",
+      "codeProject": "عرض الكود البرمجي",
       "reviewProject": "عرض مباشر",
       "portfolioImgAlt": "صورة لمشروع البورتفوليو",
       "sou9naTitle": "سوقنا - الفواكه والخضروات",
