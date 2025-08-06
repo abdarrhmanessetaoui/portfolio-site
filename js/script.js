@@ -70,7 +70,17 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.skills": "المهارات",
       "nav.services": "الخدمات",
       "nav.projects": "المشاريع",
-      "nav.contact": "اتصل"
+      "nav.contact": "اتصل",
+      welcome: "مرحبًا، أنا <span>عبد الرحمن</span>",
+      aboutHeadline: "أنا <span>مطور ويب متكامل مبتدئ</span>",
+      aboutText: `من الكهرباء إلى البرمجة، لطالما كنت فضوليًا لمعرفة كيفية عمل الأشياء.
+        أبني مواقع باستخدام HTML، CSS، JavaScript، jQuery، وBootstrap.
+        أطور تطبيقات ويب باستخدام PHP، Python، APIs، وMySQL.
+        أتعلم دائمًا وأستكشف أطر العمل مثل Laravel، React.js، Next.js، وDjango.
+        أحب حل المشكلات وإنشاء حلول رقمية مفيدة.`,
+      contactMe: "اتصل بي",
+      downloadCV: "تحميل السيرة الذاتية",
+      profileAlt: "صورة الملف الشخصي"
     }
   };
 
