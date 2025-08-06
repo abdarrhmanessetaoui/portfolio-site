@@ -40,8 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.contact": "Contact"
     },
     ar: {
-      welcome: "مرحبا",
-      intro: "هذا موقع تجريبي يدعم تغيير اللغة."
+      "nav.home": "الرئيسية",
+      "nav.resume": "السيرة الذاتية",
+      "nav.skills": "المهارات",
+      "nav.services": "الخدمات",
+      "nav.projects": "المشاريع",
+      "nav.contact": "اتصل"
     }
   };
   
