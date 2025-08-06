@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       gitCert: "شهادة Git و GitHub",
       freePlatform: "أوديمي",
       gitDesc: "أكملت دورة مجانية حول التحكم في الإصدارات باستخدام Git والتعاون عبر GitHub. تعلمت الفروع، والـ commits، وطلبات السحب، وأفضل الممارسات.",
+     
       experienceTitle: "الخبرة",
       freelancer: "مطور حر",
       independent: "مطور ويب مستقل",
