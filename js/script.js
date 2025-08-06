@@ -32,8 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.contact": "Contact"
     },
     fr: {
-      welcome: "Bienvenue",
-      intro: "Ceci est un site d'exemple avec changement de langue."
+      "nav.home": "Accueil",
+      "nav.resume": "CV",
+      "nav.skills": "Compétences",
+      "nav.services": "Services",
+      "nav.projects": "Projets",
+      "nav.contact": "Contact"
     },
     ar: {
       welcome: "مرحبا",
