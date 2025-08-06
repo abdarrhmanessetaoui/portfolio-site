@@ -121,18 +121,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Styling adjustments for Arabic
 const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
+// Adjust dropdown direction and padding for Arabic
 const dropdown = document.getElementById('langDropdown');
-
-
-if (lang === 'ar') {
-  dropdown.style.textAlign = 'right';
-  dropdown.style.paddingRight = '1rem';
-  dropdown.style.paddingLeft = '0';
-} else {
-  dropdown.style.textAlign = 'left';
-  dropdown.style.paddingLeft = '1rem';
-  dropdown.style.paddingRight = '0';
+if (dropdown) {
+  if (lang === 'ar') {
+    dropdown.style.textAlign = 'right';
+    dropdown.style.paddingRight = '1rem';
+    dropdown.style.paddingLeft = '0';
+  } else {
+    dropdown.style.textAlign = 'left';
+    dropdown.style.paddingLeft = '1rem';
+    dropdown.style.paddingRight = '0';
+  }
 }
+
 
 if (lang === 'ar') {
   aboutParagraph.style.textAlign = 'right';
