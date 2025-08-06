@@ -361,6 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+    
 
     const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
     const flagIcons = document.querySelectorAll('.flag-icon');
