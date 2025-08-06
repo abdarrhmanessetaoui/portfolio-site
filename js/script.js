@@ -66,7 +66,27 @@ document.addEventListener('DOMContentLoaded', () => {
       PCTech: "PC Technician",
       samir: "Samir Computer",
       samirDesc: "Computer repair, system maintenance and formatting; along with developing technical skills in hardware and software."
-      //
+      //skills
+      my: "My",
+      skills: "Skills",
+      technicalSkills: "Technical Skills",
+      frontend: "Frontend",
+      backend: "Backend",
+      databases: "Databases",
+      mysql: "MySQL",
+      mongodb: "MongoDB",
+      tools: "Tools & Others",
+      professionalSkills: "Professional Skills",
+      problemSolving: "Problem Solving",
+      teamwork: "Teamwork",
+      communication: "Communication",
+      planning: "Planning",
+      adaptability: "Adaptability",
+      languageSkills: "Language Skills",
+      arabic: "Arabic",
+      french: "French",
+      english: "English",
+      deutsch: "Deutsch"
     },
     fr: {
       //traduction for header
