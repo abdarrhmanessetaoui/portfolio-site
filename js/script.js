@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
       freelancer: "مطور حر",
       independent: "مطور ويب مستقل",
       independentDesc: "إنشاء وتحديث صفحات الويب باستخدام HTML/CSS، وتطوير حلول ويب مخصصة للعملاء المحليين والدوليين.",
-      mobileTech: " صيانة حواسيب ",
+      PCTech: " صيانة حواسيب ",
       samir: "سمّير كمبيوتر",
       samirDesc: "إصلاح الحواسيب، وتحديث النظام، وصيانة الأجهزة والبرمجيات، وتطوير المهارات التقنية."
     }
