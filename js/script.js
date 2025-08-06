@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navbar.classList.contains('active')) {
       dropdown.style.display = 'none';
     } else {
-      dropdown.style.display = 'block'; // ملي تسد المينيو، رجع dropdown تبان
+      dropdown.style.display = 'block';
     }
   });
   });
