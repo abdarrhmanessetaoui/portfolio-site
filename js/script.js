@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     },
     fr: {
+      //traduction for header
       "nav.home": "Accueil",
       "nav.resume": "CV",
       "nav.skills": "Compétences",
