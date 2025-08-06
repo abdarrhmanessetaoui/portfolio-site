@@ -260,12 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const elements2 = document.querySelectorAll('[data-i18n-number]');
     elements2.forEach(el => {
       const raw = el.textContent.trim();
-      let value = raw;
-    
-      if (lang === 'ar') {
-        value = toArabicNumbers(raw);
-      }
-    
+      let value = convertNumbersByLang(raw, lang);
       el.innerHTML = value;
     });
 
