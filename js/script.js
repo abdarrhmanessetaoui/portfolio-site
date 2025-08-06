@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       skills: "Compétences",
       technicalSkills: "Compétences techniques",
       frontend: " Partie frontale",
-      backend: "Backend",
+      backend: "Partie serveur",
       databases: "Bases de données",
       mysql: "MySQL",
       mongodb: "MongoDB",
