@@ -332,6 +332,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+      // placeholder
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    if (dict[key]) el.placeholder = dict[key];
+  });
+
+  // value (button)
+  document.querySelectorAll("[data-i18n-value]").forEach(el => {
+    const key = el.getAttribute("data-i18n-value");
+    if (dict[key]) el.value = dict[key];
+  });
+
     const elements2 = document.querySelectorAll('[data-i18n-number]');
     elements2.forEach(el => {
       if (lang === 'ar') {
