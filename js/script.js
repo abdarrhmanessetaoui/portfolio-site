@@ -17,7 +17,66 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ===== Language Dropdown =====
- 
+  const dropdown = document.getElementById('langDropdown');
+  const selected = document.getElementById('selected');
+  const options = document.getElementById('langOptions');
+  const allOptions = [...options.querySelectorAll('div')];
+  
+  const translations = {
+    en: {
+      welcome: "Welcome",
+      intro: "This is a sample website with language switch."
+    },
+    fr: {
+      welcome: "Bienvenue",
+      intro: "Ceci est un site d'exemple avec changement de langue."
+    },
+    ar: {
+      welcome: "مرحبا",
+      intro: "هذا موقع تجريبي يدعم تغيير اللغة."
+    }
+  };
+  
+  function updateOptionsDisplay(selectedValue) {
+    allOptions.forEach(option => {
+      option.style.display = (option.dataset.value === selectedValue) ? 'none' : 'flex';
+    });
+  }
+  
+  function applyTranslation(lang) {
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang] && translations[lang][key]) {
+        el.textContent = translations[lang][key];
+      }
+    });
+  }
+  
+  const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+  const savedOption = allOptions.find(opt => opt.dataset.value === savedLang);
+  if (savedOption) {
+    selected.innerHTML = savedOption.innerHTML;
+    updateOptionsDisplay(savedLang);
+    applyTranslation(savedLang);
+  }
+  
+  selected.addEventListener('click', (e) => {
+    e.stopPropagation();
+    options.style.display = (options.style.display === 'block') ? 'none' : 'block';
+  });
+  
+  allOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      selected.innerHTML = option.innerHTML;
+      options.style.display = 'none';
+      const chosenValue = option.dataset.value;
+      localStorage.setItem('selectedLanguage', chosenValue);
+      updateOptionsDisplay(chosenValue);
+      applyTranslation(chosenValue);
+    });
+  });
+  
 
   // ===== Fade-in Sections =====
   const allElements = document.body.querySelectorAll('section');
