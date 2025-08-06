@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const translations = {
     en: {
-      //r
+      //traduction for home
       "nav.home": "Home",
       "nav.resume": "Resume",
       "nav.skills": "Skills",
