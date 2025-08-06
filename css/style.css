@@ -1178,7 +1178,7 @@ section {
 
 /* Contact */
 .contact {
-  background-color: var(--second-bg-color);
+  background-color: var(--bg-color);
 }
 
 .contact h2 {
@@ -1188,29 +1188,25 @@ section {
 
 .contact form {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 3rem;
   margin: 5rem 0;
-}
-
-.contact form .input-box {
-  flex: 1;
+  text-align: center;
 }
 
 .contact form .input-box input,
 .contact form textarea {
   width: 100%;
-  padding: 2rem;
-  font-size: 1.6rem;
+  padding: 2.5rem;
+  font-size: 1.8rem;
   color: var(--text-color);
-  background-color: var(--bg-color);
-  border-radius: 1rem;
+  background-color: var(--second-bg-color);
+  border-radius: 2rem;
   border: 2px solid var(--border-color);
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   resize: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  font-family: inherit;
 }
 
 .contact form .input-box input:focus,
