@@ -93,9 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
       cybersecurityDesc: "I have knowledge of fundamental cybersecurity practices to help protect websites and applications from common threats, ensuring safer user data and secure environments.",
       network: "Network Fundamentals",
       networkDesc: "I understand basic networking concepts, which helps me optimize web performance and troubleshoot connectivity issues efficiently.",
-  
       //projects
-      
+
     },
     fr: {
       //traduction for header
