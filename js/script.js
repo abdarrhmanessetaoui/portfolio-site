@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdown.style.display = 'block';
     }
   });
-  });
 
   // ===== Language Dropdown =====
   const dropdown = document.getElementById('langDropdown');
