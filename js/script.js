@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       network: "Network Fundamentals",
       networkDesc: "I understand basic networking concepts, which helps me optimize web performance and troubleshoot connectivity issues efficiently.",
   
+      
     },
     fr: {
       //traduction for header
