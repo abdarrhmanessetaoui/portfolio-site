@@ -1266,8 +1266,7 @@ section {
     flex: 1 1 25rem;
   }
   .logo img {
-    width: 10%;
-    padding-right: 10px;
+display: ;
   }
 }
 
