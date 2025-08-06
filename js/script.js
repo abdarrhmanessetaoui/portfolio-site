@@ -114,7 +114,9 @@ document.addEventListener('DOMContentLoaded', () => {
       gitCert: "شهادة Git و GitHub",
       freePlatform: "أوديمي",
       gitDesc: "أكملت دورة مجانية حول التحكم في الإصدارات باستخدام Git والتعاون عبر GitHub. تعلمت الفروع، والـ commits، وطلبات السحب، وأفضل الممارسات.",
-     
+      lifeCert: "شهادة المهارات الحياتية",
+      rahal: "ثانوية رحال الفاروق",
+      lifeDesc: "حصلت على هذه الشهادة خلال تدريبي على المهارات الحياتية، حيث تعلمت أشياء مفيدة مثل التواصل وحل المشكلات.
       experienceTitle: "الخبرة",
       freelancer: "مطور حر",
       independent: "مطور ويب مستقل",
