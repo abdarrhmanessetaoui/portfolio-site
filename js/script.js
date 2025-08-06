@@ -125,7 +125,7 @@ const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
 if (lang === 'ar') {
   aboutParagraph.style.textAlign = 'right';
   aboutParagraph.style.paddingLeft = '0';
-  aboutParagraph.style.paddingRight = '2rem';
+  aboutParagraph.style.paddingRight = '0rem';
 } else {
   aboutParagraph.style.textAlign = 'left';
   aboutParagraph.style.paddingRight = '0';
