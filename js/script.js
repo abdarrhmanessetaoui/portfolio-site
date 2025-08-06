@@ -141,7 +141,7 @@ if (lang === 'ar') {
 } else {
   aboutParagraph.style.textAlign = 'left';
   aboutParagraph.style.paddingRight = '0';
-  aboutParagraph.style.paddingLeft = '2rem';
+  aboutParagraph.style.paddingLeft = '0rem';
 }
   }
   
