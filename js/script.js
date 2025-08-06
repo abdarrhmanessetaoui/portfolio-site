@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
       my: "مؤهلاتي",
       skills: "المهارات",
       technicalSkills: "المهارات التقنية",
-      frontend: "واجهات المستخدم",
+      frontend: "	الواجهة الأمامية",
       backend: "الخلفية",
       databases: "قواعد البيانات",
       mysql: "ماي إس كيو إل",
