@@ -1351,7 +1351,7 @@ section {
     position: fixed;
     top: 2rem;
     left: 3rem;
-    height: auto;
+    height: 10px;
     width: auto;
     z-index: 1100;
   }
