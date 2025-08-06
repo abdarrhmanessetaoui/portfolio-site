@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ===== Language Dropdown =====
-
   
   const translations = {
     en: {
