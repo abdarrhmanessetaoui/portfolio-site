@@ -237,10 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    document.querySelectorAll('[data-i18n-number]').forEach(el => {
-      const raw = el.textContent.trim().replace('%', '');
-      const percent = parseFloat(raw) / 100;
-      el.textContent = formatPercent(percent, lang);
+    
   
     // ALT attributes
     document.querySelectorAll('[data-i18n-alt]').forEach(el => {
