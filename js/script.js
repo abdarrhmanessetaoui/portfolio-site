@@ -73,8 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
       frontend: "Frontend",
       backend: "Backend",
       databases: "Databases",
-      mysql: "MySQL",
-      mongodb: "MongoDB",
       tools: "Tools & Others",
       professionalSkills: "Professional Skills",
       problemSolving: "Problem Solving",
