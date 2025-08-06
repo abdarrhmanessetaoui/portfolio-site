@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hsdiploma: "Technical Baccalaureate in Electrical Sciences",
       hassan: "Hassan II Qualifying High School, Marrakech",
       hassanDesc: "High school diploma specialized in electrical sciences, building a strong foundation in mathematics and applied sciences.",
-      certificatesTitle: "Certificates",
+      certificatesTitle: "<i class='bx bxs-certification'></i>Certificates",
       gitCert: "Git & GitHub Certificate",
       freePlatform: "Udemy",
       gitDesc: "Successfully completed a free course covering version control using Git and collaboration through GitHub. Learned branching, commits, pull requests, and best practices for real-world projects.",
