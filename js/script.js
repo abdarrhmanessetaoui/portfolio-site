@@ -124,6 +124,16 @@ const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
 
 
 if (lang === 'ar') {
+  dropdown.style.textAlign = 'right';
+  dropdown.style.paddingRight = '1rem';
+  dropdown.style.paddingLeft = '0';
+} else {
+  dropdown.style.textAlign = 'left';
+  dropdown.style.paddingLeft = '1rem';
+  dropdown.style.paddingRight = '0';
+}
+
+if (lang === 'ar') {
   aboutParagraph.style.textAlign = 'right';
   aboutParagraph.style.paddingLeft = '0';
   aboutParagraph.style.paddingRight = '0rem';
