@@ -288,7 +288,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "sou9naImgAlt": "معاينة موقع سوقنا للفواكه والخضروات",
       "inDev": "قيد التطوير...",
       //contact
-      
+      contactHeadline: "تواصل معي",
+      contactName: "الاسم الكامل",
+      contactEmail: "البريد الإلكتروني",
+      phoneNumber: "رقم الهاتف",
+      subject: "الموضوع",
+      contactMessage: "رسالتك",
+      contactSubmit: "إرسال الرسالة",
     }
   };
 
