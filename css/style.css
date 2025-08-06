@@ -908,7 +908,7 @@ section {
 .lang-level {
   background-color:var(--main-color);
   color: var(--muted-color);
-  padding: 1.3rem 0.7rem;
+  padding: 1.3rem 1.7rem;
   border-radius: 999px;
   font-size: 0.85rem;
 }
