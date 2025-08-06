@@ -268,64 +268,36 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
-  // ===== Update language options visibility =====
-  function updateOptionsDisplay(selectedValue) {
-    allOptions.forEach(option => {
-      option.style.display = (option.dataset.value === selectedValue) ? 'none' : 'flex';
-    });
-  }
-
-  // ===== Apply translations =====
-  function applyTranslation(lang) {
-    const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (translations[lang] && translations[lang][key]) {
-        el.innerHTML = translations[lang][key];
-      }
-    });
-
-    const percentElements = document.querySelectorAll('[data-i18n-number]');
-    percentElements.forEach(el => {
-      const key = el.getAttribute('data-i18n-number');
-      const value = parseFloat(el.textContent.replace('%', '').trim()) / 100;
-      if (translations[lang] && translations[lang][key]) {
-        el.innerHTML = (value * 100).toFixed(0) + '%';
-      }
-    });
-
-    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
-      const key = el.getAttribute('data-i18n-alt');
-      if (translations[lang] && translations[lang][key]) {
-        el.setAttribute('alt', translations[lang][key]);
-      }
-    });
-
-    document.querySelectorAll('[data-i18n-href]').forEach(el => {
-      const key = el.getAttribute('data-i18n-href');
-      if (translations[lang] && translations[lang][key]) {
-        el.setAttribute('href', translations[lang][key]);
-      }
-    });
-
+    // Direction RTL/LTR
     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
 
-    const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
-    const flagIcons = document.querySelectorAll('.flag-icon');
+    // Styling adjustments for Arabic
+const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
+const flagIcons = document.querySelectorAll('.flag-icon');
 
-    flagIcons.forEach(icon => {
-      icon.style.marginLeft = (lang === 'ar') ? '8px' : '0';
-      icon.style.marginRight = (lang === 'ar') ? '0' : '8px';
-    });
-
-    if (aboutParagraph) {
-      aboutParagraph.style.textAlign = (lang === 'ar') ? 'right' : 'left';
-      aboutParagraph.style.paddingRight = '0';
-      aboutParagraph.style.paddingLeft = '0';
-    }
+flagIcons.forEach(icon => {
+  if (lang === 'ar') {
+    icon.style.marginLeft = '8px';  
+    icon.style.marginRight = '0';
+  } else {
+    icon.style.marginRight = '8px';
+    icon.style.marginLeft = '0';
   }
+});
 
-  // ===== Language Save and Load =====
+
+if (lang === 'ar') {
+  aboutParagraph.style.textAlign = 'right';
+  aboutParagraph.style.paddingLeft = '0';
+  aboutParagraph.style.paddingRight = '0rem';
+} else {
+  aboutParagraph.style.textAlign = 'left';
+  aboutParagraph.style.paddingRight = '0';
+  aboutParagraph.style.paddingLeft = '0rem';
+}
+  }
+  
+  
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
   const savedOption = allOptions.find(opt => opt.dataset.value === savedLang);
   if (savedOption) {
@@ -333,12 +305,12 @@ document.addEventListener('DOMContentLoaded', () => {
     updateOptionsDisplay(savedLang);
     applyTranslation(savedLang);
   }
-
+  
   selected.addEventListener('click', (e) => {
     e.stopPropagation();
     options.style.display = (options.style.display === 'block') ? 'none' : 'block';
   });
-
+  
   allOptions.forEach(option => {
     option.addEventListener('click', () => {
       selected.innerHTML = option.innerHTML;
@@ -349,6 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
       applyTranslation(chosenValue);
     });
   });
+  
 
   // ===== Fade-in Sections =====
   const allElements = document.body.querySelectorAll('section');
