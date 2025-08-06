@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===== Menu toggle =====
   const menuIcon = document.getElementById('menu-icon');
   const navbar = document.querySelector('.navbar');
+  const dropdown = document.getElementById('langDropdown');
   menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
