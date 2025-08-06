@@ -58,6 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.services": "Services",
       "nav.projects": "Projets",
       "nav.contact": "Contact"
+
+      welcome: "Salut, c'est <span>Abderrhman</span>",
+      aboutHeadline: "Je suis un <span>Développeur Web Full Stack Junior</span>",
+      aboutText: `De l'électricité au codage, j'ai toujours été curieux de savoir comment les choses fonctionnent.
+        Je crée des sites avec HTML, CSS, JavaScript, jQuery et Bootstrap.
+        Je développe des applications web avec PHP, Python, des APIs et MySQL.
+        J'apprends en permanence les frameworks comme Laravel, React.js, Next.js et Django.
+        J'adore résoudre des problèmes et créer des solutions numériques utiles.`,
+      contactMe: "Me Contacter",
+      downloadCV: "Télécharger le CV",
+      profileAlt: "Photo de profil"
     },
     ar: {
       //traduction for home
