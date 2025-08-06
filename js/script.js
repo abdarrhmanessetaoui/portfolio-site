@@ -222,6 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
       french: "الفرنسية",
       english: "الإنجليزية",
       deutsch: "الألمانية",
+      //services
+      
     }
   };
 
