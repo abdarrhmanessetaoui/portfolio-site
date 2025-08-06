@@ -198,7 +198,8 @@ document.addEventListener('DOMContentLoaded', () => {
       PCTech: " صيانة حواسيب ",
       samir: "سمّير كمبيوتر",
       samirDesc: "إصلاح الحواسيب، وتحديث النظام، وصيانة الأجهزة والبرمجيات، وتطوير المهارات التقنية.",
-      /
+      //skills
+      
     }
   };
 
