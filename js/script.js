@@ -87,7 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
       french: "French",
       english: "English",
       deutsch: "Deutsch",
-      "percentage": "{{value, number, ::percent}}"
     },
     fr: {
       //traduction for header
