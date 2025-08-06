@@ -139,8 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
       frontend: " Partie frontale",
       backend: "Partie serveur",
       databases: "Bases de données",
-      mysql: "MySQL",
-      mongodb: "MongoDB",
       tools: "Outils & autres",
       professionalSkills: "Compétences professionnelles",
       problemSolving: "Résolution de problèmes",
