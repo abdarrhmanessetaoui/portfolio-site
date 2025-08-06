@@ -231,14 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  i18next.init({
-    lng: lang,
-    resources: {
-      en: { translation: translations.en },
-      fr: { translation: translations.fr },
-      ar: { translation: translations.ar }
-    }
-  });
+
 
   function applyTranslation(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
