@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.services": "Services",
       "nav.projects": "Projects",
       "nav.contact": "Contact",
-      //traduction for 
+      //traduction for home
       welcome: "Hi, It's <span>Abderrhman</span>",
       aboutHeadline: "I'm a <span>Junior Full Stack Web Developer</span>",
       aboutText: `From electricity to coding, I've always been curious about how things work.
