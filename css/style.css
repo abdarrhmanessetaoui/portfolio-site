@@ -1352,7 +1352,7 @@ section {
     top: 2rem;
     left: 3rem;
     height: 10px;
-    width: auto;
+    width: 10px;
     z-index: 1100;
   }
 
