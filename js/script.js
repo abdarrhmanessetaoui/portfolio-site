@@ -268,53 +268,60 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
-    function updateOptionsDisplay(selectedValue) {
-      allOptions.forEach(option => {
-        option.style.display = (option.dataset.value === selectedValue) ? 'none' : 'flex';
-      });
-    }
+    // Direction RTL/LTR
+    document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+
+    // Styling adjustments for Arabic
+const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
+const flagIcons = document.querySelectorAll('.flag-icon');
+
+flagIcons.forEach(icon => {
+  if (lang === 'ar') {
+    icon.style.marginLeft = '8px';  
+    icon.style.marginRight = '0';
+  } else {
+    icon.style.marginRight = '8px';
+    icon.style.marginLeft = '0';
+  }
+});
+
+
+if (lang === 'ar') {
+  aboutParagraph.style.textAlign = 'right';
+  aboutParagraph.style.paddingLeft = '0';
+  aboutParagraph.style.paddingRight = '0rem';
+} else {
+  aboutParagraph.style.textAlign = 'left';
+  aboutParagraph.style.paddingRight = '0';
+  aboutParagraph.style.paddingLeft = '0rem';
+}
+  }
   
-    function applyTranslation(lang) {
-      const elements = document.querySelectorAll('[data-i18n]');
-      elements.forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[lang] && translations[lang][key]) {
-          el.innerHTML = translations[lang][key];
-        }
-      });
   
-      document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+  const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+  const savedOption = allOptions.find(opt => opt.dataset.value === savedLang);
+  if (savedOption) {
+    selected.innerHTML = savedOption.innerHTML;
+    updateOptionsDisplay(savedLang);
+    applyTranslation(savedLang);
+  }
   
-      const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
-      if (aboutParagraph) {
-        aboutParagraph.style.textAlign = (lang === 'ar') ? 'right' : 'left';
-      }
-    }
+  selected.addEventListener('click', (e) => {
+    e.stopPropagation();
+    options.style.display = (options.style.display === 'block') ? 'none' : 'block';
+  });
   
-    // Initial Load
-    const savedLang = localStorage.getItem('selectedLanguage') || 'en';
-    const savedOption = allOptions.find(opt => opt.dataset.value === savedLang);
-    if (savedOption) {
-      selected.innerHTML = savedOption.innerHTML;
-      updateOptionsDisplay(savedLang);
-      applyTranslation(savedLang);
-    }
-  
-    selected?.addEventListener('click', (e) => {
-      e.stopPropagation();
-      options.style.display = (options.style.display === 'block') ? 'none' : 'block';
+  allOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      selected.innerHTML = option.innerHTML;
+      options.style.display = 'none';
+      const chosenValue = option.dataset.value;
+      localStorage.setItem('selectedLanguage', chosenValue);
+      updateOptionsDisplay(chosenValue);
+      applyTranslation(chosenValue);
     });
+  });
   
-    allOptions.forEach(option => {
-      option.addEventListener('click', () => {
-        const chosenValue = option.dataset.value;
-        localStorage.setItem('selectedLanguage', chosenValue);
-        selected.innerHTML = option.innerHTML;
-        options.style.display = 'none';
-        updateOptionsDisplay(chosenValue);
-        applyTranslation(chosenValue);
-      });
-    });
 
   // ===== Fade-in Sections =====
   const allElements = document.body.querySelectorAll('section');
