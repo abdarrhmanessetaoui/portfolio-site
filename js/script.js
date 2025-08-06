@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Styling adjustments for Arabic
 const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
 
+
 if (lang === 'ar') {
   aboutParagraph.style.textAlign = 'right';
   aboutParagraph.style.paddingLeft = '0';
