@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function isVisible(element) {
     const rect = element.getBoundingClientRect();
-    return rect.top <= window.innerHeight * 0.88885 && rect.bottom >= 0;
+    return rect.top <= window.innerHeight * 0.8888885 && rect.bottom >= 0;
   }
 
   function animateOnScroll() {
