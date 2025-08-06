@@ -17,10 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ===== Language Dropdown =====
-  const dropdown = document.getElementById('langDropdown');
-  const selected = document.getElementById('selected');
-  const options = document.getElementById('langOptions');
-  const allOptions = [...options.querySelectorAll('div')];
+
   
   const translations = {
     en: {
