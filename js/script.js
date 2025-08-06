@@ -330,6 +330,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (translations[lang] && translations[lang][key]) {
         el.innerHTML = translations[lang][key];
       }
+      document.querySelectorAll('[data-i18n-value]').forEach(el => {
+        const key = el.getAttribute('data-i18n-value');
+        if (translations[lang] && translations[lang][key]) {
+          el.setAttribute('value', translations[lang][key]);
+        }
     });
 
     
