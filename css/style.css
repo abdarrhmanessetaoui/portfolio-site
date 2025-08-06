@@ -608,7 +608,30 @@ section {
 
 /* Progress Fill */
 .progress-bar div {
-[]]
+  background: linear-gradient(90deg, 
+    var(--main-color) 0%, 
+    var(--accent-color) 50%, 
+    var(--hover-color) 100%
+  );
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: var(--btn-text-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  
+  /* Smooth fill animation */
+  animation: smoothFill 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards,
+             shimmer 3s ease-in-out infinite 2.5s;
+  
+  /* Add a subtle glow effect */
+  box-shadow: 0 0 10px rgba(var(--main-color-rgb), 20.3);
 }
 
 /* Shimmer effect overlay */
