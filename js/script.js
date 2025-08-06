@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const translations = {
     en: {
+      //r
       "nav.home": "Home",
       "nav.resume": "Resume",
       "nav.skills": "Skills",
@@ -47,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.services": "Services",
       "nav.projects": "Projects",
       "nav.contact": "Contact",
-      
+
     },
     fr: {
       "nav.home": "Accueil",
