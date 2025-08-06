@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
       PCTech: "PC Technician",
       samir: "Samir Computer",
       samirDesc: "Computer repair, system maintenance and formatting; along with developing technical skills in hardware and software."
-      
+      //
     },
     fr: {
       //traduction for header
