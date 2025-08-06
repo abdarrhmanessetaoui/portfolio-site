@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Styling adjustments for Arabic
 const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
+const dropdown = document.getElementById('langDropdown');
 
 
 if (lang === 'ar') {
