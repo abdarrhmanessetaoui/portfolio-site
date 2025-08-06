@@ -126,7 +126,7 @@ const dropdown = document.getElementById('langDropdown');
 if (dropdown) {
   if (lang === 'ar') {
     dropdown.style.textAlign = 'right';
-    dropdown.style.marginRight = '33rem';
+    dropdown.style.marginRight = '2rem';
     dropdown.style.paddingLeft = '0';
   } else {
     dropdown.style.textAlign = 'left';
