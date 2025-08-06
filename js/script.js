@@ -80,6 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.contact": "اتصل"
     }
   };
+
+  function updateOptionsDisplay(selectedValue) {
+    allOptions.forEach(option => {
+      option.style.display = (option.dataset.value === selectedValue) ? 'none' : 'flex';
+    });
+  }
   
   function applyTranslation(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
