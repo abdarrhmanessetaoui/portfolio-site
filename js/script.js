@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function applyTranslation(lang) {
 
 
-    const elements = document.querySelectorAll('[data-i18n-number]');
+    const elements2 = document.querySelectorAll('[data-i18n-number]');
     elements.forEach(el => {
       const key = el.getAttribute('data-i18n-number');
       const value = parseFloat(el.textContent.replace('%', '').trim()) / 100;
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
         el.innerHTML = i18next.t(key, { value });
       }
     });
-    
+
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
       const key = el.getAttribute('data-i18n');
