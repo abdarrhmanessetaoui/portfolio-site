@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactMe: "Contact Me",
       downloadCV: "Download CV",
       profileAlt: "Profile picture",
-
+      //cv
       my: "My",
       resume: "Resume",
       educationTitle: "<i class='bx bxs-graduation'></i>Education",
