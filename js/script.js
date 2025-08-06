@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ofpptTitle: "Technicien Spécialisé en Développement Web Full-Stack",
       ofpptSchool: "OFPPT - ISTA NTIC SYBA, Marrakech",
       ofpptDesc: `À l'OFPPT, j'ai appris à créer des sites web et des applications dynamiques avec des technologies comme HTML, CSS, JavaScript et PHP.
-J'ai également travaillé avec des frameworks et outils modernes tels que Laravel, React, Node.js et Git.`,
+      J'ai également travaillé avec des frameworks et outils modernes tels que Laravel, React, Node.js et Git.`,
 
       hsdiploma: "Baccalauréat Technique en Sciences Électriques",
       hassan: "Lycée Qualifiant Hassan II, Marrakech",
