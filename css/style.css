@@ -1705,11 +1705,13 @@ section {
   html {
     font-size: 35%;
   }
+
   .btn {
     width: 100%;
     max-width: 25rem;
     text-align: center;
   }
+
   .home-content h1 {
     font-size: 3rem;
   }
