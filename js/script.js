@@ -104,6 +104,14 @@ document.addEventListener('DOMContentLoaded', () => {
       "sou9naDesc": "A fresh, fully responsive Moroccan-style online shop for fruits and vegetables. The design is clean, mobile-friendly, and highlights seasonal offers. It includes a local-market vibe with intuitive navigation and placeholder admin controls.",
       "sou9naImgAlt": "Sou9na Fruits and Vegetables Website Preview",
       "inDev": "In Development..",
+      //contact
+      contactHeadline: "Contact Me",
+      contactName: "Full Name",
+      contactEmail: "Email",
+      phoneNumber: "Phone Number",
+      subject: "Subject",
+      contactMessage: "Your Message",
+      contactSubmit: "Send Message",
 
     },
     fr: {
