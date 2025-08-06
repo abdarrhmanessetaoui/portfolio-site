@@ -242,7 +242,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    
+    const elements2 = document.querySelectorAll('[data-i18n-number]');
+    elements2.forEach(el => {
+      const key = el.getAttribute('data-i18n-number');
+      const value = parseFloat(el.textContent.replace('%', '').trim()) / 100;
+      if (translations[lang] && translations[lang][key]) {
+        el.innerHTML = i18next.t(key, { value });
+      }
+    });
+
   
     // ALT attributes
     document.querySelectorAll('[data-i18n-alt]').forEach(el => {
