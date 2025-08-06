@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+    if (window.innerWidth <= 768) {
     if (navbar.classList.contains('active')) {
       dropdown.style.display = 'none';
     } else {
