@@ -128,7 +128,7 @@ flagIcons.forEach(icon => {
     icon.style.marginLeft = '8px';  
     icon.style.marginRight = '0';
   } else {
-    icon.style.marginRight = '8px';  // المسافة تكون على اليمين لأن النص على اليسار
+    icon.style.marginRight = '8px';
     icon.style.marginLeft = '0';
   }
 });
