@@ -333,7 +333,7 @@ document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
 });
 
 // Translate input `value` attributes (like buttons)
-document.querySelectorAll('[data-i18n-value]').forEach(el => {
+    document.querySelectorAll('[data-i18n-value]').forEach(el => {
   const key = el.getAttribute('data-i18n-value');
   if (translations[lang] && translations[lang][key]) {
     el.setAttribute('value', translations[lang][key]);
