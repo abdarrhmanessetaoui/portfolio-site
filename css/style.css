@@ -1267,7 +1267,7 @@ section {
   }
   .logo img {
     width: 10%;
-    pad
+    padding-right: 10px;
   }
 }
 
