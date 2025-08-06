@@ -238,6 +238,14 @@ document.addEventListener('DOMContentLoaded', () => {
   
     return str.replace(/[\u0660-\u0669]/g, d => englishDigits[arabicDigits.indexOf(d)]).replace('\u00A0٪', '%');
   }
+  function convertNumbersByLang(str, lang) {
+    if (lang === 'ar') {
+      return toArabicNumbers(str);
+    } else {
+      return fromArabicNumbers(str);
+    }
+  }
+  
   
 
   function applyTranslation(lang) {
