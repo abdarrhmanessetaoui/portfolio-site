@@ -133,7 +133,26 @@ document.addEventListener('DOMContentLoaded', () => {
       samir: "Samir Informatique",
       samirDesc: "Réparation d'ordinateurs, maintenance système et formatage ; développement des compétences techniques en matériel et logiciel.",
       //skills
-      
+      my: "Mon",
+      skills: "Compétences",
+      technicalSkills: "Compétences techniques",
+      frontend: "Frontend",
+      backend: "Backend",
+      databases: "Bases de données",
+      mysql: "MySQL",
+      mongodb: "MongoDB",
+      tools: "Outils & autres",
+      professionalSkills: "Compétences professionnelles",
+      problemSolving: "Résolution de problèmes",
+      teamwork: "Travail en équipe",
+      communication: "Communication",
+      planning: "Planification",
+      adaptability: "Adaptabilité",
+      languageSkills: "Compétences linguistiques",
+      arabic: "Arabe",
+      french: "Français",
+      english: "Anglais",
+      deutsch: "Allemand"
        },
     ar: {
       //traduction for header
