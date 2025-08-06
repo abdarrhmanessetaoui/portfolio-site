@@ -1266,8 +1266,9 @@ section {
     flex: 1 1 25rem;
   }
   .logo {
-    width: 10px;
-    height: 10px;
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 800;
   }
 }
 
