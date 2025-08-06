@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
       lifeCert: "Certificat de Compétences de Vie",
       rahal: "Lycée Rahal El Farouq",
       lifeDesc: "J'ai obtenu ce certificat lors de ma formation aux compétences de vie, où j'ai appris des choses utiles comme la communication et la résolution de problèmes.",
-      experienceTitle: "Expérience",
+      experienceTitle: "<i class='bx bxs-briefcase'></i>Expérience",
       freelancer: "Freelance en informatique",
       independent: "Développeur Web Indépendant",
       independentDesc: "Création et mise à jour de pages web en HTML/CSS, développement de solutions personnalisées pour des clients locaux et internationaux.",
