@@ -127,63 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  const translations = {
-    en: {
-      welcome: "Welcome",
-      intro: "This is a sample website with language switch."
-    },
-    fr: {
-      welcome: "Bienvenue",
-      intro: "Ceci est un site d'exemple avec changement de langue."
-    },
-    ar: {
-      welcome: "مرحبا",
-      intro: "هذا موقع تجريبي يدعم تغيير اللغة."
-    }
-  };
-
-  function setLanguage(lang) {
-    const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (translations[lang] && translations[lang][key]) {
-        el.textContent = translations[lang][key];
-      }
-    });
-  }
-
-  // Event listener for dropdown language options
-  const langOptions = document.querySelectorAll('#langOptions div');
-  langOptions.forEach(option => {
-    option.addEventListener('click', () => {
-      const selectedLang = option.getAttribute('data-value');
-      setLanguage(selectedLang);
-
-      // Change dropdown selected value
-      const selected = document.getElementById('selected');
-      selected.innerHTML = option.innerHTML;
-
-      // Optional: Hide the dropdown list after selection
-      document.getElementById('langOptions').style.display = 'none';
-    });
-  });
-
-  // Toggle dropdown list on click
-  document.getElementById('selected').addEventListener('click', () => {
-    const langOptions = document.getElementById('langOptions');
-    langOptions.style.display = langOptions.style.display === 'block' ? 'none' : 'block';
-  });
-
-  // Default language
-  setLanguage('en');
-
-
-
-
-
-
-
-
 
 
 
