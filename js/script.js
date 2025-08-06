@@ -228,10 +228,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-
   function toArabicNumbers(str) {
     const arabicDigits = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
-    return str.replace(/\d/g, d => arabicDigits[d]);
+    // تحويل الأرقام
+    let converted = str.replace(/\d/g, d => arabicDigits[d]);
+    // نضيف مسافة غير قابلة للكسر قبل علامة %
+    converted = converted.replace('%', '\u00A0٪'); 
+    return converted;
   }
 
   function applyTranslation(lang) {
