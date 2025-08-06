@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       french: "Français",
       english: "Anglais",
       deutsch: "Allemand",
+      //
        },
     ar: {
       //traduction for header
