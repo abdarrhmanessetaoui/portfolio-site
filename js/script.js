@@ -329,7 +329,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const key = el.getAttribute('data-i18n');
       if (translations[lang] && translations[lang][key]) {
         el.innerHTML = translations[lang][key];
-        
       }
     });
 
