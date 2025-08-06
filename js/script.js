@@ -41,8 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         I love solving problems and making useful digital solutions.`,
       contactMe: "Contact Me",
       downloadCV: "Download CV",
-      profileAlt: "Profile picture",
-
+      profileAlt: "Profile picture"
     },
     fr: {
       //traduction for header
