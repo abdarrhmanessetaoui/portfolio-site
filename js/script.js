@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hsdiploma: "البكالوريا التقنية في العلوم الكهربائية",
       hassan: "ثانوية الحسن الثاني التأهيلية، مراكش",
       hassanDesc: "شهادة البكالوريا تخصص العلوم الكهربائية، مع أساس قوي في الرياضيات والعلوم التطبيقية.",
-      certificatesTitle: "الشهادات",
+      certificatesTitle: "<i class='bx bxs-certification'></i>الشهادات",
       gitCert: "شهادة Git و GitHub",
       freePlatform: "أوديمي",
       gitDesc: "أكملت دورة مجانية حول التحكم في الإصدارات باستخدام Git والتعاون عبر GitHub. تعلمت الفروع، والـ commits، وطلبات السحب، وأفضل الممارسات.",
