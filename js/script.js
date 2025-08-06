@@ -228,14 +228,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  function toArabicNumbers(str, lang = 'ar') {
-    if (lang !== 'ar') return str; // ما تبدل والو إلا ماشي عربية
-  
+  function toArabicNumbers(str) {
     const arabicDigits = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
-    let converted = str.replace(/\d/g, d => arabicDigits[d]);
-    converted = converted.replace('%', '\u00A0٪'); 
-    return converted;
+    return str.replace(/\d/g, d => arabicDigits[d]).replace('%', '\u00A0٪');
   }
+  
+  
 
   function applyTranslation(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
