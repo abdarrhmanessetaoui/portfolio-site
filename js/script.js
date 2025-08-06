@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.contact": "Contact"
     },
     ar: {
+      //traduction for home
       "nav.home": "الرئيسية",
       "nav.resume": "السيرة الذاتية",
       "nav.skills": "المهارات",
