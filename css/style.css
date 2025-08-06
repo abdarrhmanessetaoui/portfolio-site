@@ -1265,7 +1265,7 @@ section {
   .skill-box {
     flex: 1 1 25rem;
   }
-  .logo {
+  .logo img {
     margin-left: -11px;
   }
 }
