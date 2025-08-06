@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
         J'adore résoudre des problèmes et créer des solutions numériques utiles.`,
       contactMe: "Me Contacter",
       downloadCV: "Télécharger le CV",
-      profileAlt: "Photo de profil"
+      profileAlt: "Photo de profil",
+      //
     },
     ar: {
       //traduction for header
