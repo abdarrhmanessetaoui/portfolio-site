@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ===== Language Dropdown =====
-  
+  i18next.loadLanguages(lang, () => {
   const translations = {
     en: {
       //traduction for header
