@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('click', () => {
     options.style.display = 'none';
-    dropdown.style.display = 'flex';
   });
 
   // ===== Fade-in Sections =====
