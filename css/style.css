@@ -125,6 +125,7 @@ body[data-theme="dark"] {
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
+  border-bottom: 1px solid var(--border-color);
 }
 
 #menu-icon {
