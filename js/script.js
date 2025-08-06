@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
       lifeCert: "شهادة المهارات الحياتية",
       rahal: "ثانوية رحال الفاروق",
       lifeDesc: "حصلت على هذه الشهادة خلال تدريبي على المهارات الحياتية، حيث تعلمت أشياء مفيدة مثل التواصل وحل المشكلات.",
-      experienceTitle: "الخبرة",
+      experienceTitle: "<i class='bx bxs-briefcase'></i>الخبرة",
       freelancer: "مطور حر",
       independent: "مطور ويب مستقل",
       independentDesc: "إنشاء وتحديث صفحات الويب باستخدام HTML/CSS، وتطوير حلول ويب مخصصة للعملاء المحليين والدوليين.",
