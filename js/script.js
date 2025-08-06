@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         el.innerHTML = translations[lang][key];
       }
     });
+    document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
   }
   
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
