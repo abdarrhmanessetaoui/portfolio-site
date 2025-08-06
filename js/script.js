@@ -362,17 +362,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
     
-  // placeholder
-  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-    const key = el.getAttribute("data-i18n-placeholder");
-    if (dict[key]) el.placeholder = dict[key];
-  });
-
-  // value (button)
-  document.querySelectorAll("[data-i18n-value]").forEach(el => {
-    const key = el.getAttribute("data-i18n-value");
-    if (dict[key]) el.value = dict[key];
-  });
 
     const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
     const flagIcons = document.querySelectorAll('.flag-icon');
