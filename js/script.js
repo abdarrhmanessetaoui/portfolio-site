@@ -17,42 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ===== Language Dropdown =====
-  const dropdown = document.getElementById('langDropdown');
-  const selected = document.getElementById('selected');
-  const options = document.getElementById('langOptions');
-  const allOptions = [...options.querySelectorAll('div')];
-
-  function updateOptionsDisplay(selectedValue) {
-    allOptions.forEach(option => {
-      option.style.display = (option.dataset.value === selectedValue) ? 'none' : 'flex';
-    });
-  }
-
-  const savedLang = localStorage.getItem('selectedLanguage') || 'en';
-  const savedOption = allOptions.find(opt => opt.dataset.value === savedLang);
-  if (savedOption) {
-    selected.innerHTML = savedOption.innerHTML;
-    updateOptionsDisplay(savedLang);
-  }
-
-  selected.addEventListener('click', (e) => {
-    e.stopPropagation();
-    options.style.display = (options.style.display === 'block') ? 'none' : 'block';
-  });
-
-  allOptions.forEach(option => {
-    option.addEventListener('click', () => {
-      selected.innerHTML = option.innerHTML;
-      options.style.display = 'none';
-      const chosenValue = option.dataset.value;
-      localStorage.setItem('selectedLanguage', chosenValue);
-      updateOptionsDisplay(chosenValue);
-    });
-  });
-
-  document.addEventListener('click', () => {
-    options.style.display = 'none';
-  });
+ 
 
   // ===== Fade-in Sections =====
   const allElements = document.body.querySelectorAll('section');
