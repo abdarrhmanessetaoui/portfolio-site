@@ -118,6 +118,19 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Direction RTL/LTR
     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+
+    // Styling adjustments for Arabic
+const aboutParagraph = document.querySelector('[data-i18n="aboutText"]');
+
+if (lang === 'ar') {
+  aboutParagraph.style.textAlign = 'right';
+  aboutParagraph.style.paddingLeft = '0';
+  aboutParagraph.style.paddingRight = '2rem';
+} else {
+  aboutParagraph.style.textAlign = 'left';
+  aboutParagraph.style.paddingRight = '0';
+  aboutParagraph.style.paddingLeft = '2rem';
+}
   }
   
   
