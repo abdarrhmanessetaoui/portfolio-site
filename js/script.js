@@ -333,17 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-      // Traduction des placeholders (input / textarea)
-  const placeholders = document.querySelectorAll('[data-i18n]');
-  placeholders.forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (translations[lang] && translations[lang][key]) {
-      if (el.placeholder !== undefined) {
-        el.placeholder = translations[lang][key];
-      }
-    }
-  });
-
+    
 
     const elements2 = document.querySelectorAll('[data-i18n-number]');
     elements2.forEach(el => {
