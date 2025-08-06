@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
       freelancer: "Freelance en informatique",
       independent: "Développeur Web Indépendant",
       independentDesc: "Création et mise à jour de pages web en HTML/CSS, développement de solutions personnalisées pour des clients locaux et internationaux.",
-      PCTech: "Technicien Mobile",
+      PCTech: "Technicien PC",
       samir: "Samir Informatique",
       samirDesc: "Réparation d'ordinateurs, maintenance système et formatage ; développement des compétences techniques en matériel et logiciel."
        },
