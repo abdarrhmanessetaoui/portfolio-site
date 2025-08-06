@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
       //cv
       my: "Mon",
       resume: "CV",
-      educationTitle: "Éducation",
+      educationTitle: "<i class='bx bxs-graduation'></i>Éducation",
       ofpptTitle: "Technicien Spécialisé en Développement Web Full-Stack",
       ofpptSchool: "OFPPT - ISTA NTIC SYBA, Marrakech",
       ofpptDesc: `À l'OFPPT, j'ai appris à créer des sites web et des applications dynamiques avec des technologies comme HTML, CSS, JavaScript et PHP.
