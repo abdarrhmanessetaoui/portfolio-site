@@ -316,10 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Close options menu on click outside
-  document.addEventListener('click', () => {
-    options.style.display = 'none';
-  });
+
 
   // ===== Fade-in Sections =====
   const allElements = document.body.querySelectorAll('section');
