@@ -41,7 +41,32 @@ document.addEventListener('DOMContentLoaded', () => {
         I love solving problems and making useful digital solutions.`,
       contactMe: "Contact Me",
       downloadCV: "Download CV",
-      profileAlt: "Profile picture"
+      profileAlt: "Profile picture",
+
+      my: "My",
+      resume: "Resume",
+      educationTitle: "Education",
+      ofpptTitle: "Technician Specialized in Full-Stack Web Development",
+      ofpptSchool: "OFPPT - ISTA NTIC SYBA, Marrakech",
+      ofpptDesc: "At OFPPT, I learned how to build dynamic websites and applications using technologies like HTML, CSS, JavaScript, and PHP, and I also worked with modern frameworks and tools such as Laravel, React, Node.js, and Git.",
+      hsdiploma: "Technical Baccalaureate in Electrical Sciences",
+      hassan: "Hassan II Qualifying High School, Marrakech",
+      hassanDesc: "High school diploma specialized in electrical sciences, building a strong foundation in mathematics and applied sciences.",
+      certificatesTitle: "Certificates",
+      gitCert: "Git & GitHub Certificate",
+      freePlatform: "Udemy",
+      gitDesc: "Successfully completed a free course covering version control using Git and collaboration through GitHub. Learned branching, commits, pull requests, and best practices for real-world projects.",
+      lifeCert: "Life Skills Certificate",
+      rahal: "Rahal El Farouq High School",
+      lifeDesc: "I earned this certificate during my life skills training, where I learned useful things like communication and problem-solving.",
+      experienceTitle: "Experience",
+      freelancer: "IT Freelancer",
+      independent: "Independent Web Developer",
+      independentDesc: "Creation and updating of web pages using HTML/CSS, developing custom web solutions for local and international clients.",
+      mobileTech: "Mobile Technician",
+      samir: "Samir Mobile",
+      samirDesc: "Mobile phone repair, formatting and system maintenance, developing technical skills in hardware and software."
+  
     },
     fr: {
       //traduction for header
