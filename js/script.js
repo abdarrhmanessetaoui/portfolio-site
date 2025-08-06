@@ -25,14 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const translations = {
     en: {
       //traduction for header
-      "nav.home": "Home",
-      "nav.resume": "Resume",
-      "nav.skills": "Skills",
-      "nav.services": "Services",
-      "nav.projects": "Projects",
-      "nav.contact": "Contact",
-      //traduction for home
-      welcome: "Hi, It's Abderrhman",
+      welcome: "Hi, It's <span>Abderrhman</span>",
       aboutHeadline: "I'm a <span>Junior Full Stack Web Developer</span>",
       aboutText: `From electricity to coding, I've always been curious about how things work.
         I build websites with HTML, CSS, JavaScript, jQuery, and Bootstrap.
