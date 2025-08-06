@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       profileAlt: "Photo de profil"
     },
     ar: {
-      //traduction for home
+      //traduction for hea
       "nav.home": "الرئيسية",
       "nav.resume": "السيرة الذاتية",
       "nav.skills": "المهارات",
