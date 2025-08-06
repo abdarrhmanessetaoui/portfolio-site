@@ -85,7 +85,15 @@ document.addEventListener('DOMContentLoaded', () => {
       french: "French",
       english: "English",
       deutsch: "Deutsch",
-      
+      //services
+      servicesHeadline: "Our <span>Services</span>",
+      webDev: "Web Development",
+      webDevDesc: "I create modern and responsive websites and web applications using JavaScript, PHP, Laravel, React, and Node.js. My focus is on clean code, simple design, and great user experience.",
+      cybersecurity: "Cybersecurity Basics",
+      cybersecurityDesc: "I have knowledge of fundamental cybersecurity practices to help protect websites and applications from common threats, ensuring safer user data and secure environments.",
+      network: "Network Fundamentals",
+      networkDesc: "I understand basic networking concepts, which helps me optimize web performance and troubleshoot connectivity issues efficiently.",
+  
     },
     fr: {
       //traduction for header
