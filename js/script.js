@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.projects": "المشاريع",
       "nav.contact": "اتصل",
       //traduction for home
-      welcome: "مرحبًا، أنا <span>عبد الرحمن</span>",
+      welcome: "مرحبًا، أنا <span>عبد الرحمان</span>",
       aboutHeadline: "أنا <span>مطور ويب متكامل مبتدئ</span>",
       aboutText: `من الكهرباء إلى البرمجة، لطالما كنت فضوليًا لمعرفة كيفية عمل الأشياء.
         أبني مواقع باستخدام HTML، CSS، JavaScript، jQuery، وBootstrap.
