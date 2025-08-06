@@ -127,9 +127,6 @@ flagIcons.forEach(icon => {
   if (lang === 'ar') {
     icon.style.marginLeft = '8px';  
     icon.style.marginRight = '0';
-  } else {
-    icon.style.marginRight = '8px';
-    icon.style.marginLeft = '0';
   }
 });
 
