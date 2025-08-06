@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-
+    
 
     document.querySelectorAll('[data-i18n-alt]').forEach(el => {
       const key = el.getAttribute('data-i18n-alt');
