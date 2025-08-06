@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       french: "French",
       english: "English",
       deutsch: "Deutsch",
+      
     },
     fr: {
       //traduction for header
