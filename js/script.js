@@ -242,16 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    const elements2 = document.querySelectorAll('[data-i18n-number]');
-    elements2.forEach(el => {
-      const key = el.getAttribute('data-i18n-number');
-      const raw = el.textContent.replace('%', '').trim();
-      const value = parseFloat(raw);
-    
-      if (translations[lang] && translations[lang][key]) {
-        el.innerHTML = i18next.t(key, { value: value });
-      }
-    });
+
 
     document.querySelectorAll('[data-i18n-alt]').forEach(el => {
       const key = el.getAttribute('data-i18n-alt');
