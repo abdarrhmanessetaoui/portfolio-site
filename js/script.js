@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "webDev": "Développement Web",
       "webDevDesc": "Je crée des sites web et des applications web modernes et responsives en utilisant JavaScript, PHP, Laravel, React et Node.js. Je me concentre sur un code propre, un design simple et une excellente expérience utilisateur.",
       "cybersecurity": "Notions de Cybersécurité",
-      "cybersecurityDesc": "J’ai des connaissances fondamentales en cybersécurité pour aider à protéger les sites et les applications contre les menaces courantes, assurant la sécurité des données utilisateurs.",
+      "cybersecurityDesc": "J'ai des connaissances fondamentales en cybersécurité pour aider à protéger les sites et les applications contre les menaces courantes, assurant la sécurité des données utilisateurs.",
       "network": "Bases des Réseaux",
       "networkDesc": "Je comprends les concepts fondamentaux des réseaux, ce qui m’aide à optimiser les performances web et à résoudre efficacement les problèmes de connectivité.",
     
