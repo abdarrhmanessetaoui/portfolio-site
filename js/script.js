@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-    dropdown
+    dropdown.style
   });
 
   // ===== Language Dropdown =====
