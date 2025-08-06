@@ -80,7 +80,7 @@ body[data-theme="dark"] {
   border: none;
   border-radius: 50%;
   width: 3.5rem;
-  height: 3.5rem;
+  height: 4rem;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 999;
