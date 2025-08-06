@@ -1321,7 +1321,7 @@ section {
   }
 
   .navbar a:hover {
-    color: var(--a);
+    color: var(--text-color);
     border: none;
   }
 
