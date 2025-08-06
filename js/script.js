@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
       independentDesc: "Creation and updating of web pages using HTML/CSS, developing custom web solutions for local and international clients.",
       PCTech: "PC Technician",
       samir: "Samir Computer",
-      samirDesc: "Computer repair, system maintenance and formatting; along with developing technical skills in hardware and software."
+      samirDesc: "Computer repair, system maintenance and formatting; along with developing technical skills in hardware and software.",
       //skills
       my: "My",
       skills: "Skills",
