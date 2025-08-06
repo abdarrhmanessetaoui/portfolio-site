@@ -24,8 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const translations = {
     en: {
-      welcome: "Welcome",
-      intro: "This is a sample website with language switch."
+      "nav.home": "Home",
+      "nav.resume": "Resume",
+      "nav.skills": "Skills",
+      "nav.services": "Services",
+      "nav.projects": "Projects",
+      "nav.contact": "Contact"
     },
     fr: {
       welcome: "Bienvenue",
