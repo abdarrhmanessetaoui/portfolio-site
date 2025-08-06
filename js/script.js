@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const elements2 = document.querySelectorAll('[data-i18n-number]');
     elements2.forEach(el => {
       if (lang === 'ar') {
-        el.style.marginRight = '36px';
+        el.style.marginRight = '0';
         el.style.marginLeft = '53px';
       } else {
         el.style.marginLeft = '6px';
