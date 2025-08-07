@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactName: "الاسم الكامل",
       contactEmail: "البريد الإلكتروني",
       phoneNumber: "رقم الهاتف",
-      subject: "الموضوع",
+      contactSubject: "الموضوع",
       contactMessage: "رسالتك",
       contactSubmit: "أرسل الرسالة",
     }
