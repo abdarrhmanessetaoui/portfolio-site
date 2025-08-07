@@ -1516,7 +1516,7 @@ section {
 
   .pro-circle {
     display: flex;
-    flex-direction: column;
+    flex-direction: auto;
     align-items: center;
     width: auto;
   }
