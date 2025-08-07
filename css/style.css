@@ -1316,12 +1316,12 @@ section {
   }
 
   .projects-box {
-    grid-template-columns: repeat(auto-fit, minmax(55rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
     gap: 2rem;
   }
 
   .project-card {
-    min-height: 80rem;
+    min-height: 40rem;
   }
 
   .project-card img {
