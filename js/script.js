@@ -572,7 +572,7 @@ Phone: ${phone}
 Subject: ${subject}
 Message: ${message}`;
 
-  const whatsappNumber = '212776429048'; // بدلها برقمك الصحيح
+  const whatsappNumber = '212776429048';
 
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 
