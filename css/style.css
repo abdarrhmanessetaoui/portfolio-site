@@ -1827,14 +1827,12 @@ section {
   * {
     all: unset !important;
     all: revert !important;
-    
-    /* ضبط النص */
+
     color: black !important;
     background: transparent !important;
     box-shadow: none !important;
     text-shadow: none !important;
 
-    /* إزالة الحركات */
     animation: none !important;
     transition: none !important;
   }
