@@ -570,7 +570,6 @@ Message: ${message}`;
 
   const whatsappNumber = '212776429048'; // بدلها برقمك الصحيح
 
-  // رابط واتساب مع نص مشفر
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 
 
