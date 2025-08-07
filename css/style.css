@@ -1507,7 +1507,7 @@ section {
     gap: 1.5rem;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: auto;
     margin-top: 7%;
     max-width: auto;
     margin-left: auto;
