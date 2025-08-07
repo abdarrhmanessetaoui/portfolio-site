@@ -566,8 +566,7 @@ Here are my details:
 Name: ${name}
 Email: ${email}
 Phone: ${phone}
-Subject: ${subject}
-Message: ${message}`;
+Subject: ${subject}`;
 
   const whatsappNumber = '212776429048';
 
