@@ -1,16 +1,40 @@
 <?php
-$file = 'contacts.json';
-$data = [
-    'name' => $_POST['name'] ?? '',
-    'email' => $_POST['email'] ?? '',
-    'phone' => $_POST['phone'] ?? '',
-    'subject' => $_POST['subject'] ?? '',
-    'message' => $_POST['message'] ?? '',
+header('Content-Type: application/json');
+
+$dataFile = 'contacts.json';
+
+$name = trim($_POST['name'] ?? '');
+$email = trim($_POST['email'] ?? '');
+$phone = trim($_POST['phone'] ?? '');
+$subject = trim($_POST['subject'] ?? '');
+$message = trim($_POST['message'] ?? '');
+
+if (!$name || !$email || !$message) {
+    echo json_encode(['success' => false, 'error' => 'Please fill required fields']);
+    exit;
+}
+
+$contact = [
+    'name' => $name,
+    'email' => $email,
+    'phone' => $phone,
+    'subject' => $subject,
+    'message' => $message,
     'date' => date('Y-m-d H:i:s')
 ];
-$contacts = file_exists($file) ? json_decode(file_get_contents($file), true) : [];
-if (!is_array($contacts)) $contacts = [];
-$contacts[] = $data;
-file_put_contents($file, json_encode($contacts, JSON_PRETTY_PRINT));
-echo "Message saved! Thank you for contacting.";
-?>
+
+if (file_exists($dataFile)) {
+    $json = file_get_contents($dataFile);
+    $contacts = json_decode($json, true);
+    if (!is_array($contacts)) $contacts = [];
+} else {
+    $contacts = [];
+}
+
+$contacts[] = $contact;
+
+if (file_put_contents($dataFile, json_encode($contacts, JSON_PRETTY_PRINT))) {
+    echo json_encode(['success' => true, 'message' => 'Message sent successfully']);
+} else {
+    echo json_encode(['success' => false, 'error' => 'Failed to save data']);
+}
