@@ -303,6 +303,9 @@ document.addEventListener('DOMContentLoaded', () => {
       "sou9naDesc": "متجر إلكتروني مغربي حديث ومتجاوب مخصص للفواكه والخضروات. التصميم بسيط ومتوافق مع الهواتف، ويبرز العروض الموسمية. يحتوي على أجواء السوق المحلي مع تنقل سهل ووظائف إدارية تجريبية.",
       "sou9naImgAlt": "معاينة موقع سوقنا للفواكه والخضروات",
       "inDev": "قيد التطوير...",
+      currencyConverterTitle: "Curreny-Converter-App",
+      currencyConverterDesc: "A fast and efficient currency converter app that lets you convert between 150+ global currencies instantly. Features real-time exchange rates, dark mode, and a clean, responsive design.",
+      currencyConverterImgAlt: "Currency Converter App Preview",
       //contact
       contactHeadline: "اتصل بي",
       contactName: "الاسم الكامل",
