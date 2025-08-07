@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactMessage: "رسالتك",
       contactSubmit: "أرسل الرسالة",
       //footer
-      "faq": "الأسئلة الشائعة",
+      "faq": "الرئيسية",
       "nav.resume": "السيرة الذاتية",
       "nav.skills": "المهارات",
       "nav.services": "الخدمات",
