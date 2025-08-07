@@ -1859,7 +1859,17 @@ textarea:focus,
 }
 
 /* High contrast mode support */
-
+@media (prefers-contrast: high) {
+  :root {
+    --border-color: #000000;
+    --muted-color: #333333;
+  }
+  
+  body[data-theme="dark"] {
+    --border-color: #ffffff;
+    --muted-color: #cccccc;
+  }
+}
 
 /* Print styles */
 @media print {
