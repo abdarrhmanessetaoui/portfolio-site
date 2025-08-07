@@ -1157,7 +1157,7 @@ section {
 }
 
 .alert.success {
-  background-color: #10b981;  /* أخضر */
+  background-color: #10b981;
   color: white;
   box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
 }
