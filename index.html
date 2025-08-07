@@ -540,6 +540,19 @@
     <h2 class="heading" data-i18n="contactHeadline"> 
       <span>Contact Me</span>
     </h2>
+
+    <div id="alert-box" class="alert hidden"></div>
+
+<form id="contact-form" action="#">
+  <!-- حقول الفورم ديالك -->
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="phone" placeholder="Phone Number">
+  <input type="text" name="subject" placeholder="Subject">
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <input type="submit" class="btn" value="Send Message">
+</form>
+
   
     <form action="php/contact.php" method="POST">
   
