@@ -568,14 +568,16 @@ Email: ${email}
 Phone: ${phone}`;
 
   const whatsappNumber = '212776429048';
-
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 
-  // Alert before redirection
-  alert("You will now be redirected to WhatsApp to send your message.");
+  // Show alert before redirecting
+  alert("Thank you! You will now be redirected to WhatsApp to send your message.");
 
   // Open WhatsApp
   window.open(url, '_blank');
+
+  // Reset the form after sending
+  form.reset();
 });
 
 
