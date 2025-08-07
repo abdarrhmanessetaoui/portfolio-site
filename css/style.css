@@ -604,7 +604,7 @@ section {
   position: relative;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
   transition-delay: 9s;
-  transition: all  4.81s ease;
+  transition: all  0.81s ease;
 }
 
 /* Progress Fill */
