@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "network": "Bases des Réseaux",
       "networkDesc": "Je comprends les concepts fondamentaux des réseaux, ce qui m'aide à optimiser les performances web et à résoudre efficacement les problèmes de connectivité.",
       //projects
-      "projectsHeadline": "Projets",
+      "projectsHeadline": "<Projets",
       "portfolio": "Site Portfolio",
       "portfolioDesc": "J'ai créé ce portfolio personnel de zéro avec HTML, CSS et JavaScript. Il met en valeur mes compétences, présente certains de mes projets, et offre un aperçu clair de mon parcours. Le design est épuré, responsive, et facile à consulter sur tous les appareils.",
       "codeProject": "Voir le Code Source",
