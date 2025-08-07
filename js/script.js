@@ -565,8 +565,7 @@ form.addEventListener('submit', function(event) {
 Here are my details:
 Name: ${name}
 Email: ${email}
-Phone: ${phone}
-Subject: ${subject}`;
+Phone: ${phone}`;
 
   const whatsappNumber = '212776429048';
 
