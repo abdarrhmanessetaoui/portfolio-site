@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
       el.setAttribute('placeholder', translations[lang][key]);
     }
   });
-//
+  
   const logoImg = document.querySelector('.logo img');
   if (lang === 'ar') {
     logoImg.src = 'img/logoarb.png';
