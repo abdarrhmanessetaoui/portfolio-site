@@ -1504,7 +1504,7 @@ section {
   }
 
   .pro-skills-grid {
-    gap: 1.5rem;
+    gap: auto;
     flex-direction: column;
     align-items: center;
     gap: auto;
