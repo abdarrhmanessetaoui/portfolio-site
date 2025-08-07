@@ -1849,6 +1849,14 @@ section {
 }
 
 /* Focus styles for accessibility */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+.dropdown-btn:focus {
+  outline: 2px solid var(--main-color);
+  outline-offset: 2px;
+}
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
