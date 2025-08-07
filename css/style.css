@@ -1180,9 +1180,7 @@ section {
   .skill-box {
     flex: 1 1 25rem;
   }
-  .logo img {
-    display: none;
-  }
+
 }
 
 @media (max-width: 992px) {
