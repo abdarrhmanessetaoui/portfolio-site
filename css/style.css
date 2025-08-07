@@ -136,7 +136,7 @@ body[data-theme="dark"] {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 22rem;
   color: var(--text-color);
   font-weight: 800;
   cursor: pointer;
