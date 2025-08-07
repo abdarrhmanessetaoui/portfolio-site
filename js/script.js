@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactHeadline: "Me Contacter",
       contactName: "Nom Complet",
       contactEmail: "Email",
-      phoneNumber: "Numéro de Téléphone",
+      contactPhone: "Numéro de Téléphone",
       subject: "Sujet",
       contactMessage: "Votre Message",
       contactSubmit: "Envoyer le Message",
