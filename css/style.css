@@ -1824,7 +1824,8 @@ section {
 }
 
 @media print {
-*{
-  display: block;
-}
+  * {
+    all: unset !important;
+    all: revert !important;
+  }
 }
