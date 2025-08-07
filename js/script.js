@@ -119,8 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.services": "Services",
       "nav.projects": "Projects",
       "nav.contact": "Contact",
-      "footer": "&copy; <span data-i18n-number>2025</span> Abderrhman Settaoui. All rights reserved."
-   
+      "footer": "&copy; <span data-i18n-number>2025</span> Abderrhman Settaoui. All rights reserved.".
     },
     fr: {
       //traduction for header
