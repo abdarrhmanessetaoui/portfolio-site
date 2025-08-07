@@ -68,6 +68,34 @@ $dataArray[] = $entry;
 
 $finalJson = json_encode($dataArray, JSON_PRETTY_PRINT);
 $saveResult = file_put_contents($dataFile, $finalJson);
+if ($saveResult !== false) {
+
+    // 1. عيّن الإيميل لي بغيت توصلك عليه (بدّل هاد النص)
+    $to = "your-email@example.com";
+
+    // 2. موضوع الإيميل
+    $email_subject = "New Contact Message from " . $name;
+
+    // 3. نص الإيميل (تقدر تزيد أو تنقص منو)
+    $email_body = "You received a new message:\n\n";
+    $email_body .= "Name: " . $name . "\n";
+    $email_body .= "Email: " . $email . "\n";
+    $email_body .= "Phone: " . $phone . "\n";
+    $email_body .= "Subject: " . $subject . "\n";
+    $email_body .= "Message:\n" . $message . "\n";
+
+    // 4. إعدادات الهيدر للإيميل
+    $headers = "From: " . $email . "\r\n";
+    $headers .= "Reply-To: " . $email . "\r\n";
+
+    // 5. إرسال الإيميل
+    mail($to, $email_subject, $email_body, $headers);
+
+    // 6. رجّع نجاح الاستجابة
+    echo json_encode(['success' => true, 'message' => "Message sent successfully!"]);
+} else {
+    echo json_encode(['success' => false, 'error' => "Failed to save your message."]);
+}
 
 
 if ($saveResult !== false) {
