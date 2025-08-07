@@ -2,10 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
       // نجيبو اللغة الحالية من html tag
       var currentLang = document.documentElement.lang || "en";
 
-      // نجيبو الإليمنت ديال الصورة
       var logoImg = document.querySelector('.logo img');
   
-      // نبدلو الصورة إلا كانت اللغة عربية
       if (currentLang === "ar") {
         logoImg.src = "img/logohd_ar.png";
       }
