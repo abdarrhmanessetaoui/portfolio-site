@@ -69,6 +69,7 @@ $dataArray[] = $entry;
 $finalJson = json_encode($dataArray, JSON_PRETTY_PRINT);
 $saveResult = file_put_contents($dataFile, $finalJson);
 
+
 if ($saveResult !== false) {
     $response = array();
     $response["success"] = true;
