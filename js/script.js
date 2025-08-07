@@ -561,7 +561,10 @@ form.addEventListener('submit', function(event) {
   const message = form.elements['message'].value.trim();
 
 
-  const text = ;
+  const text = `Hello,
+
+I have visited your portfolio and would like to get in touch with you regarding a potential collaboration or to discuss your projects.
+
 Here are my details:
 Name: ${name}
 Email: ${email}
