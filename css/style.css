@@ -1891,30 +1891,3 @@ textarea:focus,
 
 
 
-.faq-section {
-  padding: 4rem 2rem;
-  background-color: #f8f8f8;
-}
-
-.faq-question {
-  background: #eee;
-  border: none;
-  padding: 1rem;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  transition: background 0.3s;
-}
-
-.faq-question:hover {
-  background: #ddd;
-}
-
-.faq-answer {
-  display: none;
-  padding: 0 1rem 1rem;
-  background-color: white;
-  border-left: 3px solid #333;
-}
