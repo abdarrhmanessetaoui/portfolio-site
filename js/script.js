@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  var currentLang = document.documentElement.lang || "en";
-  var logoImg = document.querySelector('.logo img');
-  if (currentLang === "ar") {
-   logoImg.src = "img/logoarb.png";
-    }
+
   // ===== Body visible on load =====
   document.body.classList.add('visible');
 
