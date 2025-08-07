@@ -3,7 +3,7 @@
 
 header("Content-Type: application/json");
 
-$dataFile = __DIR__ ."../js/contacts.json";
+$dataFile ="../js/contacts.json";
 
 if (isset($_POST["name"])) {
     $name = trim($_POST["name"]);
