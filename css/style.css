@@ -1311,7 +1311,22 @@ section {
   }
 
   .pro-skills-grid {
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pro-circle {
+    width: 90px;
+    margin: 0.5rem;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .circle i {
+    font-size: 1.5rem;
   }
 
   .mode-btn {
