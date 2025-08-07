@@ -738,7 +738,7 @@ section {
 
 .pro-skills-grid:hover {
   transform: translateY(-5px);
-  transition: 0.;
+  transition: 0.5s;
 }
 
 .pro-circle {
