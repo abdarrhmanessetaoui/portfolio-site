@@ -573,7 +573,7 @@ Message: ${message}`;
   // رابط واتساب مع نص مشفر
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 
-  // فتح الرابط في نافذة جديدة
+
   window.open(url, '_blank');
 });
 
