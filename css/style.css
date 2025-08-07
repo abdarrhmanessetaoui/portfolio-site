@@ -1472,8 +1472,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px; /* كبر العرض */
-    height: 200px; /* ممكن تزيد ارتفاع متساوي */
+    width: 120px;
   }
 
   .circle {
