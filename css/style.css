@@ -736,6 +736,10 @@ section {
   margin-right: auto;
 }
 
+.skill-box:hover {
+  transform: translateY(-5px);
+}
+
 .pro-circle {
   display: flex;
   flex-direction: column;
