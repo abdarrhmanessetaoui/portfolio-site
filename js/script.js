@@ -550,4 +550,45 @@ document.querySelectorAll('input[data-i18n-value]').forEach(el => {
 
 
 
+  const form = document.getElementById('contact-form');
+const alertBox = document.getElementById('alert-box');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  fetch('send.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(res => res.json())
+  .then(data => {
+    if(data.success) {
+      showAlert(data.message, 'success');
+      form.reset();
+    } else {
+      showAlert(data.error || 'An error occurred', 'error');
+    }
+  })
+  .catch(() => {
+    showAlert('Network error', 'error');
+  });
+});
+
+function showAlert(message, type) {
+  alertBox.textContent = message;
+  alertBox.className = 'alert visible ' + type;
+
+  setTimeout(() => {
+    alertBox.classList.remove('visible');
+  }, 3500);
+}
+
+
+
+
+
+
+
 });
