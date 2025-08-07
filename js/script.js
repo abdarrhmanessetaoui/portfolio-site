@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-      var currentLang = document.documentElement.lang || "en";
-      var logoImg = document.querySelector('.logo img');
+  var currentLang = document.documentElement.lang || "en";
+  var logoImg = document.querySelector('.logo img');
       if (currentLang === "ar") {
         logoImg.src = "img/logohd_ar.png";
       }
