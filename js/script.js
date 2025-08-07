@@ -302,6 +302,15 @@ document.addEventListener('DOMContentLoaded', () => {
       contactSubject: "الموضوع",
       contactMessage: "رسالتك",
       contactSubmit: "أرسل الرسالة",
+      //footer
+      "faq": "الأسئلة الشائعة",
+      "nav.resume": "السيرة الذاتية",
+      "nav.skills": "المهارات",
+      "nav.services": "الخدمات",
+      "nav.projects": "المشاريع",
+      "nav.contact": "اتصل بي",
+  
+      "footer": "&copy; <span data-i18n-number>2025</span> عبد الرحمن السطاوي. جميع الحقوق محفوظة."
     }
   };
 
