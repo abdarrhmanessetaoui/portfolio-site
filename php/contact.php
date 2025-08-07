@@ -1,40 +1,37 @@
 <?php
 header('Content-Type: application/json');
 
-$dataFile = '..js/contacts.json';
+$dataFile = '../js/contacts.json'; // Adjust path based on your project structure
 
-$name = trim($_POST['name'] ?? '');
-$email = trim($_POST['email'] ?? '');
-$phone = trim($_POST['phone'] ?? '');
-$subject = trim($_POST['subject'] ?? '');
-$message = trim($_POST['message'] ?? '');
+$name = $_POST['name'] ?? '';
+$email = $_POST['email'] ?? '';
+$phone = $_POST['phone'] ?? '';
+$subject = $_POST['subject'] ?? '';
+$message = $_POST['message'] ?? '';
 
 if (!$name || !$email || !$message) {
-    echo json_encode(['success' => false, 'error' => 'Please fill required fields']);
-    exit;
+  echo json_encode(['success' => false, 'error' => 'Please fill all required fields.']);
+  exit;
 }
 
-$contact = [
-    'name' => $name,
-    'email' => $email,
-    'phone' => $phone,
-    'subject' => $subject,
-    'message' => $message,
-    'date' => date('Y-m-d H:i:s')
+$entry = [
+  'name' => $name,
+  'email' => $email,
+  'phone' => $phone,
+  'subject' => $subject,
+  'message' => $message,
+  'date' => date('Y-m-d H:i:s')
 ];
 
-if (file_exists($dataFile)) {
-    $json = file_get_contents($dataFile);
-    $contacts = json_decode($json, true);
-    if (!is_array($contacts)) $contacts = [];
-} else {
-    $contacts = [];
+if (!file_exists($dataFile)) {
+  file_put_contents($dataFile, json_encode([]));
 }
 
-$contacts[] = $contact;
+$data = json_decode(file_get_contents($dataFile), true);
+$data[] = $entry;
 
-if (file_put_contents($dataFile, json_encode($contacts, JSON_PRETTY_PRINT))) {
-    echo json_encode(['success' => true, 'message' => 'Message sent successfully']);
+if (file_put_contents($dataFile, json_encode($data, JSON_PRETTY_PRINT))) {
+  echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
 } else {
-    echo json_encode(['success' => false, 'error' => 'Failed to save data']);
+  echo json_encode(['success' => false, 'error' => 'Failed to save your message.']);
 }
