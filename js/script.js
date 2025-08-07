@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function applyTranslation(lang) {
     
   // تبديل الصورة حسب اللغة
-  const logoImg = document.getElementById('logo-img');
+  let logoImg = document.getElementById('logo-img');
 
   if (lang === 'ar') {
     logoImg.src = 'img/logohd_ar.png';
