@@ -70,7 +70,8 @@ $finalJson = json_encode($dataArray, JSON_PRETTY_PRINT);
 $saveResult = file_put_contents($dataFile, $finalJson);
 if ($saveResult !== false) {
 
-    $to = "ssetaouiabd@gmail.com";
+    $to = "ssetaouiabdarrhmane2004@gmail.com
+";
 
 
     $email_subject = "New Contact Message from " . $name;
