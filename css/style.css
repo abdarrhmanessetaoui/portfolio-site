@@ -79,7 +79,7 @@ body[data-theme="dark"] {
   color: var(--bg-color);
   border: none;
   border-radius: 50%;
-  width: 4rem;
+  width: 8rem;
   height: 4rem;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
