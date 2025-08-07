@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "sou9naImgAlt": "Sou9na Fruits and Vegetables Website Preview",
       "inDev": "In Development..",
       //contact
-      contactHeadline: "Contact Me",
+      contactHeadline: "<span>Contact Me</span>",
       contactName: "Full Name",
       contactEmail: "Email",
       contactPhone: "Phone Number",
