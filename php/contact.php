@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$dataFile = '../js/contacts.json'; // Adjust path based on your project structure
+$dataFile = '../js/contacts.json';
 
 $name = $_POST['name'] ?? '';
 $email = $_POST['email'] ?? '';

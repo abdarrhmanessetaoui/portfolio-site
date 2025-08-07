@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "name": "abdo",
+        "email": "admin@email.com",
+        "phone": "0776429048",
+        "subject": "test",
+        "message": "fffffffffff",
+        "date": "2025-08-07 18:00:07"
+    }
+]
