@@ -486,7 +486,7 @@ section {
   padding: 2rem;
   border-radius: 2rem;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.03s ease;
   margin: 0 4rem;
   border: 1px solid var(--border-color);
 }
