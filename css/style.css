@@ -1585,9 +1585,9 @@ section {
   }
 
   .skill-box {
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    flex: 1 1 25rem;
+    .skill-box {
+      flex: 2 1 200rem;
+    }
   }
 
   .skill-box h3 {
