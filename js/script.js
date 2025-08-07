@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactHeadline: "اتصل بي",
       contactName: "الاسم الكامل",
       contactEmail: "البريد الإلكتروني",
-      phoneNumber: "رقم الهاتف",
+      contactPhone: "رقم الهاتف",
       contactSubject: "الموضوع",
       contactMessage: "رسالتك",
       contactSubmit: "أرسل الرسالة",
