@@ -357,6 +357,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  
+
 // Translate input `value` attributes (like buttons)
 document.querySelectorAll('input[data-i18n-value]').forEach(el => {
   const key = el.getAttribute('data-i18n-value');
