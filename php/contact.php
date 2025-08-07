@@ -84,7 +84,6 @@ if ($saveResult !== false) {
     $email_body .= "Subject: " . $subject . "\n";
     $email_body .= "Message:\n" . $message . "\n";
 
-    // 4. إعدادات الهيدر للإيميل
     $headers = "From: " . $email . "\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
 
