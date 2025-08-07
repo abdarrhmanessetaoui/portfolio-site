@@ -1477,11 +1477,6 @@ section {
   .pro-circle span {
     font-size: 1.2rem;
   }
-    .pro-circle {
-    width: 100%;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-  }
 
   .contact form .input-box input,
   .contact form textarea {
