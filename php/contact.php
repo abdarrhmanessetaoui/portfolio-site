@@ -35,3 +35,4 @@ if (file_put_contents($dataFile, json_encode($data, JSON_PRETTY_PRINT))) {
 } else {
   echo json_encode(['success' => false, 'error' => 'Failed to save your message.']);
 }
+?>
