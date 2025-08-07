@@ -1318,6 +1318,7 @@ section {
   .pro-circle {
     width: 90px;
     margin: 0.5rem;
+    justify-content: center;
   }
 
   .circle {
