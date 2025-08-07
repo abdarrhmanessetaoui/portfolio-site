@@ -76,7 +76,6 @@ if ($saveResult !== false) {
     // 2. موضوع الإيميل
     $email_subject = "New Contact Message from " . $name;
 
-    // 3. نص الإيميل (تقدر تزيد أو تنقص منو)
     $email_body = "You received a new message:\n\n";
     $email_body .= "Name: " . $name . "\n";
     $email_body .= "Email: " . $email . "\n";
