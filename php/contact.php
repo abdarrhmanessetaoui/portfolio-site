@@ -91,7 +91,6 @@ if ($saveResult !== false) {
     // 5. إرسال الإيميل
     mail($to, $email_subject, $email_body, $headers);
 
-    // 6. رجّع نجاح الاستجابة
     echo json_encode(['success' => true, 'message' => "Message sent successfully!"]);
 } else {
     echo json_encode(['success' => false, 'error' => "Failed to save your message."]);
