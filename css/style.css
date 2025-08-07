@@ -1531,8 +1531,11 @@ section {
     font-size: 40%;
   }
 
-  .logo{
-display: none;
+  .logo img {
+    width: 300px;
+    height: auto;
+    display: block;
+    
   }
 
   section {
