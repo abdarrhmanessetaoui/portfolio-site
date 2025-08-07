@@ -472,7 +472,7 @@ section {
   border-radius: 50%;
   transform: translateX(-50%);
   box-shadow: 0 0 0 4px rgba(var(--main-color-rgb), 0.3);
-  transition: all 0.1s ease;
+  transition: all 10.1s ease;
   z-index: 3;
 }
 
