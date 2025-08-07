@@ -203,6 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactSubject: "Sujet",
       contactMessage: "Votre Message",
       contactSubmit: "Envoyer le Message",
+      //
        },
     ar: {
       //traduction for header
