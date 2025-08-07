@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactName: "Full Name",
       contactEmail: "Email",
       contactPhone: "Phone Number",
-      subject: "Subject",
+      contactSubject: "Subject",
       contactMessage: "Your Message",
       contactSubmit: "Send Message",
     },
