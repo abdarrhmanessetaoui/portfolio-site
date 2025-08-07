@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
       samir: "سمّير كمبيوتر",
       samirDesc: "إصلاح الحواسيب، وتحديث النظام، وصيانة الأجهزة والبرمجيات، وتطوير المهارات التقنية.",
       //skills
-      my2: "مؤهلاتي",
+      my2: " ",
       skills: "المهارات",
       technicalSkills: "المهارات التقنية",
       frontend: "	الواجهة الأمامية",
