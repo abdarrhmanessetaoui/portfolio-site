@@ -92,18 +92,5 @@ if ($saveResult !== false) {
     echo json_encode(['success' => false, 'error' => "Failed to save your message."]);
 }
 
-
-if ($saveResult !== false) {
-    $response = array();
-    $response["success"] = true;
-    $response["message"] = "Message sent successfully!";
-    echo json_encode($response);
-} else {
-    $response = array();
-    $response["success"] = false;
-    $response["error"] = "Failed to save your message.";
-    echo json_encode($response);
-}
-
 ?>
 
