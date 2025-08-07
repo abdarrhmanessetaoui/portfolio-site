@@ -1276,8 +1276,11 @@ section {
   }
 
   .skill-box {
-    flex: 1 1 10%;
-    min-height: auto;
+    .skill-box {
+      flex: 1 1 100%;
+      padding: 2rem;
+      margin-top: 1.5rem;
+    }
   }
 
   .projects-box {
