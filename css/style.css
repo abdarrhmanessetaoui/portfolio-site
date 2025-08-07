@@ -1522,7 +1522,7 @@ section {
   }
 
   .circle {
-    width: 12rem;
+    width: auto;
     height: 12rem;
   }
 
