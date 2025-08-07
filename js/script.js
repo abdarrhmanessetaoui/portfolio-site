@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.services": "الخدمات",
       "nav.projects": "المشاريع",
       "nav.contact": "اتصل بي",
-      "footer": "&copy; <span data-i18n-number>2025</span> عبد الرحمن الستاوي. جميع الحقوق محفوظة.",
+      "footer": "&copy; <span data-i18n-number>2025</span> عبد الرحمان الستاوي. جميع الحقوق محفوظة.",
     }
   };
 
