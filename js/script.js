@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var currentLang = document.documentElement.lang || "en";
   var logoImg = document.querySelector('.logo img');
   if (currentLang === "ar") {
-   logoImg.src = "img/logohd_ar.png";
+   logoImg.src = "img/lo.png";
     }
   // ===== Body visible on load =====
   document.body.classList.add('visible');
