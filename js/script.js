@@ -558,7 +558,7 @@ form.addEventListener('submit', function(e) {
 
   const formData = new FormData(form);
 
-  fetch('conta', {
+  fetch('contacts.json', {
     method: 'POST',
     body: formData
   })
