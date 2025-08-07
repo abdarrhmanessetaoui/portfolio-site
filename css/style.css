@@ -1178,7 +1178,11 @@ section {
   }
   
   .skill-box {
-    flex: 1 1 25rem;
+    flex: 1 1 250px;
+    max-width: 300px;
+    padding: 3rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
   }
   .logo img {
     display: none;
