@@ -1767,9 +1767,7 @@ section {
   .service-box {
     min-height: 25rem;
   }
-  .skill-box {
-    flex: 1 1 25rem;
-  }
+
   .project-card {
     min-height: 25rem;
   }
