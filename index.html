@@ -536,41 +536,25 @@
   </section>
   
   <section class="contact" id="contact">
-
-    <h2 class="heading" data-i18n="contactHeadline"> 
-      <span>Contact Me</span>
-    </h2>
-  
-    <form action="#">
-  
+    <h2 class="heading">Contact Me</h2>
+    <form action="save_contact.php" method="POST">
       <div class="input-group">
-  
         <div class="input-box">
-          <input type="text" data-i18n-placeholder="contactName" placeholder="Full Name">
-          <input type="email" data-i18n-placeholder="contactEmail" placeholder="Email">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
         </div>
-  
         <div class="input-box">
-          <input type="text" data-i18n-placeholder="contactPhone" placeholder="Phone Number">
-          <input type="text" data-i18n-placeholder="contactSubject" placeholder="Subject">
+          <input type="text" name="phone" placeholder="Phone Number" required>
+          <input type="text" name="subject" placeholder="Subject" required>
         </div>
-  
       </div>
-  
       <div class="input-group">
-<textarea data-i18n-placeholder="contactMessage" placeholder="Your Message" cols="30" rows="10"></textarea>
-
-        
-        <input 
-          type="submit" 
-          class="btn" 
-          value="Send Message" 
-          data-i18n-value="contactSubmit">
+        <textarea name="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+        <input type="submit" class="btn" value="Send Message">
       </div>
-  
     </form>
-  
   </section>
+  
 
   
 
