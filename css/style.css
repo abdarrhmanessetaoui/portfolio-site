@@ -1382,6 +1382,9 @@ section {
   .skill-box h3 {
     font-size: 2rem;
   }
+  .skill-box {
+    flex: 2 1 200rem;
+  }
 
   .skill span {
     font-size: 1.2rem;
