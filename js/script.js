@@ -358,7 +358,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  
+  const logoImg = document.querySelector('.logo img');
+  if (lang === 'ar') {
+    logoImg.src = 'img/logoarb.png';
+  } else if (lang === 'fr') {
+    logoImg.src = 'img/logofr.png';
+  } else {
+    logoImg.src = 'img/logohd_nobg.png';
+  }
 
 // Translate input `value` attributes (like buttons)
 document.querySelectorAll('input[data-i18n-value]').forEach(el => {
