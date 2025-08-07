@@ -1684,7 +1684,7 @@ section {
   }
 
   .project-card img {
-    height: 30rem;
+    height: auto;
   }
 
   .project-card h3 {
