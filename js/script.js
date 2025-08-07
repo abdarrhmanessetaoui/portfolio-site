@@ -503,7 +503,7 @@ document.querySelectorAll('input[data-i18n-value]').forEach(el => {
 
   function isVisible(element) {
     const rect = element.getBoundingClientRect();
-    return rect.top <= window.innerHeight * 0.085 && rect.bottom >= 0;
+    return rect.top <= window.innerHeight * 0.85 && rect.bottom >= 0;
   }
 
   function animateOnScroll() {
