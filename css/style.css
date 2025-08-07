@@ -1224,7 +1224,7 @@ section {
 
   .project-card img {
     width: 100%;
-    height: 380px; 
+    height: 380rem; 
     border-radius: 2em;
     object-fit: cover;
   }
