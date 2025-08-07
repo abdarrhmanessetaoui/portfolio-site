@@ -556,13 +556,15 @@ const alertBox = document.getElementById('alert-box');
 form.addEventListener('submit', function(e) {
   e.preventDefault();
 
+  const submitButton = form.querySelector('input[type="submit"]');
+  submitButton.disabled = true;
+
   const formData = new FormData(form);
 
   fetch('php/contact.php', {
     method: 'POST',
     body: formData
   })
-  
   .then(res => res.json())
   .then(data => {
     if(data.success) {
@@ -574,8 +576,12 @@ form.addEventListener('submit', function(e) {
   })
   .catch(() => {
     showAlert('Network error', 'error');
+  })
+  .finally(() => {
+    submitButton.disabled = false;
   });
 });
+
 
 function showAlert(message, type) {
   alertBox.textContent = message;
