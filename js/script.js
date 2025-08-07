@@ -346,9 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   
-  if (currentLang === "ar") {
-    logoImg.src = "img/logohd_ar.png";
-  }
+
   function applyTranslation(lang) {
    // Translate placeholder attributes
    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
