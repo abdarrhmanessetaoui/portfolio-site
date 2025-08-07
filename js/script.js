@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       network: "Network Fundamentals",
       networkDesc: "I understand basic networking concepts, which helps me optimize web performance and troubleshoot connectivity issues efficiently.",
       //projects
-      "projectsHeadline": "Projects",
+      "projectsHeadline": "spanProjects",
       "portfolio": "Portfolio Website",
       "portfolioDesc": "I built this personal portfolio from scratch using HTML, CSS, and JavaScript. It highlights my skills, showcases some of my projects, and gives a clear overview of my background. The design is clean, responsive, and easy to explore on any device.",
       "codeProject": "View Source Code",
