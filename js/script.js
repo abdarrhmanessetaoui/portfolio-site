@@ -552,7 +552,7 @@ document.querySelectorAll('input[data-i18n-value]').forEach(el => {
 const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', function(event) {
-  event.preventDefault(); // منع الإرسال العادي
+  event.preventDefault(); 
 
   const name = form.elements['name'].value.trim();
   const email = form.elements['email'].value.trim();
