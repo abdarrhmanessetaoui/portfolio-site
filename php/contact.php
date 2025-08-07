@@ -70,7 +70,6 @@ $finalJson = json_encode($dataArray, JSON_PRETTY_PRINT);
 $saveResult = file_put_contents($dataFile, $finalJson);
 if ($saveResult !== false) {
 
-    // 1. عيّن الإيميل لي بغيت توصلك عليه (بدّل هاد النص)
     $to = "your-email@example.com";
 
 
