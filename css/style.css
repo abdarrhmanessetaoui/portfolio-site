@@ -1585,7 +1585,9 @@ section {
     padding: 1.5rem;
     border-radius: 1.5rem;
   }
-
+  .skill-box {
+    flex: 1 1 25rem;
+  }
   .skill-box h3 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
