@@ -1675,25 +1675,36 @@ section {
   }
 
   .pro-skills-grid {
-    gap: 1rem;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 7%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .pro-circle {
-    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
   }
 
   .circle {
-    width: 6rem;
-    height: 6rem;
+    width: 12rem;
+    height: 12rem;
   }
 
   .circle i {
-    font-size: 2rem;
+    font-size: 6.5rem;
   }
 
   .pro-circle span {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
+  
 
   .contact form .input-box input,
   .contact form textarea {
