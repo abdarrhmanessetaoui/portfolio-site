@@ -1313,9 +1313,6 @@ section {
   .pro-skills-grid {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .pro-circle {
@@ -1327,7 +1324,7 @@ section {
   .circle {
     width: 60px;
     height: 60px;
-    justify-content: center;
+    
   }
 
   .circle i {
