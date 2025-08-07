@@ -159,6 +159,12 @@ body[data-theme="dark"] {
   box-shadow: none !important;
 }
 
+.logo a:focus, .logo a:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 .logo:hover {
   transform: scale(1.1);
 }
