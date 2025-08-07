@@ -1745,7 +1745,12 @@ section {
     font-size: 35%;
   }
 
-
+  .logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+    
+  }
   .home-content h1 {
     font-size: 3rem;
   }
