@@ -1461,7 +1461,11 @@ section {
     gap: 1.5rem;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;  
+    gap: 2rem;
+    margin-top: 7%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .pro-circle {
