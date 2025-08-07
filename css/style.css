@@ -1575,8 +1575,11 @@ section {
   }
 
   .skill-box {
-    padding: 2rem;
-    min-height: auto;
+    .skill-box {
+      flex: 1 1 100%;
+      padding: 2rem;
+      margin-top: 1.5rem;
+    }
   }
 
   .skill-box h3 {
