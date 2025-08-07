@@ -1509,7 +1509,7 @@ section {
     align-items: center;
     gap: 2rem;
     margin-top: 7%;
-    max-width: 100%;
+    max-width: auto%;
     margin-left: auto;
     margin-right: auto;
   }
