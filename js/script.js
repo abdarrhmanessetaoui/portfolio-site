@@ -358,16 +358,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   
-  // تبديل الصورة حسب اللغة
-  const logoImg = document.getElementById('logo-img');
-
-  if (lang === 'ar') {
-    logoImg.src = 'img/logohd_ar.png';
-  } else if (lang === 'fr') {
-    logoImg.src = 'img/logohd_fr.png'; // مثلا لو عندك لوجو فرنسي
-  } else {
-    logoImg.src = 'img/logohd_nobg.png'; // النسخة الإنجليزية أو الافتراضية
-  }
 
 // Translate input `value` attributes (like buttons)
 document.querySelectorAll('input[data-i18n-value]').forEach(el => {
