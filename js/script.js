@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       samir: "Samir Computer",
       samirDesc: "Computer repair, system maintenance and formatting; along with developing technical skills in hardware and software.",
       //skills
-      my: "My",
+      my2: "My",
       skills: "Skills",
       technicalSkills: "Technical Skills",
       frontend: "Frontend",
