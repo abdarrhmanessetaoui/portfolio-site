@@ -1178,11 +1178,7 @@ section {
   }
   
   .skill-box {
-    .skill-box {
-      flex: 1 1 100%;
-      padding: 2rem;
-      margin-top: 1.5rem;
-    }
+    flex: 1 1 25rem;
   }
   .logo img {
     display: none;
