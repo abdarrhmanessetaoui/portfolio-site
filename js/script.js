@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (lang === 'ar') {
     logoImg.src = 'img/logoarb.png';
   } else if (lang === 'fr') {
-    logoImg.src = 'img/logofr.png';
+    logoImg.src = 'img/logohd_nobg.png';
   } else {
     logoImg.src = 'img/logohd_nobg.png';
   }
