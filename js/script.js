@@ -549,7 +549,34 @@ document.querySelectorAll('input[data-i18n-value]').forEach(el => {
 
 
 //contact
+const form = document.getElementById('contact-form');
 
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // منع الإرسال العادي
+
+  const name = form.elements['name'].value.trim();
+  const email = form.elements['email'].value.trim();
+  const phone = form.elements['phone'].value.trim();
+  const subject = form.elements['subject'].value.trim();
+  const message = form.elements['message'].value.trim();
+
+  // نص الرسالة اللي غادي تتبعت في الواتساب
+  const text = `Hello! I received a contact request:
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Subject: ${subject}
+Message: ${message}`;
+
+  // رقم الواتساب ديالك بصيغة دولية، مثلا المغرب +212...
+  const whatsappNumber = '2126XXXXXXXX'; // بدلها برقمك الصحيح
+
+  // رابط واتساب مع نص مشفر
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+  // فتح الرابط في نافذة جديدة
+  window.open(url, '_blank');
+});
 
 
 
