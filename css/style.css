@@ -1170,7 +1170,7 @@ section {
 /* Responsive Design */
 @media (max-width: 1200px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
   
   .skills-container {
