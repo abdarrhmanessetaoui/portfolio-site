@@ -1824,22 +1824,5 @@ section {
 }
 
 @media print {
-  body {
-    color: black;
-    background: white;
-    font-size: 12pt;
-    line-height: 1.4;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    page-break-inside: avoid;
-  }
-
-  .mode-btn,
-  .navbar,
-  #menu-icon {
-    display: none !important;
-  }
+*
 }
