@@ -472,7 +472,7 @@ section {
   border-radius: 50%;
   transform: translateX(-50%);
   box-shadow: 0 0 0 4px rgba(var(--main-color-rgb), 0.3);
-  transition: all 0.01s ease;
+  transition: all 0.s ease;
   z-index: 3;
 }
 
@@ -486,7 +486,7 @@ section {
   padding: 2rem;
   border-radius: 2rem;
   position: relative;
-  transition: all 0.03s ease;
+  transition: all 0.3s ease;
   margin: 0 4rem;
   border: 1px solid var(--border-color);
 }
@@ -528,10 +528,10 @@ section {
 }
 
 /* Animation delays */
-.timeline-item:nth-child(1) { transition-delay: 0.01s; }
-.timeline-item:nth-child(2) { transition-delay: 0.02s; }
-.timeline-item:nth-child(3) { transition-delay: 0.03s; }
-.timeline-item:nth-child(4) { transition-delay: 0.04s; }
+.timeline-item:nth-child(1) { transition-delay: 0.1s; }
+.timeline-item:nth-child(2) { transition-delay: 0.2s; }
+.timeline-item:nth-child(3) { transition-delay: 0.3s; }
+.timeline-item:nth-child(4) { transition-delay: 0.4s; }
 
 
 
