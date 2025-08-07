@@ -1585,9 +1585,7 @@ section {
   }
 
   .skill-box {
-    .skill-box {
-      flex: 2 1 200rem;
-    }
+    flex: 2 1 200rem;
   }
 
   .skill-box h3 {
