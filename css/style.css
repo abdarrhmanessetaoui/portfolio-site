@@ -1469,7 +1469,10 @@ section {
   }
 
   .pro-circle {
-    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
   }
 
   .circle {
