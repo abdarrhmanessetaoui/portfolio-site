@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
       english: "الإنجليزية",
       deutsch: "الألمانية",
       //services
-      "servicesHeadline": "sالخدمات",
+      "servicesHeadline": "<span>الخدمات",
       "webDev": "تطوير الويب",
       "webDevDesc": "كنطوّر مواقع وتطبيقات ويب عصرية ومتجاوبة باستخدام JavaScript، PHP، Laravel، React وNode.js. كنركّز على كود نقي، تصميم بسيط وتجربة مستخدم ممتازة.",
       "cybersecurity": "أمن المعلومات",
