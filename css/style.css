@@ -1459,7 +1459,7 @@ section {
 
   .pro-skills-grid {
     gap: 1.5rem;
-    flex-direction: column-reverse;
+    flex-direction: col;
     
   }
 
