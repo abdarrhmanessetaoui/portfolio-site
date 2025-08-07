@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$dataFile = 'contacts.json';
+$dataFile = 'Jcontacts.json';
 
 $name = trim($_POST['name'] ?? '');
 $email = trim($_POST['email'] ?? '');
