@@ -755,7 +755,7 @@ section {
 
 .pro-circle:hover {
   scale: 1.1;
-  transition: ;
+  transition: all 3s;
 }
 
 .circle {
