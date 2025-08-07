@@ -1837,14 +1837,12 @@ section {
     transition: none !important;
   }
 
-  /* صور */
   img {
     max-width: 100% !important;
     height: auto !important;
     page-break-inside: avoid;
   }
 
-  /* عناصر مخفية فالطباعة */
   .mode-btn,
   .navbar,
   #menu-icon {
