@@ -1323,7 +1323,7 @@ section {
   }
 
   .projects-box {
-    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(55rem, 1fr));
     gap: 2rem;
   }
 
