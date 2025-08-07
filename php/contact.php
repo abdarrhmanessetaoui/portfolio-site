@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$dataFile = 'js';
+$dataFile = 'js/';
 
 $name = trim($_POST['name'] ?? '');
 $email = trim($_POST['email'] ?? '');
