@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var logoImg = document.querySelector('.logo img');
   if (currentLang === "ar") {
    logoImg.src = "img/logohd_ar.png";
-      }
+    }
   // ===== Body visible on load =====
   document.body.classList.add('visible');
 
