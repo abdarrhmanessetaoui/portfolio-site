@@ -1832,7 +1832,7 @@ section {
   }
 
   .project-card img {
-    height: 30rem;
+    height: auto;
   }
 
   .timeline-content {
