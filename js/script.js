@@ -569,7 +569,7 @@ Subject: ${subject}
 Message: ${message}`;
 
   // رقم الواتساب ديالك بصيغة دولية، مثلا المغرب +212...
-  const whatsappNumber = '2126XXXXXXXX'; // بدلها برقمك الصحيح
+  const whatsappNumber = '21277'; // بدلها برقمك الصحيح
 
   // رابط واتساب مع نص مشفر
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
