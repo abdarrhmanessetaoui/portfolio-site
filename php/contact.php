@@ -88,7 +88,6 @@ if ($saveResult !== false) {
     $headers = "From: " . $email . "\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
 
-    // 5. إرسال الإيميل
     mail($to, $email_subject, $email_body, $headers);
 
     echo json_encode(['success' => true, 'message' => "Message sent successfully!"]);
