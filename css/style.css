@@ -629,7 +629,7 @@ section {
   
   /* Smooth fill animation */
   animation: smoothFill 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards,
-             shimmer 3s ease-in-out infinite 2.5s;
+             shimmer 3s ease-in-out infinite 1.5s;
   
   /* Add a subtle glow effect */
   box-shadow: 0 0 10px rgba(var(--main-color-rgb), 20.3);
