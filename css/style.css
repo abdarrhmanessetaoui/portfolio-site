@@ -1823,3 +1823,25 @@ section {
   transform: translateY(0);
 }
 
+@media print {
+  .mode-btn,
+  .navbar,
+  #menu-icon {
+    display: none !important;
+  }
+  
+  .header {
+    position: static;
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+    page-break-inside: avoid;
+  }
+  
+  .home-img img {
+    max-width: 10cm;
+  }
+}
