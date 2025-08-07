@@ -560,7 +560,7 @@ form.addEventListener('submit', function(event) {
   const subject = form.elements['subject'].value.trim();
   const message = form.elements['message'].value.trim();
 
-  // نص الرسالة اللي غادي تتبعت في الواتساب
+
   const text = `Hello! I received a contact request:
 Name: ${name}
 Email: ${email}
