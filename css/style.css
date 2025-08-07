@@ -751,11 +751,11 @@ section {
   flex-direction: column;
   align-items: center;
   width: 120px;
-  transition: all 3s;
+  
 }
 
 .pro-circle:hover {
-  scale: 1.;
+  scale: 1.1;
   transition: all 3s;
 }
 
