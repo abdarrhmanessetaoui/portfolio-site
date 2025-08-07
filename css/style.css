@@ -1133,7 +1133,41 @@ section {
   border-color: var(--main-color);
   box-shadow: 0 0 10px rgba(var(--main-color-rgb), 0.2);
 }
-/*alert
+/*alert*/
+.alert {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  max-width: 400px;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+}
+
+.alert.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  user-select: auto;
+}
+
+.alert.success {
+  background-color: #10b981;  /* أخضر */
+  color: white;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.alert.error {
+  background-color: #ef4444;  /* أحمر */
+  color: white;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
 
 /* Footer */
 .footer {
