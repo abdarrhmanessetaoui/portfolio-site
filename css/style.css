@@ -1196,7 +1196,7 @@ section {
   }
 
   .logo {
-    display: flex;
+    display: block;
   }
 
   #menu-icon {
