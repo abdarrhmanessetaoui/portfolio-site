@@ -548,7 +548,7 @@ document.querySelectorAll('input[data-i18n-value]').forEach(el => {
 
 
 
-
+//contact
 
 const form = document.getElementById('contact-form');
 const alertBox = document.getElementById('alert-box');
