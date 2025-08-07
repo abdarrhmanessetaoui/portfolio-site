@@ -203,7 +203,15 @@ document.addEventListener('DOMContentLoaded', () => {
       contactSubject: "Sujet",
       contactMessage: "Votre Message",
       contactSubmit: "Envoyer le Message",
-      //
+      //footer
+      "faq": "FAQ",
+      "nav.resume": "CV",
+      "nav.skills": "Compétences",
+      "nav.services": "Services",
+      "nav.projects": "Projets",
+      "nav.contact": "Contact",
+  
+      "footer": "&copy; <span data-i18n-number>2025</span> Abderrhman Settaoui. Tous droits réservés."
        },
     ar: {
       //traduction for header
