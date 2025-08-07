@@ -326,11 +326,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function applyTranslation(lang) {
    // Translate placeholder attributes
    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-   const key = el.getAttribute('data-i18n-placeholder');
-   if (translations[lang] && translations[lang][key]) {
-   el.setAttribute('placeholder', translations[lang][key]);
-  }
-});
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[lang] && translations[lang][key]) {
+      el.setAttribute('placeholder', translations[lang][key]);
+    }
+  });
 
 // Translate input `value` attributes (like buttons)
 document.querySelectorAll('input[data-i18n-value]').forEach(el => {
