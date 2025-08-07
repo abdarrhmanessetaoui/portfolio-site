@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactHeadline: "Contact Me",
       contactName: "Full Name",
       contactEmail: "Email",
-      phoneNumber: "Phone Number",
+      contactPhone: "Phone Number",
       subject: "Subject",
       contactMessage: "Your Message",
       contactSubmit: "Send Message",
