@@ -113,6 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactMessage: "Your Message",
       contactSubmit: "Send Message",
       //footer
+      
     },
     fr: {
       //traduction for header
