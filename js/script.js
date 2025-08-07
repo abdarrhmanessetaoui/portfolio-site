@@ -560,7 +560,6 @@ form.addEventListener('submit', function(event) {
   const subject = form.elements['subject'].value.trim();
   const message = form.elements['message'].value.trim();
 
-
   const text = `Subject: ${subject},
 ${message}
 Here are my details:
@@ -572,9 +571,13 @@ Phone: ${phone}`;
 
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 
+  // Alert before redirection
+  alert("You will now be redirected to WhatsApp to send your message.");
 
+  // Open WhatsApp
   window.open(url, '_blank');
 });
+
 
 
 
