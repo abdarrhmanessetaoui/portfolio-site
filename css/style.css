@@ -150,19 +150,6 @@ body[data-theme="dark"] {
   
 }
 
-.logo img,
-.logo img:focus,
-.logo img:active,
-.logo img:visited,
-.logo a,
-.logo a:focus,
-.logo a:active,
-.logo a:visited {
-  outline: none !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
 .logo:hover {
   transform: scale(1.1);
 }
