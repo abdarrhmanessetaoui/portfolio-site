@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "network": "الشبكات",
       "networkDesc": "عندي فهم جيد للمفاهيم الأساسية ديال الشبكات، وهادشي كيساعدني نحسّن الأداء ونتعامل مزيان مع مشاكل الاتصال.",  
       //projects
-      "projectsHeadline": "<span>الخدمات</span>المشاريع",
+      "projectsHeadline": "<span>المشاريع</span>",
       "portfolio": "موقع البورتفوليو",
       "portfolioDesc": "صممت هذا الموقع الشخصي من البداية باستخدام HTML وCSS وJavaScript. يعرض مهاراتي، ويعرض بعض مشاريعي، ويوضح خلفيتي بشكل واضح. التصميم نظيف ومتجاوب وسهل الاستخدام على كل الأجهزة.",
       "codeProject": "عرض الكود البرمجي",
