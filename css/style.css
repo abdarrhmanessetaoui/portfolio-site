@@ -1824,8 +1824,43 @@ section {
 }
 
 @media print {
+  /* خلي كل العناصر ظاهرة */
   * {
-    all: unset !important;
-    all: revert !important;
+    display: initial !important;
+    position: static !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    -webkit-print-color-adjust: exact !important; /* طباعة الألوان بدقة */
+  }
+
+  /* ازالة الحركات والانتقالات */
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* ضبط الخطوط */
+  body, section, header, footer, nav, main, div {
+    margin: 0.5cm !important;
+    padding: 0 !important;
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+  }
+
+  /* ازالة اي عناصر ما باغيش تبان */
+  /* مثلاً اذا عندك أزرار تغيير الوضع او نافيغاسيون */
+  .mode-btn,
+  #menu-icon,
+  .navbar {
+    display: none !important;
+  }
+
+  /* الصور متواجدة */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
   }
 }
