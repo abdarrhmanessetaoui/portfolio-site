@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
       samir: "Samir Informatique",
       samirDesc: "Réparation d'ordinateurs, maintenance système et formatage ; développement des compétences techniques en matériel et logiciel.",
       //skills
-      my: "Mon",
+      my2: "Mon",
       skills: "Compétences",
       technicalSkills: "Compétences techniques",
       frontend: " Partie frontale",
