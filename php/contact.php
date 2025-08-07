@@ -73,7 +73,7 @@ if ($saveResult !== false) {
     // 1. عيّن الإيميل لي بغيت توصلك عليه (بدّل هاد النص)
     $to = "your-email@example.com";
 
-    // 2. موضوع الإيميل
+
     $email_subject = "New Contact Message from " . $name;
 
     $email_body = "You received a new message:\n\n";
