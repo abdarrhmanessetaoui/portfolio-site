@@ -648,7 +648,7 @@ section {
     rgba(255, 255, 255, 0.4) 50%, 
     transparent 100%
   );
-  animation: shimmerMove 2s ease-in-out infinite;
+  animation: shimmerMove 1s ease-in-out infinite;
 }
 
 .progress-bar:hover {
