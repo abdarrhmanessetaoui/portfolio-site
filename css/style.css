@@ -753,7 +753,7 @@ section {
   width: 120px;
 }
 
-.pro-circle {
+.pro-circle: {
   display: flex;
   flex-direction: column;
   align-items: center;
