@@ -558,10 +558,11 @@ form.addEventListener('submit', function(e) {
 
   const formData = new FormData(form);
 
-  fetch('contacts.json', {
+  fetch('php/contact.php', {
     method: 'POST',
     body: formData
   })
+  
   .then(res => res.json())
   .then(data => {
     if(data.success) {
