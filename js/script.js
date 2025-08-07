@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactMessage: "Your Message",
       contactSubmit: "Send Message",
       //footer
-      "faq": "FAQ",
+      "faq": "Home",
       "nav.resume": "Resume",
       "nav.skills": "Skills",
       "nav.services": "Services",
