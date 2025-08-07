@@ -207,6 +207,9 @@ document.addEventListener('DOMContentLoaded', () => {
       "sou9naDesc": "Une boutique en ligne marocaine fraîche et entièrement responsive pour fruits et légumes. Le design est clair, adapté aux mobiles, et met en avant les offres saisonnières. Elle propose une ambiance de marché local avec une navigation intuitive et des contrôles admin fictifs.",
       "sou9naImgAlt": "Aperçu du site Sou9na Fruits et Légumes",
       "inDev": "En développement..",
+      currencyConverterTitle: "Application de Conversion de Devises",
+      currencyConverterDesc: "Une application rapide et efficace qui vous permet de convertir instantanément plus de 150 devises du monde entier. Elle offre des taux de change en temps réel, un mode sombre, et un design propre et réactif.",
+      currencyConverterImgAlt: "Aperçu de l'application de conversion de devises",
       //contact
       contactHeadline: "<span>Me Contacter</span>",
       contactName: "Nom Complet",
