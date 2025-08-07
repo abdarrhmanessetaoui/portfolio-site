@@ -1780,18 +1780,37 @@ section {
     padding: 1rem;
   }
 
+  .pro-skills-grid {
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 7%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .pro-circle {
-    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
   }
 
   .circle {
-    width: 5rem;
-    height: 5rem;
+    width: 12rem;
+    height: 12rem;
   }
 
   .circle i {
-    font-size: 1.5rem;
+    font-size: 6.5rem;
   }
+
+  .pro-circle span {
+    font-size: 1.2rem;
+  }
+  
 }
 
 /* Utility Classes */
