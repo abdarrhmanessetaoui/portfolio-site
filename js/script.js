@@ -561,7 +561,8 @@ form.addEventListener('submit', function(event) {
   const message = form.elements['message'].value.trim();
 
 
-  const text = `${message}
+  const text = `
+  ${message}
 Here are my details:
 Name: ${name}
 Email: ${email}
