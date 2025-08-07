@@ -1746,12 +1746,9 @@ section {
   }
 
   .skill-box {
-    .skill-box {
-      padding: 1.5rem;
-      border-radius: 1.5rem;
-    }
+    padding: 1.5rem;
+    border-radius: 1.5rem;
   }
-
   .service-box {
     min-height: 25rem;
   }
