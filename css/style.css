@@ -452,7 +452,7 @@ section {
   margin-bottom: 3rem;
   opacity: 0;
   transform: translateY(5rem);
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
   z-index: 2;
 }
 
