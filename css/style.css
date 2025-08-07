@@ -736,7 +736,7 @@ section {
   margin-right: auto;
 }
 
-.skill-box:hover {
+.pro-skills-grid:hover {
   transform: translateY(-5px);
 }
 
