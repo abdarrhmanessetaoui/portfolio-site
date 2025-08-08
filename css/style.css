@@ -1547,6 +1547,7 @@ section {
 
   .dropdown {
     left: 2rem;
+    width: auto;
   }
 
   .flag-icon {
