@@ -1613,15 +1613,7 @@ section {
     align-items: center;
     font-size: -5%;
   }
-  .dropdown-list {
-    padding: 4px 6px;
-    cursor: pointer;
-    color: var(--text-color);
-    border-radius: 6rem;
-    display: block;
-    align-items: center;
-    font-size: -5%;
-  }
+
   .flag-icon {
     width: 15px;
     height: 8px;
