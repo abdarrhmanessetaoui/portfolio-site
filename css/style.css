@@ -1611,7 +1611,7 @@ section {
     border-radius: 6rem;
     display: block;
     align-items: center;
-    text
+    text-size-adjust: ;
   }
   .flag-icon {
     width: auto;
