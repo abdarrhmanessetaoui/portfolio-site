@@ -1591,6 +1591,17 @@ section {
     height: auto;
   }
 
+  .dropdown-btn {
+    background: var(--main-color);
+    color: var(--btn-text-color);
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
   .flag-icon {
     width: auto;
     height: auto;
