@@ -1582,6 +1582,7 @@ section {
     width: 200px;
     height: auto;
     display: block;
+    margin: ;
     
   }
 
@@ -1594,7 +1595,7 @@ section {
   .dropdown-btn {
     background: var(--main-color);
     color: var(--btn-text-color);
-    padding: 4px 12px;
+    padding: 4px 6px;
     cursor: pointer;
     border-radius: 6rem;
     font-weight: bold;
