@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "sou9naDesc": "A fresh, fully responsive Moroccan-style online shop for fruits and vegetables. The design is clean, mobile-friendly, and highlights seasonal offers. It includes a local-market vibe with intuitive navigation and placeholder admin controls.",
       "sou9naImgAlt": "Sou9na Fruits and Vegetables Website Preview",
       "inDev": "In Development..",
-      expenseTrackerTitle": "Expense Tracker",
+      "expenseTrackerTitle": "Expense Tracker",
       expenseTrackerDesc": "A simple and intuitive expense tracker app to help you manage your income and expenses efficiently. Features real-time balance updates, transaction history, and a clean, responsive design.",
      
       "currencyConverterTitle": "Curreny-Converter-App",
