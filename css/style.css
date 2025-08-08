@@ -1551,7 +1551,7 @@ section {
 
   .flag-icon {
     width: auto;
-    height: 14px;
+    height: auto;
     margin-right: 8px;
     object-fit: cover;
   }
