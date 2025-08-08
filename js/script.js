@@ -330,6 +330,9 @@ document.addEventListener('DOMContentLoaded', () => {
       "currencyConverterTitle": "تطبيق تحويل العملات",
       currencyConverterDesc: "تطبيق سريع وفعّال يسمح لك بتحويل أكثر من 150 عملة عالمية فورياً. يتميز بأسعار صرف حية، ووضع ليلي، وتصميم نظيف ومتجاوب.",
       currencyConverterImgAlt: "معاينة تطبيق تحويل العملات",
+      todoAppTitle: "تطبيق المهام",
+      todoAppDesc: "تطبيق بسيط ونظيف لقائمة المهام يساعدك على تنظيم مهامك بسهولة. يحتوي على إضافة، تحديد، حذف المهام وتصميم متجاوب.",
+      todoAppImgAlt: "معاينة تطبيق المهام",
       //contact
       contactHeadline: "اتصل بي",
       contactName: "الاسم الكامل",
