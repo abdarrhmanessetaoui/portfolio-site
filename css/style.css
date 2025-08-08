@@ -1614,7 +1614,7 @@ section {
     font-size: -5%;
   }
   .dropdown-list {
-    padding: 4px 6px;
+    padding: 43px 6px;
     cursor: pointer;
     color: var(--text-color);
     border-radius: 6rem;
