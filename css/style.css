@@ -1587,7 +1587,7 @@ section {
 
   .dropdown {
     left: 2rem;
-    width: 1px;
+    width: auto;
     height: auto;
   }
 
