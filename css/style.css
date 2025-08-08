@@ -1592,7 +1592,7 @@ section {
   }
 
   .flag-icon {
-    width: auto;
+    width: 1%;
     height: auto;
     margin-right: 8px;
     object-fit: cover;
