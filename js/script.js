@@ -107,7 +107,9 @@ document.addEventListener('DOMContentLoaded', () => {
       "inDev": "In Development..",
       "expenseTrackerTitle": "Expense Tracker",
       "expenseTrackerDesc": "A simple and intuitive expense tracker app to help you manage your income and expenses efficiently. Features real-time balance updates, transaction history, and a clean, responsive design.",
-     
+      githubUserFinderTitle: "GitHub User Finder",
+      githubUserFinderDesc: "A simple web app to search GitHub users and view their profile information and repositories. Includes avatar, bio, followers, top repositories, and a clean responsive design.",
+      githubUserFinderImgAlt: "GitHub User Finder App Preview",  
       "currencyConverterTitle": "Curreny-Converter-App",
       "currencyConverterDesc": "A fast and efficient currency converter app that lets you convert between 150+ global currencies instantly. Features real-time exchange rates, dark mode, and a clean, responsive design.",
       "currencyConverterImgAlt": "Currency Converter App Preview",
