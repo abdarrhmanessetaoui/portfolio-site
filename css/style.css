@@ -1614,7 +1614,7 @@ section {
     font-size: 5%;
   }
   .flag-icon {
-    width: auto;
+    width: 1px;
     height: auto;
     margin-right: 1px;
     object-fit: cover;
