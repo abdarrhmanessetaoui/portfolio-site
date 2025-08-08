@@ -1617,7 +1617,7 @@ section {
   .dropdown-list {
     position: absolute;
     top: 100%;
-    margin-top: 5px;
+    margin-top: 50px;
     left: 0;
     width: 100%;
     background: var(--second-bg-color);
