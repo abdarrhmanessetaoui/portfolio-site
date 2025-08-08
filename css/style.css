@@ -1613,7 +1613,7 @@ section {
     align-items: center;
     font-size: -5%;
   }
-  .dropdown-list div {
+  .dropdown-list {
     padding: 4px 6px;
     cursor: pointer;
     color: var(--text-color);
