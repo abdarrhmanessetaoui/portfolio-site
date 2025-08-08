@@ -317,7 +317,10 @@ document.addEventListener('DOMContentLoaded', () => {
       "inDev": "قيد التطوير...",
       expenseTrackerTitle: "متتبع المصاريف",
       expenseTrackerDesc: "تطبيق بسيط وسهل الاستخدام يساعدك على إدارة دخلك ونفقاتك بكفاءة. يتميز بتحديث الرصيد لحظيًا، وسجل للمعاملات، وتصميم نظيف ومتجاوب.",
-      
+      githubUserFinderTitle: "الباحث عن مستخدمي GitHub",
+      githubUserFinderDesc: "تطبيق ويب بسيط للبحث عن مستخدمي GitHub وعرض معلومات ملفاتهم الشخصية والمستودعات. يتضمن الصورة، النبذة، المتابعين، أفضل المستودعات، وتصميم نظيف ومتجاوب.",
+      githubUserFinderImgAlt: "معاينة تطبيق الباحث عن مستخدمي GitHub",
+     
       "currencyConverterTitle": "تطبيق تحويل العملات",
       currencyConverterDesc: "تطبيق سريع وفعّال يسمح لك بتحويل أكثر من 150 عملة عالمية فورياً. يتميز بأسعار صرف حية، ووضع ليلي، وتصميم نظيف ومتجاوب.",
       currencyConverterImgAlt: "معاينة تطبيق تحويل العملات",
