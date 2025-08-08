@@ -113,6 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
       "currencyConverterTitle": "Curreny-Converter-App",
       "currencyConverterDesc": "A fast and efficient currency converter app that lets you convert between 150+ global currencies instantly. Features real-time exchange rates, dark mode, and a clean, responsive design.",
       "currencyConverterImgAlt": "Currency Converter App Preview",
+      todoAppTitle: "Todo App",
+      todoAppDesc: "A simple and clean Todo List app to help you organize your tasks easily. Features adding, marking complete, deleting tasks, and a responsive design.",
+      todoAppImgAlt: "Todo App Preview",
       //contact
       contactHeadline: "<span>Contact Me</span>",
       contactName: "Full Name",
