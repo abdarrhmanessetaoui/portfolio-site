@@ -1585,6 +1585,19 @@ section {
     
   }
 
+  .dropdown {
+    left: 2rem;
+    width: auto;
+    height: auto;
+  }
+
+  .flag-icon {
+    width: auto;
+    height: auto;
+    margin-right: 8px;
+    object-fit: cover;
+  }
+
   section {
     padding: 6rem 2%;
   }
