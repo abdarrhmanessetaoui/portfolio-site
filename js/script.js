@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
       expenseTrackerTitle: "متتبع المصاريف",
       expenseTrackerDesc: "تطبيق بسيط وسهل الاستخدام يساعدك على إدارة دخلك ونفقاتك بكفاءة. يتميز بتحديث الرصيد لحظيًا، وسجل للمعاملات، وتصميم نظيف ومتجاوب.",
     
-      "currencyConverterTitle: "تطبيق تحويل العملات",
+      "currencyConverterTitle": "تطبيق تحويل العملات",
       currencyConverterDesc: "تطبيق سريع وفعّال يسمح لك بتحويل أكثر من 150 عملة عالمية فورياً. يتميز بأسعار صرف حية، ووضع ليلي، وتصميم نظيف ومتجاوب.",
       currencyConverterImgAlt: "معاينة تطبيق تحويل العملات",
       //contact
