@@ -1547,6 +1547,15 @@ section {
 
   .dropdown {
     left: 2rem;
+    width: auto;
+    height: auto;
+  }
+
+  .flag-icon {
+    width: auto;
+    height: auto;
+    margin-right: 8px;
+    object-fit: cover;
   }
 
   .languages-grid {
@@ -1574,6 +1583,30 @@ section {
     height: auto;
     display: block;
     
+  }
+
+  .dropdown {
+    left: 2rem;
+    width: auto;
+    height: auto;
+  }
+
+  .dropdown-btn {
+    background: var(--main-color);
+    color: var(--btn-text-color);
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  .flag-icon {
+    width: auto;
+    height: auto;
+    margin-right: 8px;
+    object-fit: cover;
   }
 
   section {
@@ -1781,6 +1814,23 @@ section {
     display: block;
     
   }
+
+
+  .dropdown {
+    left: 2rem;
+    width: auto;
+    height: auto;
+  }
+
+  .flag-icon {
+    width: auto;
+    height: auto;
+    margin-right: 8px;
+    object-fit: cover;
+  }
+
+
+
   .home-content h1 {
     font-size: 3rem;
   }
