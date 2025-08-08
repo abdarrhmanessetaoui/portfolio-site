@@ -1548,6 +1548,7 @@ section {
   .dropdown {
     left: 2rem;
     width: auto;
+    height: auto;
   }
 
   .flag-icon {
