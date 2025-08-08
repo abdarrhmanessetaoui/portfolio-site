@@ -220,6 +220,9 @@ document.addEventListener('DOMContentLoaded', () => {
       currencyConverterTitle: "Application de Conversion de Devises",
       currencyConverterDesc: "Une application rapide et efficace qui vous permet de convertir instantanément plus de 150 devises du monde entier. Elle offre des taux de change en temps réel, un mode sombre, et un design propre et réactif.",
       currencyConverterImgAlt: "Aperçu de l'application de conversion de devises",
+      todoAppTitle: "Application Todo",
+      todoAppDesc: "Une application simple et claire de liste de tâches pour vous aider à organiser facilement vos tâches. Comprend l'ajout, la validation, la suppression des tâches et un design responsive.",
+      todoAppImgAlt: "Aperçu de l'application Todo",
       //contact
       contactHeadline: "<span>Me Contacter</span>",
       contactName: "Nom Complet",
