@@ -1313,7 +1313,7 @@ section {
     position: fixed;
     top: 2rem;
     left: 3rem;
-    height: 1rem;
+    height: auto;
     width: auto;
     z-index: 1100;
   }
