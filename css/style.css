@@ -1604,7 +1604,14 @@ section {
     display: flex;
     align-items: center;
   }
-
+  .dropdown-list div {
+    padding: 8px 12px;
+    cursor: pointer;
+    color: var(--text-color);
+    border-radius: 6rem;
+    display: block;
+    align-items: center;
+  }
   .flag-icon {
     width: auto;
     height: auto;
