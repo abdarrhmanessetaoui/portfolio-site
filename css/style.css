@@ -1584,6 +1584,12 @@ section {
     display: block;
   }
 
+  .logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+  }
+
   .dropdown {
     left: 2rem;
     width: auto;
