@@ -1547,8 +1547,6 @@ section {
 
   .dropdown {
     left: 2rem;
-    width: auto;
-    height: 1px;
   }
 
   .languages-grid {
@@ -1572,7 +1570,7 @@ section {
   }
 
   .logo img {
-    width: auto;
+    width: 200px;
     height: auto;
     display: block;
     
