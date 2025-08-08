@@ -212,7 +212,9 @@ document.addEventListener('DOMContentLoaded', () => {
       "inDev": "En développement..",
       expenseTrackerTitle: "Suivi des Dépenses",
       expenseTrackerDesc: "Une application simple et intuitive pour suivre vos revenus et dépenses efficacement. Elle offre un solde mis à jour en temps réel, un historique des transactions et un design réactif et épuré.",
-      
+      githubUserFinderTitle: "Chercheur d'utilisateurs GitHub",
+      githubUserFinderDesc: "Une application web simple pour rechercher des utilisateurs GitHub et afficher leurs informations de profil et dépôts. Comprend l’avatar, la bio, les abonnés, les meilleurs dépôts, et un design réactif et épuré.",
+      githubUserFinderImgAlt: "Aperçu de l'application GitHub User Finder",  
       currencyConverterTitle: "Application de Conversion de Devises",
       currencyConverterDesc: "Une application rapide et efficace qui vous permet de convertir instantanément plus de 150 devises du monde entier. Elle offre des taux de change en temps réel, un mode sombre, et un design propre et réactif.",
       currencyConverterImgAlt: "Aperçu de l'application de conversion de devises",
