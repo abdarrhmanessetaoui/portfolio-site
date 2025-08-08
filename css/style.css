@@ -1612,7 +1612,7 @@ section {
     display: block;
     align-items: center;
     font-size: 5%;
-    pad
+    padding: 0;
   }
   .flag-icon {
     width: 15px;
