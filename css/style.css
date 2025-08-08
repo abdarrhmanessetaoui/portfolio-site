@@ -1548,7 +1548,6 @@ section {
   .dropdown {
     left: 2rem;
     width: auto;
-    height: auto;
   }
 
   .flag-icon {
@@ -1582,34 +1581,7 @@ section {
     width: 200px;
     height: auto;
     display: block;
-  }
-
-  .logo  {
-    margin-top: -5%;
-  }
-
-  .dropdown {
-    left: 2rem;
-    width: auto;
-    height: auto;
-  }
-
-  .dropdown-btn {
-    background: var(--main-color);
-    color: var(--btn-text-color);
-    padding: 4px 6px;
-    cursor: pointer;
-    border-radius: 6rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-  }
-
-  .flag-icon {
-    width: auto;
-    height: auto;
-    margin-right: 8px;
-    object-fit: cover;
+    
   }
 
   section {
@@ -1817,49 +1789,6 @@ section {
     display: block;
     
   }
-
-  .logo  {
-    margin-top: -3%;
-  }
-
-
-  .dropdown {
-    left: 2rem;
-    width: auto;
-    height: auto;
-  }
-
-  .flag-icon {
-    width: auto;
-    height: auto;
-    margin-right: 8px;
-    object-fit: cover;
-  }
-
-  .dropdown-list {
-    position: absolute;
-    top: 100%;
-    margin-top: 5px;
-    left: 0;
-    width: auto;
-    background: var(--second-bg-color);
-    border: 1px solid var(--border-color);
-    border-radius: 1rem;
-    display: none;
-    z-index: 10;
-    box-shadow: 0 4px 12px rgba(var(--main-color-rgb), 0.15);
-  }
-  .dropdown-list div {
-    padding: 8px 12px;
-    cursor: pointer;
-    color: var(--text-color);
-    border-radius: 6rem;
-    display: block;
-    align-items: center;
-  }
-
-
-
   .home-content h1 {
     font-size: 3rem;
   }
