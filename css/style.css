@@ -1826,7 +1826,7 @@ section {
   .dropdown {
     left: 2rem;
     width: 10px;
-    height: auto;
+    height: 10px;
   }
 
   .flag-icon {
