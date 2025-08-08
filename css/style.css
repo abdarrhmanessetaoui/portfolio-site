@@ -1549,6 +1549,13 @@ section {
     left: 2rem;
   }
 
+  .flag-icon {
+    width: 20px;
+    height: 14px;
+    margin-right: 8px;
+    object-fit: cover;
+  }
+
   .languages-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
