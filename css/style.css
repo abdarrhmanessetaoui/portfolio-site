@@ -214,7 +214,7 @@ span {
 
 .dropdown {
   position: relative;
-  width: 10px;
+  width: 100px;
   user-select: none;
 }
 .dropdown-btn {
