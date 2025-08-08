@@ -1547,7 +1547,7 @@ section {
 
   .dropdown {
     left: 2rem;
-    w
+    width: auto;
   }
 
   .languages-grid {
