@@ -209,7 +209,9 @@ document.addEventListener('DOMContentLoaded', () => {
       "inDev": "En développement..",
       expenseTrackerTitle: "Suivi des Dépenses",
       expenseTrackerDesc: "Une application simple et intuitive pour suivre vos revenus et dépenses efficacement. Elle offre un solde mis à jour en temps réel, un historique des transactions et un design réactif et épuré.",
-    
+      expenseTrackerTitle: "Expense Tracker",
+    expenseTrackerDesc: "A simple and intuitive expense tracker app to help you manage your income and expenses efficiently. Features real-time balance updates, transaction history, and a clean, responsive design.",
+     
       currencyConverterTitle: "Application de Conversion de Devises",
       currencyConverterDesc: "Une application rapide et efficace qui vous permet de convertir instantanément plus de 150 devises du monde entier. Elle offre des taux de change en temps réel, un mode sombre, et un design propre et réactif.",
       currencyConverterImgAlt: "Aperçu de l'application de conversion de devises",
