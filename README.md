@@ -1,44 +1,33 @@
-# 🎨 Portfolio Site - Abderrhman Settaoui
+# Abderrhman Settaoui – Portfolio Site
 
-[![GitHub stars](https://img.shields.io/github/stars/abdarrhmanessetaoui/portfolio-site?style=for-the-badge&logo=github)](https://github.com/abdarrhmanessetaoui/portfolio-site/stargazers)
-![Last Commit](https://img.shields.io/github/last-commit/abdarrhmanessetaoui/portfolio-site?style=for-the-badge)
-[![GitHub forks](https://img.shields.io/github/forks/abdarrhmanessetaoui/portfolio-site?style=for-the-badge)](https://github.com/abdarrhmanessetaoui/portfolio-site/network)
-[![GitHub issues](https://img.shields.io/github/issues/abdarrhmanessetaoui/portfolio-site?style=for-the-badge)](https://github.com/abdarrhmanessetaoui/portfolio-site/issues)
-[![GitHub license](https://img.shields.io/github/license/abdarrhmanessetaoui/portfolio-site?style=for-the-badge)](https://github.com/abdarrhmanessetaoui/portfolio-site/blob/main/LICENSE)
-
----
-
-## 🌟 Project Preview
-
-<p align="center">
-  <img src="preview.PNG" alt="Project Preview" width="600" style="border-radius: 15px;"/>
-</p>
+![Stars](https://img.shields.io/github/stars/abdarrhmanessetaoui/portfolio-site?color=gold)
+![Forks](https://img.shields.io/github/forks/abdarrhmanessetaoui/portfolio-site?color=lightblue)
+![Last Commit](https://img.shields.io/github/last-commit/abdarrhmanessetaoui/portfolio-site?color=green)
+![License](https://img.shields.io/github/license/abdarrhmanessetaoui/portfolio-site?color=orange)
 
 ---
 
-## 🚀 Features
-
-- Responsive & clean design  
-- Projects showcase with live links  
-- Contact section for collaboration  
+## Preview
+![Portfolio Preview](preview.PNG)
 
 ---
 
-## 📂 How to View
-
-Open the `index.html` file in your browser or visit the live site at:  
-[https://abdarrhmanessetaoui.github.io/portfolio-site/](https://abdarrhmanessetaoui.github.io/portfolio-site/)
-or
-[https://abderrhmansettaoui.netlify.app/](https://abderrhmansettaoui.netlify.app/)
-
----
-
-## 📬 Contact
-
-Email: abderrhman.settaoui@gmail.com  
-GitHub: [abdarrhmanessetaoui](https://github.com/abdarrhmanessetaoui)
+## Features
+- Responsive and clean design
+- Smooth animations and modern UI
+- Project showcase with live demos
+- Contact form for collaborations
+- Hosted on GitHub Pages and Netlify
 
 ---
 
-> _Thank you for visiting!_
+## Live Demo
+- **GitHub Pages:** [View Site](https://abdarrhmanessetaoui.github.io/portfolio-site/)  
+- **Netlify:** [View Site](https://abderrhmansettaoui.netlify.app/)
 
+---
+
+## Installation
+```bash
+git clone https://github.com/abdarrhmanessetaoui/portfolio-site.git
+# Then open index.html in your browser
